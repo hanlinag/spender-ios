@@ -10,6 +10,16 @@
 		2336DE58E2F1D69440EBD2AF /* Pods_SpenderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A25AD4FD577E15D0FCE59E5 /* Pods_SpenderTests.framework */; };
 		A188413A2321BF4E1906E64C /* Pods_Spender_SpenderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0027654F39F0287D5DDBC10 /* Pods_Spender_SpenderUITests.framework */; };
 		CB7BF850276F2C990090FE0A /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF84F276F2C990090FE0A /* UIViewController + Extensions.swift */; };
+		CB7BF852276F387D0090FE0A /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7BF851276F387D0090FE0A /* Authentication.storyboard */; };
+		CB7BF856276F4B2A0090FE0A /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF855276F4B2A0090FE0A /* MainTabBarViewController.swift */; };
+		CB7BF858276F4E150090FE0A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF857276F4E150090FE0A /* HomeViewController.swift */; };
+		CB7BF85B276F7D630090FE0A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7BF85A276F7D630090FE0A /* Home.storyboard */; };
+		CB7BF85D276F7D700090FE0A /* Wallets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7BF85C276F7D700090FE0A /* Wallets.storyboard */; };
+		CB7BF85F276F7D830090FE0A /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7BF85E276F7D830090FE0A /* Activity.storyboard */; };
+		CB7BF861276F7D9A0090FE0A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7BF860276F7D9A0090FE0A /* Settings.storyboard */; };
+		CB7BF867276F81900090FE0A /* WalletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF866276F81900090FE0A /* WalletsViewController.swift */; };
+		CB7BF869276F819D0090FE0A /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF868276F819D0090FE0A /* ActivityViewController.swift */; };
+		CB7BF86B276F81A80090FE0A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF86A276F81A80090FE0A /* SettingsViewController.swift */; };
 		CB9749A7276A4F7700357BF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9749A6276A4F7700357BF2 /* AppDelegate.swift */; };
 		CB9749A9276A4F7700357BF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9749A8276A4F7700357BF2 /* SceneDelegate.swift */; };
 		CB9749AB276A4F7700357BF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9749AA276A4F7700357BF2 /* ViewController.swift */; };
@@ -53,6 +63,16 @@
 		B422A81DD88C9AD8A421BD41 /* Pods-SpenderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpenderTests.debug.xcconfig"; path = "Target Support Files/Pods-SpenderTests/Pods-SpenderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B538D108A7675D5C26F4AFFE /* Pods-Spender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spender.debug.xcconfig"; path = "Target Support Files/Pods-Spender/Pods-Spender.debug.xcconfig"; sourceTree = "<group>"; };
 		CB7BF84F276F2C990090FE0A /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
+		CB7BF851276F387D0090FE0A /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		CB7BF855276F4B2A0090FE0A /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		CB7BF857276F4E150090FE0A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CB7BF85A276F7D630090FE0A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		CB7BF85C276F7D700090FE0A /* Wallets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallets.storyboard; sourceTree = "<group>"; };
+		CB7BF85E276F7D830090FE0A /* Activity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
+		CB7BF860276F7D9A0090FE0A /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		CB7BF866276F81900090FE0A /* WalletsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsViewController.swift; sourceTree = "<group>"; };
+		CB7BF868276F819D0090FE0A /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		CB7BF86A276F81A80090FE0A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CB9749A3276A4F7700357BF2 /* Spender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9749A6276A4F7700357BF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9749A8276A4F7700357BF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +142,55 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB7BF853276F4AAD0090FE0A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CBADC22C276DCABF00F8003A /* LoginViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		CB7BF854276F4ABB0090FE0A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CB7BF855276F4B2A0090FE0A /* MainTabBarViewController.swift */,
+				CB9749AA276A4F7700357BF2 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CB7BF862276F814A0090FE0A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CB7BF857276F4E150090FE0A /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CB7BF863276F81510090FE0A /* Wallets */ = {
+			isa = PBXGroup;
+			children = (
+				CB7BF866276F81900090FE0A /* WalletsViewController.swift */,
+			);
+			path = Wallets;
+			sourceTree = "<group>";
+		};
+		CB7BF864276F81590090FE0A /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				CB7BF868276F819D0090FE0A /* ActivityViewController.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		CB7BF865276F81640090FE0A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CB7BF86A276F81A80090FE0A /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		CB97499A276A4F7700357BF2 = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +251,11 @@
 			children = (
 				CB9749B1276A4F7800357BF2 /* LaunchScreen.storyboard */,
 				CB9749AC276A4F7700357BF2 /* Main.storyboard */,
+				CB7BF851276F387D0090FE0A /* Authentication.storyboard */,
+				CB7BF85A276F7D630090FE0A /* Home.storyboard */,
+				CB7BF85C276F7D700090FE0A /* Wallets.storyboard */,
+				CB7BF85E276F7D830090FE0A /* Activity.storyboard */,
+				CB7BF860276F7D9A0090FE0A /* Settings.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,9 +263,13 @@
 		CBADC226276DBE7A00F8003A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CB9749AA276A4F7700357BF2 /* ViewController.swift */,
+				CB7BF865276F81640090FE0A /* Settings */,
+				CB7BF864276F81590090FE0A /* Activity */,
+				CB7BF863276F81510090FE0A /* Wallets */,
+				CB7BF862276F814A0090FE0A /* Home */,
+				CB7BF854276F4ABB0090FE0A /* Main */,
+				CB7BF853276F4AAD0090FE0A /* Authentication */,
 				CBADC22A276DC6D900F8003A /* SplashScreenController.swift */,
-				CBADC22C276DCABF00F8003A /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -330,8 +408,13 @@
 			files = (
 				CB9749B3276A4F7800357BF2 /* LaunchScreen.storyboard in Resources */,
 				CB9749D7276A52A400357BF2 /* GoogleService-Info.plist in Resources */,
+				CB7BF85D276F7D700090FE0A /* Wallets.storyboard in Resources */,
 				CB9749B0276A4F7800357BF2 /* Assets.xcassets in Resources */,
+				CB7BF85B276F7D630090FE0A /* Home.storyboard in Resources */,
 				CB9749AE276A4F7700357BF2 /* Main.storyboard in Resources */,
+				CB7BF861276F7D9A0090FE0A /* Settings.storyboard in Resources */,
+				CB7BF852276F387D0090FE0A /* Authentication.storyboard in Resources */,
+				CB7BF85F276F7D830090FE0A /* Activity.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,8 +544,13 @@
 			files = (
 				CB9749AB276A4F7700357BF2 /* ViewController.swift in Sources */,
 				CB9749A7276A4F7700357BF2 /* AppDelegate.swift in Sources */,
+				CB7BF86B276F81A80090FE0A /* SettingsViewController.swift in Sources */,
 				CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */,
+				CB7BF869276F819D0090FE0A /* ActivityViewController.swift in Sources */,
+				CB7BF858276F4E150090FE0A /* HomeViewController.swift in Sources */,
+				CB7BF856276F4B2A0090FE0A /* MainTabBarViewController.swift in Sources */,
 				CBADC22D276DCABF00F8003A /* LoginViewController.swift in Sources */,
+				CB7BF867276F81900090FE0A /* WalletsViewController.swift in Sources */,
 				CB7BF850276F2C990090FE0A /* UIViewController + Extensions.swift in Sources */,
 				CB9749A9276A4F7700357BF2 /* SceneDelegate.swift in Sources */,
 			);
@@ -650,6 +738,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -679,6 +768,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

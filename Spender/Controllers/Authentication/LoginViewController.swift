@@ -27,6 +27,17 @@ class LoginViewController: UIViewController{
     }
     
     
+    @IBAction func onLoginButtonAction(_ sender: Any) {
+        print("GOOO: Login Button touched...")
+        
+        //go to tab bar controller aka main
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MainTabBarBoard") as! MainTabBarViewController
+        let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
+        sceneDelegate.window?.rootViewController = vc
+        
+    }
+    
     @IBAction func onGoogleLoginAction(_ sender: Any) {
         print("GOOO: Google Login Button touched...")
         

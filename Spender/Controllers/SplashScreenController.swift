@@ -23,7 +23,7 @@ class SplashScreenController: UIViewController{
     }
     
     @objc func goToLoginScreen(){
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Authentication", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewBoard") as! LoginViewController
         let sceneDelegate = UIApplication.shared.connectedScenes.first!.delegate as! SceneDelegate
         sceneDelegate.window!.rootViewController = vc
