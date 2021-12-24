@@ -107,7 +107,7 @@
     <resources>
         <image name="logo-white" width="167.33332824707031" height="167"/>
         <namedColor name="AccentColor">
-            <color red="0.792156862745098" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.97254901960784312" green="0.29411764705882354" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

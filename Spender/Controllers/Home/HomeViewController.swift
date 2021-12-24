@@ -14,6 +14,10 @@ class HomeViewController: UIViewController {
 
         print("GOOO: Home View controller now")
         // Do any additional setup after loading the view.
+        
+        //configure naviation controller
+        //self.navigationController?.navigationBar.prefersLargeTitles = true
+        //self.navigationController?.navigationBar.title = "Hello"
     }
     
 
