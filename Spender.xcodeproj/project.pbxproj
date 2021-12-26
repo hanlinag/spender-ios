@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		2336DE58E2F1D69440EBD2AF /* Pods_SpenderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A25AD4FD577E15D0FCE59E5 /* Pods_SpenderTests.framework */; };
 		A188413A2321BF4E1906E64C /* Pods_Spender_SpenderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0027654F39F0287D5DDBC10 /* Pods_Spender_SpenderUITests.framework */; };
-		CB6542AC2775AC9F0006893E /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6542AA2775AC9F0006893E /* TransactionCell.swift */; };
-		CB6542AD2775AC9F0006893E /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB6542AB2775AC9F0006893E /* TransactionCell.xib */; };
+		CB13A6C4277782CD00B89753 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13A6C2277782CD00B89753 /* TransactionTableViewCell.swift */; };
+		CB13A6C5277782CD00B89753 /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB13A6C3277782CD00B89753 /* TransactionTableViewCell.xib */; };
 		CB7BF850276F2C990090FE0A /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF84F276F2C990090FE0A /* UIViewController + Extensions.swift */; };
 		CB7BF852276F387D0090FE0A /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7BF851276F387D0090FE0A /* Authentication.storyboard */; };
 		CB7BF856276F4B2A0090FE0A /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF855276F4B2A0090FE0A /* MainTabBarViewController.swift */; };
@@ -64,8 +64,8 @@
 		B0027654F39F0287D5DDBC10 /* Pods_Spender_SpenderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spender_SpenderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B422A81DD88C9AD8A421BD41 /* Pods-SpenderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpenderTests.debug.xcconfig"; path = "Target Support Files/Pods-SpenderTests/Pods-SpenderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B538D108A7675D5C26F4AFFE /* Pods-Spender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spender.debug.xcconfig"; path = "Target Support Files/Pods-Spender/Pods-Spender.debug.xcconfig"; sourceTree = "<group>"; };
-		CB6542AA2775AC9F0006893E /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
-		CB6542AB2775AC9F0006893E /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		CB13A6C2277782CD00B89753 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		CB13A6C3277782CD00B89753 /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
 		CB7BF84F276F2C990090FE0A /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
 		CB7BF851276F387D0090FE0A /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		CB7BF855276F4B2A0090FE0A /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -289,8 +289,8 @@
 		CBADC227276DBE8900F8003A /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				CB6542AA2775AC9F0006893E /* TransactionCell.swift */,
-				CB6542AB2775AC9F0006893E /* TransactionCell.xib */,
+				CB13A6C2277782CD00B89753 /* TransactionTableViewCell.swift */,
+				CB13A6C3277782CD00B89753 /* TransactionTableViewCell.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -420,9 +420,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB13A6C5277782CD00B89753 /* TransactionTableViewCell.xib in Resources */,
 				CB9749B3276A4F7800357BF2 /* LaunchScreen.storyboard in Resources */,
 				CB9749D7276A52A400357BF2 /* GoogleService-Info.plist in Resources */,
-				CB6542AD2775AC9F0006893E /* TransactionCell.xib in Resources */,
 				CB7BF85D276F7D700090FE0A /* Wallets.storyboard in Resources */,
 				CB9749B0276A4F7800357BF2 /* Assets.xcassets in Resources */,
 				CB7BF85B276F7D630090FE0A /* Home.storyboard in Resources */,
@@ -560,7 +560,6 @@
 				CB9749AB276A4F7700357BF2 /* ViewController.swift in Sources */,
 				CB9749A7276A4F7700357BF2 /* AppDelegate.swift in Sources */,
 				CB7BF86B276F81A80090FE0A /* SettingsViewController.swift in Sources */,
-				CB6542AC2775AC9F0006893E /* TransactionCell.swift in Sources */,
 				CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */,
 				CB7BF869276F819D0090FE0A /* ActivityViewController.swift in Sources */,
 				CB7BF858276F4E150090FE0A /* HomeViewController.swift in Sources */,
@@ -568,6 +567,7 @@
 				CBADC22D276DCABF00F8003A /* LoginViewController.swift in Sources */,
 				CB7BF867276F81900090FE0A /* WalletsViewController.swift in Sources */,
 				CB7BF850276F2C990090FE0A /* UIViewController + Extensions.swift in Sources */,
+				CB13A6C4277782CD00B89753 /* TransactionTableViewCell.swift in Sources */,
 				CB9749A9276A4F7700357BF2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
