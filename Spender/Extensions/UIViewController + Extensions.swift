@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import FBSDKLoginKit
 
 extension UIViewController {
     //Keyboard dismissal on tap
@@ -18,5 +19,19 @@ extension UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+}
+
+extension UIViewController: LoginButtonDelegate{
+    public func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        guard error == nil, let accessToken = result?.token else{
+            return print(error ?? "Facebook access token is nil")
+        }
+
+    
+    }
+    
+    public func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        print("Logged out")
     }
 }

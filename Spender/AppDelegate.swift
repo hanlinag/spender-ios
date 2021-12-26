@@ -8,6 +8,9 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import FBSDKCoreKit
+import FBSDKLoginKit
+import FirebaseAuth
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -44,4 +47,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
 

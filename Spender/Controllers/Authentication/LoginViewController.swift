@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import GoogleSignIn
 import FirebaseAuth
+import FBSDKLoginKit
 
 class LoginViewController: UIViewController{
     
@@ -66,5 +67,22 @@ class LoginViewController: UIViewController{
         
         
     }//end of button tap action
+    
+    @IBAction func onFacebookLoginTap(_ sender: Any) {
+        print("Facebook login tapped")
+        //let loginButton = FBLoginButton()
+        //loginButton.delegate = self
+        
+        
+        
+    }//end of Facebook button tap action
+    
+
+    
+    @IBAction func onAppleLoginTapped(_ sender: Any) {
+        print("Apple login tapped")
+        
+    }//end of Apple login tap action
+    
     
 }

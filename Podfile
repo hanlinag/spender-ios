@@ -17,6 +17,8 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'GoogleSignIn'
+pod 'FBSDKCoreKit', '11.2.1'
+pod 'FBSDKLoginKit', '11.2.1'
 
   target 'SpenderTests' do
     inherit! :search_paths
