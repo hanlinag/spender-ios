@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		2336DE58E2F1D69440EBD2AF /* Pods_SpenderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A25AD4FD577E15D0FCE59E5 /* Pods_SpenderTests.framework */; };
 		A188413A2321BF4E1906E64C /* Pods_Spender_SpenderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0027654F39F0287D5DDBC10 /* Pods_Spender_SpenderUITests.framework */; };
+		CB0DCAD6285F86CE004A87FA /* SettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0DCAD5285F86CE004A87FA /* SettingsVM.swift */; };
+		CB0DCADA285F8703004A87FA /* ActivityVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0DCAD9285F8703004A87FA /* ActivityVM.swift */; };
+		CB0DCADC285F870C004A87FA /* WalletsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0DCADB285F870C004A87FA /* WalletsVM.swift */; };
+		CB0DCADE285F8719004A87FA /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0DCADD285F8719004A87FA /* HomeVM.swift */; };
+		CB0DCAE0285F872E004A87FA /* AuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0DCADF285F872E004A87FA /* AuthVM.swift */; };
+		CB0DCAE3285F87C2004A87FA /* CommonVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0DCAE2285F87C2004A87FA /* CommonVM.swift */; };
 		CB13A6C4277782CD00B89753 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13A6C2277782CD00B89753 /* TransactionTableViewCell.swift */; };
 		CB13A6C5277782CD00B89753 /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB13A6C3277782CD00B89753 /* TransactionTableViewCell.xib */; };
 		CB7BF850276F2C990090FE0A /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF84F276F2C990090FE0A /* UIViewController + Extensions.swift */; };
@@ -64,6 +70,12 @@
 		B0027654F39F0287D5DDBC10 /* Pods_Spender_SpenderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spender_SpenderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B422A81DD88C9AD8A421BD41 /* Pods-SpenderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpenderTests.debug.xcconfig"; path = "Target Support Files/Pods-SpenderTests/Pods-SpenderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B538D108A7675D5C26F4AFFE /* Pods-Spender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spender.debug.xcconfig"; path = "Target Support Files/Pods-Spender/Pods-Spender.debug.xcconfig"; sourceTree = "<group>"; };
+		CB0DCAD5285F86CE004A87FA /* SettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVM.swift; sourceTree = "<group>"; };
+		CB0DCAD9285F8703004A87FA /* ActivityVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityVM.swift; sourceTree = "<group>"; };
+		CB0DCADB285F870C004A87FA /* WalletsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsVM.swift; sourceTree = "<group>"; };
+		CB0DCADD285F8719004A87FA /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		CB0DCADF285F872E004A87FA /* AuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVM.swift; sourceTree = "<group>"; };
+		CB0DCAE2285F87C2004A87FA /* CommonVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonVM.swift; sourceTree = "<group>"; };
 		CB13A6C2277782CD00B89753 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		CB13A6C3277782CD00B89753 /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
 		CB7BF84F276F2C990090FE0A /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
@@ -146,11 +158,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB0DCAD3285F859B004A87FA /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CB0DCAD4285F86A7004A87FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB0DCAD7285F86E0004A87FA /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		CB0DCAE1285F879B004A87FA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CBADC22A276DC6D900F8003A /* SplashScreenController.swift */,
+				CB0DCAE2285F87C2004A87FA /* CommonVM.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		CB7BF853276F4AAD0090FE0A /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				CB7BF851276F387D0090FE0A /* Authentication.storyboard */,
 				CBADC22C276DCABF00F8003A /* LoginViewController.swift */,
+				CB0DCADF285F872E004A87FA /* AuthVM.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -170,6 +213,7 @@
 			children = (
 				CB7BF85A276F7D630090FE0A /* Home.storyboard */,
 				CB7BF857276F4E150090FE0A /* HomeViewController.swift */,
+				CB0DCADD285F8719004A87FA /* HomeVM.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -179,6 +223,7 @@
 			children = (
 				CB7BF85C276F7D700090FE0A /* Wallets.storyboard */,
 				CB7BF866276F81900090FE0A /* WalletsViewController.swift */,
+				CB0DCADB285F870C004A87FA /* WalletsVM.swift */,
 			);
 			path = Wallets;
 			sourceTree = "<group>";
@@ -188,6 +233,7 @@
 			children = (
 				CB7BF85E276F7D830090FE0A /* Activity.storyboard */,
 				CB7BF868276F819D0090FE0A /* ActivityViewController.swift */,
+				CB0DCAD9285F8703004A87FA /* ActivityVM.swift */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -197,6 +243,7 @@
 			children = (
 				CB7BF860276F7D9A0090FE0A /* Settings.storyboard */,
 				CB7BF86A276F81A80090FE0A /* SettingsViewController.swift */,
+				CB0DCAD5285F86CE004A87FA /* SettingsVM.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -204,6 +251,8 @@
 		CB7BF86C276F87490090FE0A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				CB0DCAD7285F86E0004A87FA /* DB */,
+				CB0DCAD3285F859B004A87FA /* API */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -233,6 +282,7 @@
 		CB9749A5276A4F7700357BF2 /* Spender */ = {
 			isa = PBXGroup;
 			children = (
+				CB0DCAD4285F86A7004A87FA /* Models */,
 				CB7BF86C276F87490090FE0A /* Utilities */,
 				CBADC229276DBEA300F8003A /* Resources */,
 				CBADC228276DBE9900F8003A /* Extensions */,
@@ -275,13 +325,13 @@
 		CBADC226276DBE7A00F8003A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CB0DCAE1285F879B004A87FA /* Common */,
 				CB7BF865276F81640090FE0A /* Settings */,
 				CB7BF864276F81590090FE0A /* Activity */,
 				CB7BF863276F81510090FE0A /* Wallets */,
 				CB7BF862276F814A0090FE0A /* Home */,
 				CB7BF854276F4ABB0090FE0A /* Main */,
 				CB7BF853276F4AAD0090FE0A /* Authentication */,
-				CBADC22A276DC6D900F8003A /* SplashScreenController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -381,6 +431,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = Tyler;
 				TargetAttributes = {
 					CB9749A2276A4F7700357BF2 = {
 						CreatedOnToolsVersion = 13.2;
@@ -558,16 +609,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB9749AB276A4F7700357BF2 /* ViewController.swift in Sources */,
+				CB0DCAE3285F87C2004A87FA /* CommonVM.swift in Sources */,
 				CB9749A7276A4F7700357BF2 /* AppDelegate.swift in Sources */,
 				CB7BF86B276F81A80090FE0A /* SettingsViewController.swift in Sources */,
+				CB0DCADE285F8719004A87FA /* HomeVM.swift in Sources */,
+				CB0DCADA285F8703004A87FA /* ActivityVM.swift in Sources */,
 				CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */,
+				CB0DCAE0285F872E004A87FA /* AuthVM.swift in Sources */,
 				CB7BF869276F819D0090FE0A /* ActivityViewController.swift in Sources */,
 				CB7BF858276F4E150090FE0A /* HomeViewController.swift in Sources */,
 				CB7BF856276F4B2A0090FE0A /* MainTabBarViewController.swift in Sources */,
 				CBADC22D276DCABF00F8003A /* LoginViewController.swift in Sources */,
+				CB0DCADC285F870C004A87FA /* WalletsVM.swift in Sources */,
 				CB7BF867276F81900090FE0A /* WalletsViewController.swift in Sources */,
 				CB7BF850276F2C990090FE0A /* UIViewController + Extensions.swift in Sources */,
 				CB13A6C4277782CD00B89753 /* TransactionTableViewCell.swift in Sources */,
+				CB0DCAD6285F86CE004A87FA /* SettingsVM.swift in Sources */,
 				CB9749A9276A4F7700357BF2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -675,7 +732,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -730,7 +787,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -2,7 +2,8 @@
 //  SceneDelegate.swift
 //  Spender
 //
-//  Created by Aceplus on 15/12/2021.
+//  Created by Tyler on 15/12/2021.
+//  Copyright © 2022 Tyler. All rights reserved.
 //
 
 import UIKit

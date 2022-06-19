@@ -3,6 +3,7 @@
 //  Spender
 //
 //  Created by Tyler on 19/12/2021.
+//  Copyright © 2022 Tyler. All rights reserved.
 //
 
 import Foundation
