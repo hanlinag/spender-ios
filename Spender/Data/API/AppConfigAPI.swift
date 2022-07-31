@@ -7,4 +7,25 @@
 //
 
 import Foundation
+import Alamofire
+import Moya
+import RxSwift
+import RxCocoa
+import RxAlamofire
 
+extension API.AppConfig {
+    
+    struct GetAppConfig {
+        typealias T = AppConfigResponse
+        var path: String { return "app-config" }
+        
+        func getAppConfig() {
+            URLSession.shared.rx.json(url: URL(string: "https://spendergo.herokuapp.com/api/v1/app-config")!)
+                .observe(on: MainScheduler.instance)
+                .subscribe{ print($0) }
+            
+        }
+    }
+    
+   
+}

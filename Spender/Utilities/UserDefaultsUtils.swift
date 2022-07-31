@@ -9,8 +9,8 @@
 import Foundation
 
 private enum UserDefaultsKey: String {
-    case appCurrentLocale =  "appCurrentLocale"
-    case apiToken         =  "userAccountLoginToken"
+    case appCurrentLocale         =  "appCurrentLocale"
+    case userAccountToken         =  "userAccountLoginToken"
 }
 
 final class UserDefaultsUtils {
@@ -19,21 +19,27 @@ final class UserDefaultsUtils {
         get { return _get(valueForKey: .appCurrentLocale) as? String ?? "" }
     }
     
-    //private methods
-    private static func _set(value: Any?, key: UserDefaultsKey) {
-        UserDefaults.standard.set(value, forKey: key.rawValue)
+    static var userAccountToken: String? {
+        set { _set(value: newValue, key: .userAccountToken) }
+        get { return _get(valueForKey: .userAccountToken) as? String ?? "" }
     }
     
-    private static func _get(valueForKey key: UserDefaultsKey)-> Any? {
-        return UserDefaults.standard.value(forKey: key.rawValue)
-    }
     
     static func deleteCurrentLocale() {
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.appCurrentLocale.rawValue)
     }
     
     static func deleteAPIToken() {
-        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.apiToken.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.userAccountToken.rawValue)
+    }
+    
+    //MARK: - private methods
+    private static func _set(value: Any?, key: UserDefaultsKey) {
+        UserDefaults.standard.set(value, forKey: key.rawValue)
+    }
+    
+    private static func _get(valueForKey key: UserDefaultsKey)-> Any? {
+        return UserDefaults.standard.value(forKey: key.rawValue)
     }
 }
 

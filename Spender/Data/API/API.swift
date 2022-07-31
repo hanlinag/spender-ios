@@ -26,7 +26,7 @@ enum API {
     enum Headers {}
     
     static var backendURL: URL {
-        return URL(string: "https://spendergo.herokuapp.com/api")!
+        return URL(string: "https://spendergo.herokuapp.com/api/v1/")!
     }
     
     static var exchangeRateURL: URL {
@@ -43,7 +43,7 @@ extension Moya.TargetType {
     var backendURL: URL             { return API.backendURL }
     var exchangeRateURL: URL        { return API.exchangeRateURL }
     var strapiURL: URL              { return API.strapiURL }
-    //var headers: [String: String]?  { return API.Headers.all() }
+    var headers: [String: String]?  { return API.Headers.all() }
 }
 
 //MARK: - Moya For Actual API Call Config

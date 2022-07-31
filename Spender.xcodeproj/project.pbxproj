@@ -56,6 +56,8 @@
 		CB8675002896EF8900144558 /* AppConfigAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8674FF2896EF8900144558 /* AppConfigAPI.swift */; };
 		CB8675022896EF9400144558 /* FeedbackAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8675012896EF9400144558 /* FeedbackAPI.swift */; };
 		CB8675042896EFA700144558 /* ExchangeRateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8675032896EFA700144558 /* ExchangeRateAPI.swift */; };
+		CB8675062896F53300144558 /* AppConfigResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8675052896F53300144558 /* AppConfigResponse.swift */; };
+		CB8675082896F58100144558 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8675072896F58100144558 /* ErrorResponse.swift */; };
 		CB9749A7276A4F7700357BF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9749A6276A4F7700357BF2 /* AppDelegate.swift */; };
 		CB9749A9276A4F7700357BF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9749A8276A4F7700357BF2 /* SceneDelegate.swift */; };
 		CB9749AB276A4F7700357BF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9749AA276A4F7700357BF2 /* ViewController.swift */; };
@@ -146,6 +148,8 @@
 		CB8674FF2896EF8900144558 /* AppConfigAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigAPI.swift; sourceTree = "<group>"; };
 		CB8675012896EF9400144558 /* FeedbackAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAPI.swift; sourceTree = "<group>"; };
 		CB8675032896EFA700144558 /* ExchangeRateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateAPI.swift; sourceTree = "<group>"; };
+		CB8675052896F53300144558 /* AppConfigResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigResponse.swift; sourceTree = "<group>"; };
+		CB8675072896F58100144558 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		CB9749A3276A4F7700357BF2 /* Spender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9749A6276A4F7700357BF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9749A8276A4F7700357BF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -233,6 +237,8 @@
 		CB0DCAD4285F86A7004A87FA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CB8675052896F53300144558 /* AppConfigResponse.swift */,
+				CB8675072896F58100144558 /* ErrorResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -799,6 +805,7 @@
 				CB0DCADA285F8703004A87FA /* ActivityVM.swift in Sources */,
 				CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */,
 				CB0DCAE0285F872E004A87FA /* AuthVM.swift in Sources */,
+				CB8675082896F58100144558 /* ErrorResponse.swift in Sources */,
 				CB8674FA2896EF6A00144558 /* AuthAPI.swift in Sources */,
 				CB8675022896EF9400144558 /* FeedbackAPI.swift in Sources */,
 				CB7BF869276F819D0090FE0A /* ActivityVC.swift in Sources */,
@@ -814,6 +821,7 @@
 				CB51DFC928962362006BCBB3 /* PinCodeVC.swift in Sources */,
 				CB7BF867276F81900090FE0A /* WalletsVC.swift in Sources */,
 				CB8674F62896E1B900144558 /* API.swift in Sources */,
+				CB8675062896F53300144558 /* AppConfigResponse.swift in Sources */,
 				CB51DFF028967440006BCBB3 /* Localizable.swift in Sources */,
 				CB7BF850276F2C990090FE0A /* ViewController + Extensions.swift in Sources */,
 				CB13A6C4277782CD00B89753 /* TransactionTableViewCell.swift in Sources */,
