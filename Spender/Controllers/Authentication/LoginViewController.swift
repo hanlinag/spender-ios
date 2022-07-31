@@ -8,9 +8,9 @@
 
 import Foundation
 import UIKit
-import Firebase
-import GoogleSignIn
+import FirebaseCore
 import FirebaseAuth
+import GoogleSignIn
 import FBSDKLoginKit
 
 class LoginViewController: UIViewController{
@@ -46,10 +46,10 @@ class LoginViewController: UIViewController{
         guard let clientID = FirebaseApp.app()?.options.clientID else {return}
         
         //google sign in config obj
-        let config = GIDConfiguration(clientID: clientID)
+        let signInConfig = GIDConfiguration(clientID: clientID)
         
         //start sign in flow
-        GIDSignIn.sharedInstance.signIn(with: config, presenting: self) {[unowned self] user , error  in
+        GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) {[unowned self] user , error  in
             if let error = error {
                 print("GOOO: GIDSignIn, error occured.. \(error.localizedDescription)")
                 return
@@ -58,10 +58,10 @@ class LoginViewController: UIViewController{
             guard let authentication = user?.authentication else { return }
             guard let idToken = authentication.idToken else { return }
             
-            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
+            _ = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
             
             //get the account and do the rest
-            print("GOOO: Hello, \(Auth.auth().currentUser?.displayName)")
+            print("GOOO: Hello, \(String(describing: Auth.auth().currentUser?.displayName))")
             
         }//end of google signin
         
