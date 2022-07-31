@@ -2,7 +2,8 @@
 //  SceneDelegate.swift
 //  Spender
 //
-//  Created by Aceplus on 15/12/2021.
+//  Created by Tyler on 15/12/2021.
+//  Copyright © 2022 Tyler. All rights reserved.
 //
 
 import UIKit
@@ -17,6 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        //disable dark mode
+        if #available(iOS 13.0, *){
+            self.window?.overrideUserInterfaceStyle = .light
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
