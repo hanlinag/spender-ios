@@ -13,7 +13,7 @@ import FirebaseAuth
 import GoogleSignIn
 import FBSDKLoginKit
 
-class LoginViewController: UIViewController{
+class Login: SpenderViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -78,7 +78,7 @@ class LoginViewController: UIViewController{
         
     }//end of Facebook button tap action
     
-
+    
     
     @IBAction func onAppleLoginTapped(_ sender: Any) {
         print("Apple login tapped")

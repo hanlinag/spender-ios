@@ -14,11 +14,29 @@ target 'Spender' do
   
   # Add the pods for any other Firebase products you want to use in your app
   # For example, to use Firebase Authentication and Cloud Firestore
+  #Google and FB Services
   pod 'FirebaseAuth', '9.3.0'
+  pod 'FirebaseFirestore'
   pod 'GoogleSignIn'
   pod 'FBSDKCoreKit', '14.1.0'
   pod 'FBSDKLoginKit', '14.1.0'
+  #MS AppCenter
   pod 'AppCenter'
+  #Photo Lib
+  pod 'Kingfisher'
+  #Rx and Network
+  pod 'Moya', '15.0.0'
+  pod 'Moya/RxSwift', '15.0.0'
+  pod 'RxAlamofire'
+  pod 'RxDataSources'
+  pod 'RxRealm'
+  #Realm DB
+  pod 'RealmSwift', '10.28.3'
+  pod 'Realm', '10.28.3'
+  #Char
+  pod 'Charts'
+  #Crypt Algorithms
+  pod 'CryptoSwift', '1.5.1'
   
   target 'SpenderTests' do
     # Pods for testing

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class SplashScreenController: UIViewController{
+class SplashScreenController: SpenderViewController{
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -24,8 +24,8 @@ class SplashScreenController: UIViewController{
     }
     
     @objc func goToLoginScreen(){
-        let storyboard = UIStoryboard(name: "Authentication", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewBoard") as! LoginViewController
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "Login") as! Login
         let sceneDelegate = UIApplication.shared.connectedScenes.first!.delegate as! SceneDelegate
         sceneDelegate.window!.rootViewController = vc
         //self.presentedViewController(vc, animated: true)

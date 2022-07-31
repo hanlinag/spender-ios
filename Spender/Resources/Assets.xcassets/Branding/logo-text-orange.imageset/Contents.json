@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "icons8-appliances-24.png",
+      "filename" : "Logo Orange.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Logo Orange@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Logo Orange@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

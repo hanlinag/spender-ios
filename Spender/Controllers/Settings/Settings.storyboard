@@ -8,11 +8,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings-->
+        <!--Navigation Controller-->
         <scene sceneID="8i1-rA-Ah6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9yk-7i-9d2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="ic-settings" id="e5b-J7-G4O"/>
+                    <tabBarItem key="tabBarItem" title="" image="gearshape.fill" catalog="system" id="e5b-J7-G4O">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="tab.settings"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W1E-eG-R91">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -45,7 +49,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic-settings" width="24" height="24"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

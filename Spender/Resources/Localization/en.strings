@@ -1,0 +1,39 @@
+/* 
+  e.strings
+  Spender
+
+  Created by Tyler on 31/07/2022.
+  Copyright © 2022 Tyler. All rights reserved.
+*/
+
+//general
+"general.yes"       =         "Yes";
+"general.no"        =         "No";
+"general.ok"        =         "OK";
+"general.cancel"    =         "Cancel";
+"general.done"      =         "Done";
+"general.logout"    =         "Logout";
+"general.close"     =         "Close";
+"general.confirm"   =         "Confirm";
+"general.loading"   =         "Loading";
+"general.alert"     =         "Alert!";
+
+//tab bars
+"tab.home"      = "Home";
+"tab.wallets"   = "Wallets";
+"tab.activity"  = "Activity";
+"tab.settings"  = "Settings";
+
+//titles
+
+
+//labels
+
+
+//buttons
+
+
+//hints
+
+
+

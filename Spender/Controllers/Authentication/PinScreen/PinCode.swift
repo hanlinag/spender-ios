@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PinCode: UIViewController {
+class PinCode: SpenderViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

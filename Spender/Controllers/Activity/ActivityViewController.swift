@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ActivityViewController: UIViewController {
+class ActivityViewController: SpenderViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

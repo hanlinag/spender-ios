@@ -2,8 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Pyidaungsu.ttf</string>
+	</array>
 	<key>MSToken</key>
-	<string>554767bf384f9d4c0ebd7bf040744bc1d169540d</string>
+	<string>9428f531-76d2-4004-b5e7-cfdfc816a538</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
