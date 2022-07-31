@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1330"
+   LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "479BDBD165CD08E2159181E58CD2078F"
-               BuildableName = "FBAEMKit.framework"
+               BuildableName = "FBAEMKit"
                BlueprintName = "FBAEMKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
