@@ -17,6 +17,11 @@ class SpenderViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Locale.currentLocale = .MM
+        //set locale
+        Locale.currentLocale = Locale(rawValue: UserDefaultsUtils.currentLocale!) ?? .EN
+        
+        //tap to dismiss kb in every screen
+        onTapToDismissKeyboard()
+        
     }
 }

@@ -27,6 +27,7 @@ target 'Spender' do
   #Rx and Network
   pod 'Moya', '15.0.0'
   pod 'Moya/RxSwift', '15.0.0'
+  pod 'Alamofire'
   pod 'RxAlamofire'
   pod 'RxDataSources'
   pod 'RxRealm'

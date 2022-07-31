@@ -10,6 +10,7 @@ import Foundation
 
 private enum UserDefaultsKey: String {
     case appCurrentLocale =  "appCurrentLocale"
+    case apiToken         =  "userAccountLoginToken"
 }
 
 final class UserDefaultsUtils {
@@ -29,6 +30,10 @@ final class UserDefaultsUtils {
     
     static func deleteCurrentLocale() {
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.appCurrentLocale.rawValue)
+    }
+    
+    static func deleteAPIToken() {
+        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.apiToken.rawValue)
     }
 }
 

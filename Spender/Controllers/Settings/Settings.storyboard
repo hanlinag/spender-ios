@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9yk-7i-9d2">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -31,12 +30,12 @@
             </objects>
             <point key="canvasLocation" x="-535.20000000000005" y="1783.7438423645322"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--SettingsVC-->
         <scene sceneID="Oqm-aw-ztD">
             <objects>
-                <viewController storyboardIdentifier="SettingsViewBoard" id="yAd-aO-F34" customClass="SettingsViewController" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewBoard" id="yAd-aO-F34" customClass="SettingsVC" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="73i-Vo-cwz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="afS-Nf-HDz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

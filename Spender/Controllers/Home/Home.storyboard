@@ -36,7 +36,7 @@
         <!--Home-->
         <scene sceneID="Vxo-bH-Oub">
             <objects>
-                <viewController storyboardIdentifier="Home" id="2wh-EN-CBM" customClass="HomeViewController" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="2wh-EN-CBM" customClass="HomeVC" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U8f-3n-ZeV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,6 +156,9 @@
                                                                 <rect key="frame" x="209.66666666666666" y="17" width="100.33333333333334" height="31"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="See Activity" cornerStyle="capsule"/>
+                                                                <connections>
+                                                                    <action selector="seeAllPressed:" destination="2wh-EN-CBM" eventType="touchUpInside" id="tYv-wn-zlc"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemGray6Color"/>

@@ -25,7 +25,7 @@ class SplashScreenController: SpenderViewController{
     
     @objc func goToLoginScreen(){
         let storyboard = UIStoryboard(name: "Login", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "Login") as! Login
+        let vc = storyboard.instantiateViewController(withIdentifier: "Login") as! LoginVC
         let sceneDelegate = UIApplication.shared.connectedScenes.first!.delegate as! SceneDelegate
         sceneDelegate.window!.rootViewController = vc
         //self.presentedViewController(vc, animated: true)

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V5i-Lb-p2R">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,7 +11,11 @@
         <scene sceneID="js9-rw-KwA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V5i-Lb-p2R" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="creditcard.fill" catalog="system" id="Zb6-HC-iSk" customClass="Wallet"/>
+                    <tabBarItem key="tabBarItem" title="" image="creditcard.fill" catalog="system" id="Zb6-HC-iSk">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="tab.wallets"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YW9-ac-Pvr">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -27,12 +30,12 @@
             </objects>
             <point key="canvasLocation" x="-2386.4000000000001" y="1783.7438423645322"/>
         </scene>
-        <!--Wallets View Controller-->
+        <!--WalletsVC-->
         <scene sceneID="Zi3-dX-taS">
             <objects>
-                <viewController storyboardIdentifier="WalletsViewBoard" id="YvU-PK-UuZ" customClass="WalletsViewController" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalletsViewBoard" id="YvU-PK-UuZ" customClass="WalletsVC" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FQp-x3-0Up">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="gjs-p7-YbO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

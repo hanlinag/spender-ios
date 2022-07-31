@@ -835,6 +835,7 @@ PODS:
   - SwiftAlgorithms (1.0.0)
 
 DEPENDENCIES:
+  - Alamofire
   - AppCenter
   - Charts
   - CryptoSwift (= 1.5.1)
@@ -942,6 +943,6 @@ SPEC CHECKSUMS:
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
 
-PODFILE CHECKSUM: b93805e45d87181fe68622d7bcd0fdd60038bb3f
+PODFILE CHECKSUM: 1daa4b1b80c1bedb0cb30d7150f4b3f9fb640f29
 
 COCOAPODS: 1.11.3
