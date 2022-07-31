@@ -50,6 +50,12 @@
 		CB8674F42896DC7A00144558 /* SpenderPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8674F32896DC7A00144558 /* SpenderPrimaryButton.swift */; };
 		CB8674F62896E1B900144558 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8674F52896E1B900144558 /* API.swift */; };
 		CB8674F82896E50700144558 /* APIHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8674F72896E50700144558 /* APIHeaders.swift */; };
+		CB8674FA2896EF6A00144558 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8674F92896EF6A00144558 /* AuthAPI.swift */; };
+		CB8674FC2896EF7200144558 /* WalletAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8674FB2896EF7200144558 /* WalletAPI.swift */; };
+		CB8674FE2896EF7D00144558 /* TransactionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8674FD2896EF7D00144558 /* TransactionAPI.swift */; };
+		CB8675002896EF8900144558 /* AppConfigAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8674FF2896EF8900144558 /* AppConfigAPI.swift */; };
+		CB8675022896EF9400144558 /* FeedbackAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8675012896EF9400144558 /* FeedbackAPI.swift */; };
+		CB8675042896EFA700144558 /* ExchangeRateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8675032896EFA700144558 /* ExchangeRateAPI.swift */; };
 		CB9749A7276A4F7700357BF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9749A6276A4F7700357BF2 /* AppDelegate.swift */; };
 		CB9749A9276A4F7700357BF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9749A8276A4F7700357BF2 /* SceneDelegate.swift */; };
 		CB9749AB276A4F7700357BF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9749AA276A4F7700357BF2 /* ViewController.swift */; };
@@ -134,6 +140,12 @@
 		CB8674F32896DC7A00144558 /* SpenderPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpenderPrimaryButton.swift; sourceTree = "<group>"; };
 		CB8674F52896E1B900144558 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		CB8674F72896E50700144558 /* APIHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHeaders.swift; sourceTree = "<group>"; };
+		CB8674F92896EF6A00144558 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		CB8674FB2896EF7200144558 /* WalletAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAPI.swift; sourceTree = "<group>"; };
+		CB8674FD2896EF7D00144558 /* TransactionAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionAPI.swift; sourceTree = "<group>"; };
+		CB8674FF2896EF8900144558 /* AppConfigAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigAPI.swift; sourceTree = "<group>"; };
+		CB8675012896EF9400144558 /* FeedbackAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAPI.swift; sourceTree = "<group>"; };
+		CB8675032896EFA700144558 /* ExchangeRateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateAPI.swift; sourceTree = "<group>"; };
 		CB9749A3276A4F7700357BF2 /* Spender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9749A6276A4F7700357BF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9749A8276A4F7700357BF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,6 +220,12 @@
 			children = (
 				CB8674F52896E1B900144558 /* API.swift */,
 				CB8674F72896E50700144558 /* APIHeaders.swift */,
+				CB8674F92896EF6A00144558 /* AuthAPI.swift */,
+				CB8674FB2896EF7200144558 /* WalletAPI.swift */,
+				CB8674FD2896EF7D00144558 /* TransactionAPI.swift */,
+				CB8674FF2896EF8900144558 /* AppConfigAPI.swift */,
+				CB8675012896EF9400144558 /* FeedbackAPI.swift */,
+				CB8675032896EFA700144558 /* ExchangeRateAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -769,9 +787,11 @@
 				CB51DFDA28965522006BCBB3 /* UIFont + Extensions.swift in Sources */,
 				CB8674F82896E50700144558 /* APIHeaders.swift in Sources */,
 				CB9749AB276A4F7700357BF2 /* ViewController.swift in Sources */,
+				CB8675042896EFA700144558 /* ExchangeRateAPI.swift in Sources */,
 				CB51DFCF289635FE006BCBB3 /* SpenderNavBar.swift in Sources */,
 				CB0DCAE3285F87C2004A87FA /* CommonVM.swift in Sources */,
 				CB51DFDE2896558B006BCBB3 /* SpenderImageViewController.swift in Sources */,
+				CB8675002896EF8900144558 /* AppConfigAPI.swift in Sources */,
 				CB51DFEA28966674006BCBB3 /* Locale.swift in Sources */,
 				CB9749A7276A4F7700357BF2 /* AppDelegate.swift in Sources */,
 				CB7BF86B276F81A80090FE0A /* SettingsVC.swift in Sources */,
@@ -779,11 +799,14 @@
 				CB0DCADA285F8703004A87FA /* ActivityVM.swift in Sources */,
 				CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */,
 				CB0DCAE0285F872E004A87FA /* AuthVM.swift in Sources */,
+				CB8674FA2896EF6A00144558 /* AuthAPI.swift in Sources */,
+				CB8675022896EF9400144558 /* FeedbackAPI.swift in Sources */,
 				CB7BF869276F819D0090FE0A /* ActivityVC.swift in Sources */,
 				CB51DFEE28966B06006BCBB3 /* UserDefaultsUtils.swift in Sources */,
 				CB7BF858276F4E150090FE0A /* HomeVC.swift in Sources */,
 				CB7BF856276F4B2A0090FE0A /* MainTabBarViewController.swift in Sources */,
 				CB8674F42896DC7A00144558 /* SpenderPrimaryButton.swift in Sources */,
+				CB8674FC2896EF7200144558 /* WalletAPI.swift in Sources */,
 				CB8674F22896DC6B00144558 /* LoadingButton.swift in Sources */,
 				CB51DFE02896559B006BCBB3 /* SpenderViewController.swift in Sources */,
 				CBADC22D276DCABF00F8003A /* LoginVC.swift in Sources */,
@@ -798,6 +821,7 @@
 				CB51DFFA2896C650006BCBB3 /* AssociateObject.swift in Sources */,
 				CB0DCAD6285F86CE004A87FA /* SettingsVM.swift in Sources */,
 				CB9749A9276A4F7700357BF2 /* SceneDelegate.swift in Sources */,
+				CB8674FE2896EF7D00144558 /* TransactionAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
