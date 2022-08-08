@@ -13,19 +13,39 @@ import RxSwift
 import RxCocoa
 import RxAlamofire
 
-extension API.AppConfig {
+
+extension API.AppConfig: TargetType {
+    //private static let appConfig = API.backendURL.absoluteString + "app-config"
+    //static let provider = MoyaProvider<API.AppConfig>.defaultProvider()
+//    static let provider = MoyaProvider<API.AppConfig>()
     
-    struct GetAppConfig {
-        typealias T = AppConfigResponse
-        var path: String { return "app-config" }
-        
-        func getAppConfig() {
-            URLSession.shared.rx.json(url: URL(string: "https://spendergo.herokuapp.com/api/v1/app-config")!)
-                .observe(on: MainScheduler.instance)
-                .subscribe{ print($0) }
-            
+    private static let appConfig = "app-config"
+    
+    var baseURL: URL { return API.backendURL }
+    
+    var path: String {
+        switch self {
+        case .info: return "\(API.AppConfig.appConfig)"
         }
     }
     
-   
+    var method: Moya.Method {
+        switch self {
+        case .info: return .get
+        }
+    }
+    
+    var task: Task {
+        switch self {
+        case .info: return .requestPlain //no parameter
+        }
+    }
+    
+    var headers: [String : String]? {
+        return API.Headers.all()
+    }
+    
+    
+
+    
 }

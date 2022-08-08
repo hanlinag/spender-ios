@@ -20,7 +20,9 @@ enum API {
     enum Auth {}
     enum Wallet {}
     enum Transaction {}
-    enum AppConfig {}
+    enum AppConfig {
+        case info
+    }
     enum Feedback {}
     
     enum Headers {}
@@ -48,14 +50,20 @@ extension Moya.TargetType {
 
 //MARK: - Moya For Actual API Call Config
 extension MoyaProvider {
-    static func defaultSession(imageRequest: Bool = false) -> Session {
+    
+    
+    static func defaultProvider() -> SpenderProvider<Target> {
+        
         let config = URLSessionConfiguration.default
         config.timeoutIntervalForRequest = 90
         config.timeoutIntervalForResource = 90
         config.urlCache = nil
         
-        return Session(configuration: config, startRequestsImmediately: false)
+        let session = Alamofire.Session(configuration: config)
         
+        return SpenderProvider(endpointClosure: { target in
+            return MoyaProvider.defaultEndpointMapping(for: target)
+        }, session: session, plugins: [APIErrorPlugin.instance])
     }
 }
 
@@ -66,3 +74,12 @@ extension API: CachePolicyGettableType {
 }
 
 
+
+//MARK: - Strig Helper for API
+private extension String {
+    var urlEscaped: String {
+        addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
+    }
+    
+    var utf8Encoded: Data { Data(self.utf8) }
+}

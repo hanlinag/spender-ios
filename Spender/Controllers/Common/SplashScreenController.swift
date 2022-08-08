@@ -20,9 +20,10 @@ class SplashScreenController: SpenderViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         print("GOOO: splash screen")
-        URLSession.shared.rx.json(url: URL(string: "https://spendergo.herokuapp.com/api/v1/app-config")!)
-            .observe(on: MainScheduler.instance)
-            .subscribe{ print($0) }
+//        URLSession.shared.rx.json(url: URL(string: "https://spendergo.herokuapp.com/api/v1/app-config")!)
+//            .observe(on: MainScheduler.instance)
+//            .subscribe{ print($0) }
+        CommonVM.shared.getAppConfig()
         //self.perform(#selector(self.goToLoginScreen), with: nil, afterDelay: 5.0)
         goToLoginScreen()
     }

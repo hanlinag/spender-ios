@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+final class AuthVM: NSObject {
+    static let shared = AuthVM()
+    
+    var accountStatus: String? = ""
+    
+    func clearAuthInfo() {
+        self.accountStatus = nil
+    }
+}

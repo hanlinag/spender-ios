@@ -11,6 +11,7 @@ import Foundation
 private enum UserDefaultsKey: String {
     case appCurrentLocale         =  "appCurrentLocale"
     case userAccountToken         =  "userAccountLoginToken"
+    case isBiometricRegister      =  "isBiometricRegister"
 }
 
 final class UserDefaultsUtils {
@@ -24,13 +25,22 @@ final class UserDefaultsUtils {
         get { return _get(valueForKey: .userAccountToken) as? String ?? "" }
     }
     
+    static var isBiometricRegister: String? {
+        set { _set(value: newValue, key: .isBiometricRegister) }
+        get { return _get(valueForKey: .isBiometricRegister) as? String ?? "" }
+    }
     
+    //MARK: - Remove Methods
     static func deleteCurrentLocale() {
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.appCurrentLocale.rawValue)
     }
     
     static func deleteAPIToken() {
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.userAccountToken.rawValue)
+    }
+    
+    static func deleteBiometricRegister() {
+        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.isBiometricRegister.rawValue)
     }
     
     //MARK: - private methods
