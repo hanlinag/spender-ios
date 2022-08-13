@@ -13,6 +13,8 @@ import RxCocoa
 
 class SplashScreenController: SpenderViewController{
     
+    private let commonVM = CommonVM.shared
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -23,7 +25,9 @@ class SplashScreenController: SpenderViewController{
 //        URLSession.shared.rx.json(url: URL(string: "https://spendergo.herokuapp.com/api/v1/app-config")!)
 //            .observe(on: MainScheduler.instance)
 //            .subscribe{ print($0) }
-        CommonVM.shared.getAppConfig()
+        commonVM.getAppConfig()
+        commonVM.sendFeedback()
+        
         //self.perform(#selector(self.goToLoginScreen), with: nil, afterDelay: 5.0)
         goToLoginScreen()
     }

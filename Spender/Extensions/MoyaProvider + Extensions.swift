@@ -53,8 +53,7 @@ extension TargetType {
     
     private func SpenderProviderRequest<T: TargetType>(_ target: T) -> RxSwift.Single<Moya.Response> {
         let provider = MoyaProvider<T>.defaultProvider()
-        //debugPrint("provider createdd.........\(target.requestAPI())")
-       
+        
         return provider.request(target)
             
     }

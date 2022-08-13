@@ -17,13 +17,36 @@ protocol CachePolicyGettableType { var cachePolicy: URLRequest.CachePolicy? { ge
 
 //MARK: - API Values
 enum API {
-    enum Auth {}
-    enum Wallet {}
-    enum Transaction {}
+    enum Auth {
+        case login(email: String, password: String, loginType: String)
+        case signup(name: String, email: String, nickName: String, password: String, dob: String, loginType: String, occupation: String)
+        case logout
+    }
+    
+    enum Wallet {
+        case getAll
+        case create(name: String, type: String, amount: String)
+        case getBy(uuid: String)
+        case update(uuid: String, name: String, type: String)
+        case delete(uuid: String)
+    }
+    
+    enum Transaction {
+        case getAll
+        case create(title: String, walletID: String, amount: String, category: String, type: String, note: String, date: String)
+        case getByQuery(walletID: String, type: String, category: String)
+        case getBy(uuid: String)
+        case update(uuid: String, title: String, walletID: String, amount: String, category: String, type: String, note: String, date: String)
+        case delete(uuid: String)
+    }
+    
     enum AppConfig {
         case info
     }
-    enum Feedback {}
+    
+    enum Feedback {
+        case send(name: String, rating: Int, message: String)
+    }
     
     enum Headers {}
     
@@ -76,7 +99,7 @@ extension API: CachePolicyGettableType {
 
 
 //MARK: - Strig Helper for API
-private extension String {
+extension String {
     var urlEscaped: String {
         addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
     }

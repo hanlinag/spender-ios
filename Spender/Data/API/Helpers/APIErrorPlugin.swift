@@ -16,12 +16,15 @@ final class APIErrorPlugin: PluginType {
     static let instance = APIErrorPlugin()
     
     func willSend(_ request: RequestType, target: TargetType) {
-        debugPrint("Inside error plugin")
+        
         #if DEBUG
-        debugPrint("Will Send Request: ", request.request?.url?.absoluteString ?? "")
+        print("⚡️⚡️⚡️ Will Send Request:⚡️⚡️⚡️ \n", request.request?.url?.absoluteString ?? "")
+        
+        print("⚙️⚙️⚙️ Headers ⚙️⚙️⚙️ \n", request.request?.headers.description ?? "")
         
         if let body = request.request?.httpBody {
-            debugPrint("JSON Body: \n \(try! JSONEncoder().encode(body))")
+            
+            print("⚡️⚡️⚡️ JSON Body: \n \(NSString(data: body, encoding: String.Encoding.utf8.rawValue) ?? "" )") 
         }
         #endif
     }
@@ -32,12 +35,12 @@ final class APIErrorPlugin: PluginType {
             #if DEBUG
             
             do {
-                debugPrint("URL - \(target.baseURL)\(target.path)")
+                print("⬇️⬇️⬇️ Response URL - \(target.baseURL)\(target.path)")
                 let json = try JSONSerialization.jsonObject(with: response.data, options: .mutableContainers)
-                debugPrint("API Response: Status Code \(response.statusCode) \n \(String(describing: json))")
+                print("🟢🟢🟢 API Response: Status Code \(response.statusCode) \n \(String(describing: json))")
             } catch  {
                 let res = String(data: response.data, encoding: .utf8)
-                debugPrint("API Response: Status Code \(response.statusCode) \n \(String(describing: res))")
+                print("🟢🟢🟢 API Response: Status Code \(response.statusCode) \n \(String(describing: res))")
             }
             
             #endif
@@ -50,11 +53,11 @@ final class APIErrorPlugin: PluginType {
                 AuthVM.shared.clearAuthInfo()
                 API.Headers.clearAll()
             }
-            debugPrint("API Error: \(response.data)")
+            print("🔴🔴🔴 API Error: \(response.data)")
             break
         case .failure(let error):
             #if DEBUG
-            debugPrint("API Response: Status Code \(error.response?.statusCode ?? -11)")
+            print("🔴🔴🔴 API Response: Status Code \(error.response?.statusCode ?? -11)")
             #endif
             //TO DO: Show Alert of something if error occurs.
             break
@@ -64,7 +67,7 @@ final class APIErrorPlugin: PluginType {
         
         
         #if DEBUG
-        debugPrint("Global handler exits here.")
+        //debugPrint("Global handler exits here.")
         #endif
     }
 }

@@ -27,16 +27,83 @@ class SpenderProvider<Target> where Target: Moya.TargetType {
     }
     
     func request(_ t: Target) -> Single<Response> {
-        debugPrint("Inside request...............")
         
-        provider.request(t) { result in
-           // return result
-            debugPrint("hello, \(result)")
-        }
-        return provider.rx.request(t)
+        //var response : Response? = nil
+        //var error : MoyaError?    = nil
+       // var isSuccess: Bool      = false
+        
+//        provider.request(t) { result in
+//            switch result {
+//            case .success(let respo):
+//                response = respo
+//                isSuccess = true
+//                break
+//
+//            case .failure(let err):
+//                error = err
+//                isSuccess = false
+//                break
+//            }
+//        }
+        
+        return Single<Response>.create(subscribe: { single in
+            
+            let cancellable = self.provider.request(t) { result in
+            switch result {
+                case .success(let respo):
+                    single(.success(respo))
+                    break
+                    
+                case .failure(let err):
+                    single(.failure(err))
+                    break
+                }
+                
+                //return Disposables.create { }
+            }
+            
+//            if isSuccess {
+//                single(.success(response!))
+//            } else {
+//                single(.failure(error!))
+//            }
+            
+            return Disposables.create {
+               // cancellable.cancel()
+            }
+        })
+        
     }
     
     
+    //            self.provider.request(t) { result in
+    //                switch result {
+    //                case .success(let response):
+    //                    return Single.create(subscribe: { single in
+    //                        single(.success(response))
+    //                    })
+    //
+    //                case .failure(let error):
+    //                    return Single.create(subscribe: { single in
+    //                        single(.failure(error))
+    //                    })
+    //                }
+    //                //single(.failure(error)) as! Disposable
+    //            } as! Single<Response>
+    //
     
+    //  return provider.rx.reque
+    
+    //return provider.rx.request(t)
+    
+    
+    //        return Disposables.create {
+    //            cancellableToken?.cancel()
+    //        }
+    // return provider.rx.request(t)
+
+
+
+
 }
 

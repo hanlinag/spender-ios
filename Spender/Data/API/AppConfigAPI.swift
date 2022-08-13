@@ -15,9 +15,6 @@ import RxAlamofire
 
 
 extension API.AppConfig: TargetType {
-    //private static let appConfig = API.backendURL.absoluteString + "app-config"
-    //static let provider = MoyaProvider<API.AppConfig>.defaultProvider()
-//    static let provider = MoyaProvider<API.AppConfig>()
     
     private static let appConfig = "app-config"
     

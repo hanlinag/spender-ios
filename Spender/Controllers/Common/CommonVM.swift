@@ -32,9 +32,36 @@ final class CommonVM : NSObject {
     //    }
     //}
     
+    func sendFeedback() {
+        API.Feedback.send(name: "Tyler", rating: 5, message: "Ok Testing,")
+            .requestAPI().subscribe { response in
+            debugPrint(response.statusCode)
+        } onFailure: { error in
+            debugPrint(error.localizedDescription)
+        } onDisposed: {
+            DisposeBag()
+        }
+    }
+    
     func getAppConfig() {
-        debugPrint("Hello")
-        API.AppConfig.info.requestAPI()
+        
+//        API.AppConfig.info.requestAPI().subscribe(onNext: { res in
+//            debugPrint("⚙️⚙️⚙️⚙️---------",res.localizedDescription)
+//
+//        )}.disposed(by: DisposeBag())
+        
+        API.AppConfig.info.requestAPI().subscribe { response in
+            debugPrint(response.statusCode)
+        } onFailure: { error in
+            debugPrint(error.localizedDescription)
+        } onDisposed: {
+            DisposeBag()
+        }
+//
+//
+        
+       
+
 //        { result in
 //            debugPrint(result.debugDescription)
 //        } onError: { error in
