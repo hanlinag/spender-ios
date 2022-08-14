@@ -24,9 +24,9 @@ final class APIErrorPlugin: PluginType {
         
         if let body = request.request?.httpBody {
             
-            print("⚡️⚡️⚡️ JSON Body: \n \(NSString(data: body, encoding: String.Encoding.utf8.rawValue) ?? "" )") 
+            print("⚡️⚡️⚡️ JSON Body: \n \(NSString(data: body, encoding: String.Encoding.utf8.rawValue) ?? "" )")
         }
-        #endif
+            #endif
     }
     
     func didReceive(_ result: Result<Response, MoyaError>, target: TargetType) {
@@ -61,7 +61,7 @@ final class APIErrorPlugin: PluginType {
             #endif
             //TO DO: Show Alert of something if error occurs.
             break
-        
+            
         }
         
         

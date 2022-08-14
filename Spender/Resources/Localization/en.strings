@@ -25,15 +25,16 @@
 "tab.settings"  = "Settings";
 
 //titles
-
+"title.login"  = "Login";
 
 //labels
-
+"desc.login"  = "Please login to your account to get to know more about your spending behavior.";
 
 //buttons
 
 
 //hints
-
+"placeholder.email" = "Email";
+"placeholder.password" = "Password";
 
 

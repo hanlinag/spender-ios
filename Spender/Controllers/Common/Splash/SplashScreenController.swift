@@ -11,7 +11,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class SplashScreenController: SpenderViewController{
+class SplashScreenController: SpenderViewController {
     
     private let commonVM = CommonVM.shared
     
@@ -21,12 +21,10 @@ class SplashScreenController: SpenderViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("GOOO: splash screen")
-//        URLSession.shared.rx.json(url: URL(string: "https://spendergo.herokuapp.com/api/v1/app-config")!)
-//            .observe(on: MainScheduler.instance)
-//            .subscribe{ print($0) }
+        //print("GOOO: splash screen")
+        
         commonVM.getAppConfig()
-        commonVM.sendFeedback()
+        //commonVM.sendFeedback()
         
         //self.perform(#selector(self.goToLoginScreen), with: nil, afterDelay: 5.0)
         goToLoginScreen()
@@ -39,7 +37,5 @@ class SplashScreenController: SpenderViewController{
         sceneDelegate.window!.rootViewController = vc
         //self.presentedViewController(vc, animated: true)
         
-        
-    
     }
 }

@@ -18,6 +18,19 @@
 		CB0DCAE3285F87C2004A87FA /* CommonVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0DCAE2285F87C2004A87FA /* CommonVM.swift */; };
 		CB13A6C4277782CD00B89753 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13A6C2277782CD00B89753 /* TransactionTableViewCell.swift */; };
 		CB13A6C5277782CD00B89753 /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB13A6C3277782CD00B89753 /* TransactionTableViewCell.xib */; };
+		CB50A55B28A8DFD100A7F082 /* AccountResetMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A55A28A8DFD100A7F082 /* AccountResetMain.swift */; };
+		CB50A55D28A8DFE300A7F082 /* AccountResetMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB50A55C28A8DFE300A7F082 /* AccountResetMain.storyboard */; };
+		CB50A56028A8E01300A7F082 /* SendCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A55E28A8E01300A7F082 /* SendCode.swift */; };
+		CB50A56128A8E01300A7F082 /* SendCode.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A55F28A8E01300A7F082 /* SendCode.xib */; };
+		CB50A56628A8E04900A7F082 /* PinConfirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A56428A8E04900A7F082 /* PinConfirm.swift */; };
+		CB50A56728A8E04900A7F082 /* PinConfirm.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A56528A8E04900A7F082 /* PinConfirm.xib */; };
+		CB50A56B28A8E06700A7F082 /* SetNewPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A56928A8E06700A7F082 /* SetNewPassword.swift */; };
+		CB50A56C28A8E06700A7F082 /* SetNewPassword.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A56A28A8E06700A7F082 /* SetNewPassword.xib */; };
+		CB50A57028A8E09000A7F082 /* Congratulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A56E28A8E09000A7F082 /* Congratulations.swift */; };
+		CB50A57128A8E09000A7F082 /* Congratulations.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A56F28A8E09000A7F082 /* Congratulations.xib */; };
+		CB50A57528A8E0CD00A7F082 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57328A8E0CD00A7F082 /* Signup.swift */; };
+		CB50A57628A8E0CD00A7F082 /* Signup.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A57428A8E0CD00A7F082 /* Signup.xib */; };
+		CB50A57A28A8EC2400A7F082 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57928A8EC2400A7F082 /* WebView.swift */; };
 		CB51DFC928962362006BCBB3 /* PinCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51DFC828962362006BCBB3 /* PinCodeVC.swift */; };
 		CB51DFCB2896236B006BCBB3 /* PinCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB51DFCA2896236B006BCBB3 /* PinCode.storyboard */; };
 		CB51DFCF289635FE006BCBB3 /* SpenderNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51DFCE289635FE006BCBB3 /* SpenderNavBar.swift */; };
@@ -40,6 +53,7 @@
 		CB6A9CAC28A7E83600F9BC60 /* UIDevice + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A9CAB28A7E83600F9BC60 /* UIDevice + Extension.swift */; };
 		CB6A9CAE28A7EF0C00F9BC60 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A9CAD28A7EF0C00F9BC60 /* LoginRequest.swift */; };
 		CB6A9CB028A8041200F9BC60 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A9CAF28A8041200F9BC60 /* Constants.swift */; };
+		CB6A9CB228A80DD700F9BC60 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A9CB128A80DD700F9BC60 /* LoginResponse.swift */; };
 		CB7BF850276F2C990090FE0A /* ViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF84F276F2C990090FE0A /* ViewController + Extensions.swift */; };
 		CB7BF852276F387D0090FE0A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7BF851276F387D0090FE0A /* Login.storyboard */; };
 		CB7BF856276F4B2A0090FE0A /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF855276F4B2A0090FE0A /* MainTabBarViewController.swift */; };
@@ -113,6 +127,19 @@
 		CB0DCAE2285F87C2004A87FA /* CommonVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonVM.swift; sourceTree = "<group>"; };
 		CB13A6C2277782CD00B89753 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		CB13A6C3277782CD00B89753 /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
+		CB50A55A28A8DFD100A7F082 /* AccountResetMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountResetMain.swift; sourceTree = "<group>"; };
+		CB50A55C28A8DFE300A7F082 /* AccountResetMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountResetMain.storyboard; sourceTree = "<group>"; };
+		CB50A55E28A8E01300A7F082 /* SendCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendCode.swift; sourceTree = "<group>"; };
+		CB50A55F28A8E01300A7F082 /* SendCode.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendCode.xib; sourceTree = "<group>"; };
+		CB50A56428A8E04900A7F082 /* PinConfirm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinConfirm.swift; sourceTree = "<group>"; };
+		CB50A56528A8E04900A7F082 /* PinConfirm.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PinConfirm.xib; sourceTree = "<group>"; };
+		CB50A56928A8E06700A7F082 /* SetNewPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPassword.swift; sourceTree = "<group>"; };
+		CB50A56A28A8E06700A7F082 /* SetNewPassword.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetNewPassword.xib; sourceTree = "<group>"; };
+		CB50A56E28A8E09000A7F082 /* Congratulations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congratulations.swift; sourceTree = "<group>"; };
+		CB50A56F28A8E09000A7F082 /* Congratulations.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Congratulations.xib; sourceTree = "<group>"; };
+		CB50A57328A8E0CD00A7F082 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		CB50A57428A8E0CD00A7F082 /* Signup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Signup.xib; sourceTree = "<group>"; };
+		CB50A57928A8EC2400A7F082 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		CB51DFC828962362006BCBB3 /* PinCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeVC.swift; sourceTree = "<group>"; };
 		CB51DFCA2896236B006BCBB3 /* PinCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PinCode.storyboard; sourceTree = "<group>"; };
 		CB51DFCE289635FE006BCBB3 /* SpenderNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpenderNavBar.swift; sourceTree = "<group>"; };
@@ -139,6 +166,7 @@
 		CB6A9CAB28A7E83600F9BC60 /* UIDevice + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice + Extension.swift"; sourceTree = "<group>"; };
 		CB6A9CAD28A7EF0C00F9BC60 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		CB6A9CAF28A8041200F9BC60 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CB6A9CB128A80DD700F9BC60 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		CB7BF84F276F2C990090FE0A /* ViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Extensions.swift"; sourceTree = "<group>"; };
 		CB7BF851276F387D0090FE0A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CB7BF855276F4B2A0090FE0A /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -271,7 +299,8 @@
 		CB0DCAE1285F879B004A87FA /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				CBADC22A276DC6D900F8003A /* SplashScreenController.swift */,
+				CB50A57828A8EC0D00A7F082 /* WebView */,
+				CB50A57728A8EC0400A7F082 /* Splash */,
 				CB0DCAE2285F87C2004A87FA /* CommonVM.swift */,
 			);
 			path = Common;
@@ -303,8 +332,82 @@
 			isa = PBXGroup;
 			children = (
 				CB6A9CAD28A7EF0C00F9BC60 /* LoginRequest.swift */,
+				CB6A9CB128A80DD700F9BC60 /* LoginResponse.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		CB50A55928A8DFBC00A7F082 /* AccountReset */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A56828A8E05500A7F082 /* SetNewPassword */,
+				CB50A56328A8E03300A7F082 /* PinConfirm */,
+				CB50A55A28A8DFD100A7F082 /* AccountResetMain.swift */,
+				CB50A55C28A8DFE300A7F082 /* AccountResetMain.storyboard */,
+				CB50A56228A8E01B00A7F082 /* SendCode */,
+			);
+			path = AccountReset;
+			sourceTree = "<group>";
+		};
+		CB50A56228A8E01B00A7F082 /* SendCode */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A55E28A8E01300A7F082 /* SendCode.swift */,
+				CB50A55F28A8E01300A7F082 /* SendCode.xib */,
+			);
+			path = SendCode;
+			sourceTree = "<group>";
+		};
+		CB50A56328A8E03300A7F082 /* PinConfirm */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A56428A8E04900A7F082 /* PinConfirm.swift */,
+				CB50A56528A8E04900A7F082 /* PinConfirm.xib */,
+			);
+			path = PinConfirm;
+			sourceTree = "<group>";
+		};
+		CB50A56828A8E05500A7F082 /* SetNewPassword */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A56928A8E06700A7F082 /* SetNewPassword.swift */,
+				CB50A56A28A8E06700A7F082 /* SetNewPassword.xib */,
+			);
+			path = SetNewPassword;
+			sourceTree = "<group>";
+		};
+		CB50A56D28A8E07200A7F082 /* Congratulations */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A56E28A8E09000A7F082 /* Congratulations.swift */,
+				CB50A56F28A8E09000A7F082 /* Congratulations.xib */,
+			);
+			path = Congratulations;
+			sourceTree = "<group>";
+		};
+		CB50A57228A8E0B800A7F082 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A57328A8E0CD00A7F082 /* Signup.swift */,
+				CB50A57428A8E0CD00A7F082 /* Signup.xib */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		CB50A57728A8EC0400A7F082 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				CBADC22A276DC6D900F8003A /* SplashScreenController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		CB50A57828A8EC0D00A7F082 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A57928A8EC2400A7F082 /* WebView.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		CB51DFC728962345006BCBB3 /* PinScreen */ = {
@@ -375,6 +478,9 @@
 		CB7BF853276F4AAD0090FE0A /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				CB50A57228A8E0B800A7F082 /* Signup */,
+				CB50A56D28A8E07200A7F082 /* Congratulations */,
+				CB50A55928A8DFBC00A7F082 /* AccountReset */,
 				CB51DFC728962345006BCBB3 /* PinScreen */,
 				CB8674F02896D82000144558 /* Login */,
 				CB0DCADF285F872E004A87FA /* AuthVM.swift */,
@@ -691,21 +797,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB13A6C5277782CD00B89753 /* TransactionTableViewCell.xib in Resources */,
+				CB50A56C28A8E06700A7F082 /* SetNewPassword.xib in Resources */,
+				CB50A55D28A8DFE300A7F082 /* AccountResetMain.storyboard in Resources */,
 				CB9749B3276A4F7800357BF2 /* LaunchScreen.storyboard in Resources */,
 				CB51E0042896D230006BCBB3 /* mm.strings in Resources */,
 				CB51DFD628965305006BCBB3 /* Pyidaungsu.ttf in Resources */,
 				CB51E0052896D230006BCBB3 /* th.strings in Resources */,
 				CB9749D7276A52A400357BF2 /* GoogleService-Info.plist in Resources */,
 				CB51E0032896D230006BCBB3 /* en.strings in Resources */,
+				CB50A56728A8E04900A7F082 /* PinConfirm.xib in Resources */,
 				CB7BF85D276F7D700090FE0A /* Wallets.storyboard in Resources */,
 				CB9749B0276A4F7800357BF2 /* Assets.xcassets in Resources */,
 				CB51DFD128963609006BCBB3 /* SpenderNavBar.xib in Resources */,
+				CB50A57128A8E09000A7F082 /* Congratulations.xib in Resources */,
 				CB7BF85B276F7D630090FE0A /* Home.storyboard in Resources */,
 				CB9749AE276A4F7700357BF2 /* Main.storyboard in Resources */,
 				CB51DFF828967B77006BCBB3 /* ColorAssets.xcassets in Resources */,
 				CB7BF861276F7D9A0090FE0A /* Settings.storyboard in Resources */,
 				CB51DFCB2896236B006BCBB3 /* PinCode.storyboard in Resources */,
+				CB50A57628A8E0CD00A7F082 /* Signup.xib in Resources */,
 				CB7BF852276F387D0090FE0A /* Login.storyboard in Resources */,
+				CB50A56128A8E01300A7F082 /* SendCode.xib in Resources */,
 				CB7BF85F276F7D830090FE0A /* Activity.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -860,8 +972,10 @@
 				CB51DFDE2896558B006BCBB3 /* SpenderImageViewController.swift in Sources */,
 				CB5D527C2898F74600F8CE73 /* APIErrorPlugin.swift in Sources */,
 				CB8675002896EF8900144558 /* AppConfigAPI.swift in Sources */,
+				CB50A55B28A8DFD100A7F082 /* AccountResetMain.swift in Sources */,
 				CB6A9CAE28A7EF0C00F9BC60 /* LoginRequest.swift in Sources */,
 				CB51DFEA28966674006BCBB3 /* Locale.swift in Sources */,
+				CB50A56B28A8E06700A7F082 /* SetNewPassword.swift in Sources */,
 				CB9749A7276A4F7700357BF2 /* AppDelegate.swift in Sources */,
 				CB7BF86B276F81A80090FE0A /* SettingsVC.swift in Sources */,
 				CB0DCADE285F8719004A87FA /* HomeVM.swift in Sources */,
@@ -870,12 +984,14 @@
 				CB0DCAE0285F872E004A87FA /* AuthVM.swift in Sources */,
 				CBA227C328A237FA00B7E8A2 /* Rx + MoyaProvider.swift in Sources */,
 				CB8675082896F58100144558 /* ErrorResponse.swift in Sources */,
+				CB50A57A28A8EC2400A7F082 /* WebView.swift in Sources */,
 				CB8674FA2896EF6A00144558 /* AuthAPI.swift in Sources */,
 				CB8675022896EF9400144558 /* FeedbackAPI.swift in Sources */,
 				CB7BF869276F819D0090FE0A /* ActivityVC.swift in Sources */,
 				CB6A9CAC28A7E83600F9BC60 /* UIDevice + Extension.swift in Sources */,
 				CB51DFEE28966B06006BCBB3 /* UserDefaultsUtils.swift in Sources */,
 				CB6A9CB028A8041200F9BC60 /* Constants.swift in Sources */,
+				CB50A56028A8E01300A7F082 /* SendCode.swift in Sources */,
 				CB7BF858276F4E150090FE0A /* HomeVC.swift in Sources */,
 				CB7BF856276F4B2A0090FE0A /* MainTabBarViewController.swift in Sources */,
 				CB5D527E2898F77F00F8CE73 /* APIProvider.swift in Sources */,
@@ -884,16 +1000,20 @@
 				CB8674F22896DC6B00144558 /* LoadingButton.swift in Sources */,
 				CB51DFE02896559B006BCBB3 /* SpenderViewController.swift in Sources */,
 				CBADC22D276DCABF00F8003A /* LoginVC.swift in Sources */,
+				CB50A56628A8E04900A7F082 /* PinConfirm.swift in Sources */,
 				CB0DCADC285F870C004A87FA /* WalletsVM.swift in Sources */,
 				CB51DFC928962362006BCBB3 /* PinCodeVC.swift in Sources */,
 				CB7BF867276F81900090FE0A /* WalletsVC.swift in Sources */,
 				CB8674F62896E1B900144558 /* API.swift in Sources */,
+				CB50A57528A8E0CD00A7F082 /* Signup.swift in Sources */,
 				CB8675062896F53300144558 /* AppConfigResponse.swift in Sources */,
+				CB6A9CB228A80DD700F9BC60 /* LoginResponse.swift in Sources */,
 				CB51DFF028967440006BCBB3 /* Localizable.swift in Sources */,
 				CB7BF850276F2C990090FE0A /* ViewController + Extensions.swift in Sources */,
 				CB13A6C4277782CD00B89753 /* TransactionTableViewCell.swift in Sources */,
 				CB51DFDC2896553D006BCBB3 /* UIColor + Extensions.swift in Sources */,
 				CB51DFFA2896C650006BCBB3 /* AssociateObject.swift in Sources */,
+				CB50A57028A8E09000A7F082 /* Congratulations.swift in Sources */,
 				CBAC750C28A157AB008D8FCB /* MoyaProvider + Extensions.swift in Sources */,
 				CB0DCAD6285F86CE004A87FA /* SettingsVM.swift in Sources */,
 				CB9749A9276A4F7700357BF2 /* SceneDelegate.swift in Sources */,

@@ -15,6 +15,10 @@ import FBSDKLoginKit
 
 class LoginVC: SpenderViewController {
     
+    @IBOutlet weak var tfEmail: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -84,6 +88,13 @@ class LoginVC: SpenderViewController {
         print("Apple login tapped")
         
     }//end of Apple login tap action
+    
+    
+    @IBAction func onForgotPasswordTapped(_ sender: Any) {
+    }
+    
+    @IBAction func onRegisterTapped(_ sender: Any) {
+    }
     
     
 }
