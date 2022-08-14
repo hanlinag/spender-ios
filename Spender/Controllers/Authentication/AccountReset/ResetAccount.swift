@@ -47,6 +47,7 @@ class ResetAccount: SpenderViewController {
         
         //set up nav left bar item
         let leftNavButton = UIBarButtonItem(image: UIImage(systemName: "chevron.backward"), style: .plain, target: self, action: #selector(handleBackAction))
+        leftNavButton.tintColor = .black
         self.navigationItem.hidesBackButton   = false
         self.navigationItem.leftBarButtonItem = leftNavButton
     }
@@ -139,6 +140,7 @@ class ResetAccount: SpenderViewController {
         case 3:
             //confirm action
             //check and go to congrats
+            goToCongratsScreen()
             break
         default:
             self.dismiss(animated: true)
@@ -147,6 +149,17 @@ class ResetAccount: SpenderViewController {
     
     @IBAction func onResendTapped(_ sender: Any) {
         debugPrint("On Resend OTP Tapped")
+    }
+    
+    private func goToCongratsScreen() {
+        let storyboard = UIStoryboard(name: "Congratulations", bundle: Bundle.main)
+        let vc: Congratulations = storyboard.instantiateViewController(withIdentifier: "Congratulations") as! Congratulations
+        
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle   = .crossDissolve
+        vc.isModalInPresentation  = false
+        
+        self.present(vc, animated: true)
     }
     
 }

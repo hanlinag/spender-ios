@@ -29,6 +29,7 @@
 "title.confirmation" = "Confirmation";
 "title.forgot_pw" = "Forgot Password";
 "title.set_new_pw" = "Set New Password";
+"title.congrats" = "Congratulations!";
 
 //labels
 "desc.login"  = "Please login to your account to get to know more about your spending behavior.";
@@ -37,6 +38,8 @@
 "desc.set_new_pw" = "Please enter your new password for your account.";
 "desc.dont_have_account" = "Don’t have an account yet?  Register";
 "desc.login_with" = "Login With";
+"desc.reset_congrats" = "Your password has been resetted successfully.";
+"desc.create_congrats" = "We've successfully created your Spender account.";
 
 //buttons
 "btn.sign_in" = "Sign In";
@@ -47,6 +50,7 @@
 "btn.send" = "Send";
 "btn.ok" = "OK";
 "btn.confirm"  = "Confirm";
+"btn.get_started" = "Get Started";
 
 //hints
 "placeholder.email" = "Email";

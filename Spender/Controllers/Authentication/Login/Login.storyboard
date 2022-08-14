@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="67l-Zd-7dC">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -22,10 +22,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-text-orange" translatesAutoresizingMaskIntoConstraints="NO" id="9P2-ou-zhk">
-                                <rect key="frame" x="85" y="44" width="205" height="203"/>
+                                <rect key="frame" x="85" y="88" width="205" height="203"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LJ7-gc-fV6" userLabel="Title Stack View">
-                                <rect key="frame" x="25" y="247" width="325" height="72"/>
+                                <rect key="frame" x="25" y="291" width="325" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CX6-Vc-05k" userLabel="lbllogin">
                                         <rect key="frame" x="0.0" y="0.0" width="59" height="28.666666666666668"/>
@@ -48,7 +48,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="bottom" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bjT-wL-ibq" userLabel="TextFieldStack View">
-                                <rect key="frame" x="25" y="334" width="325" height="121.33333333333331"/>
+                                <rect key="frame" x="25" y="378" width="325" height="121.33333333333331"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TS4-4v-1gi">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="42"/>
@@ -90,6 +90,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="onForgotPasswordTapped:" destination="svQ-LD-4GY" eventType="touchUpInside" id="4AR-a1-gK7"/>
+                                            <segue destination="WVd-WI-gG8" kind="modal" identifier="loginToReset" modalPresentationStyle="formSheet" modalTransitionStyle="coverVertical" id="usA-Bw-Vlu"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -101,7 +102,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncS-zk-Cje" customClass="LoadingButton" customModule="Spender" customModuleProvider="target">
-                                <rect key="frame" x="35" y="470.33333333333331" width="305" height="43.999999999999943"/>
+                                <rect key="frame" x="35" y="514.33333333333337" width="305" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="swZ-xd-dbX"/>
                                 </constraints>
@@ -118,7 +119,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PBa-9h-kG3" userLabel="Other Stack View">
-                                <rect key="frame" x="96.666666666666686" y="534.33333333333337" width="182" height="75"/>
+                                <rect key="frame" x="96.666666666666686" y="578.33333333333337" width="182" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dl5-TI-T4n">
                                         <rect key="frame" x="54.333333333333329" y="0.0" width="73" height="18"/>
@@ -241,6 +242,7 @@
                             <constraint firstItem="ncS-zk-Cje" firstAttribute="centerX" secondItem="dXj-EY-N9Y" secondAttribute="centerX" id="vvT-8e-sHb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="428-ok-qZO"/>
                     <connections>
                         <outlet property="tfEmail" destination="TS4-4v-1gi" id="m8d-uQ-qLh"/>
                         <outlet property="tfPassword" destination="hAc-Mo-WFD" id="G0B-AM-M9e"/>
@@ -248,9 +250,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bf-vM-bwo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2308" y="1354"/>
+            <point key="canvasLocation" x="-1365.5999999999999" y="1353.6945812807883"/>
+        </scene>
+        <!--ResetAccount-->
+        <scene sceneID="ZtI-9f-9vg">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ResetAccount" storyboardName="ResetAccount" id="WVd-WI-gG8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="g8B-wa-MY7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HI8-cy-5en" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-744.79999999999995" y="1380.2955665024631"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W7T-Md-ntm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="67l-Zd-7dC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fWd-Ky-IlH">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="svQ-LD-4GY" kind="relationship" relationship="rootViewController" id="apn-Cn-3FB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6s-92-Hav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2308" y="1353.6945812807883"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="ncS-zk-Cje">
+            <size key="intrinsicContentSize" width="76.666666666666671" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <image name="apple" width="405.33334350585938" height="481"/>
         <image name="background" width="390" height="844"/>

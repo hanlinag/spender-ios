@@ -21,7 +21,6 @@
 		CB50A55B28A8DFD100A7F082 /* ResetAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A55A28A8DFD100A7F082 /* ResetAccount.swift */; };
 		CB50A55D28A8DFE300A7F082 /* ResetAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB50A55C28A8DFE300A7F082 /* ResetAccount.storyboard */; };
 		CB50A57028A8E09000A7F082 /* Congratulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A56E28A8E09000A7F082 /* Congratulations.swift */; };
-		CB50A57128A8E09000A7F082 /* Congratulations.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A56F28A8E09000A7F082 /* Congratulations.xib */; };
 		CB50A57528A8E0CD00A7F082 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57328A8E0CD00A7F082 /* Signup.swift */; };
 		CB50A57628A8E0CD00A7F082 /* Signup.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A57428A8E0CD00A7F082 /* Signup.xib */; };
 		CB50A57A28A8EC2400A7F082 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57928A8EC2400A7F082 /* WebView.swift */; };
@@ -47,6 +46,7 @@
 		CB50A5AE28A8F03000A7F082 /* ConfirmAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A5AC28A8F03000A7F082 /* ConfirmAlert.xib */; };
 		CB50A5B228A8F09200A7F082 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A5B028A8F09200A7F082 /* Onboarding.swift */; };
 		CB50A5B328A8F09200A7F082 /* Onboarding.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A5B128A8F09200A7F082 /* Onboarding.xib */; };
+		CB50A5BF28A95D4A00A7F082 /* Congratulations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB50A5BE28A95D4A00A7F082 /* Congratulations.storyboard */; };
 		CB51DFC928962362006BCBB3 /* PinCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51DFC828962362006BCBB3 /* PinCodeVC.swift */; };
 		CB51DFCB2896236B006BCBB3 /* PinCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB51DFCA2896236B006BCBB3 /* PinCode.storyboard */; };
 		CB51DFCF289635FE006BCBB3 /* SpenderNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51DFCE289635FE006BCBB3 /* SpenderNavBar.swift */; };
@@ -146,7 +146,6 @@
 		CB50A55A28A8DFD100A7F082 /* ResetAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetAccount.swift; sourceTree = "<group>"; };
 		CB50A55C28A8DFE300A7F082 /* ResetAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetAccount.storyboard; sourceTree = "<group>"; };
 		CB50A56E28A8E09000A7F082 /* Congratulations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congratulations.swift; sourceTree = "<group>"; };
-		CB50A56F28A8E09000A7F082 /* Congratulations.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Congratulations.xib; sourceTree = "<group>"; };
 		CB50A57328A8E0CD00A7F082 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		CB50A57428A8E0CD00A7F082 /* Signup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Signup.xib; sourceTree = "<group>"; };
 		CB50A57928A8EC2400A7F082 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -172,6 +171,7 @@
 		CB50A5AC28A8F03000A7F082 /* ConfirmAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmAlert.xib; sourceTree = "<group>"; };
 		CB50A5B028A8F09200A7F082 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		CB50A5B128A8F09200A7F082 /* Onboarding.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Onboarding.xib; sourceTree = "<group>"; };
+		CB50A5BE28A95D4A00A7F082 /* Congratulations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Congratulations.storyboard; sourceTree = "<group>"; };
 		CB51DFC828962362006BCBB3 /* PinCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeVC.swift; sourceTree = "<group>"; };
 		CB51DFCA2896236B006BCBB3 /* PinCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PinCode.storyboard; sourceTree = "<group>"; };
 		CB51DFCE289635FE006BCBB3 /* SpenderNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpenderNavBar.swift; sourceTree = "<group>"; };
@@ -385,7 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				CB50A56E28A8E09000A7F082 /* Congratulations.swift */,
-				CB50A56F28A8E09000A7F082 /* Congratulations.xib */,
+				CB50A5BE28A95D4A00A7F082 /* Congratulations.storyboard */,
 			);
 			path = Congratulations;
 			sourceTree = "<group>";
@@ -966,8 +966,8 @@
 				CB50A59828A8EF4100A7F082 /* SelectWallet.xib in Resources */,
 				CB7BF85D276F7D700090FE0A /* Wallets.storyboard in Resources */,
 				CB9749B0276A4F7800357BF2 /* Assets.xcassets in Resources */,
+				CB50A5BF28A95D4A00A7F082 /* Congratulations.storyboard in Resources */,
 				CB51DFD128963609006BCBB3 /* SpenderNavBar.xib in Resources */,
-				CB50A57128A8E09000A7F082 /* Congratulations.xib in Resources */,
 				CB7BF85B276F7D630090FE0A /* Home.storyboard in Resources */,
 				CB9749AE276A4F7700357BF2 /* Main.storyboard in Resources */,
 				CB51DFF828967B77006BCBB3 /* ColorAssets.xcassets in Resources */,
