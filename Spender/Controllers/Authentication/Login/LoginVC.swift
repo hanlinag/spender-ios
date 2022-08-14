@@ -91,6 +91,10 @@ class LoginVC: SpenderViewController {
     
     
     @IBAction func onForgotPasswordTapped(_ sender: Any) {
+        //go to forget pw step 1
+        let storyboard = UIStoryboard(name: "ResetAccount", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ResetAccount") as! ResetAccount
+        self.present(vc, animated: true)
     }
     
     @IBAction func onRegisterTapped(_ sender: Any) {

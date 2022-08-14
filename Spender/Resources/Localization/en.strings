@@ -26,15 +26,32 @@
 
 //titles
 "title.login"  = "Login";
+"title.confirmation" = "Confirmation";
+"title.forgot_pw" = "Forgot Password";
+"title.set_new_pw" = "Set New Password";
 
 //labels
 "desc.login"  = "Please login to your account to get to know more about your spending behavior.";
+"desc.forgot_pw" = "Please enter your email to reset your password.";
+"desc.confirmation" = "Please enter the code sent to your email: %s";
+"desc.set_new_pw" = "Please enter your new password for your account.";
+"desc.dont_have_account" = "Don’t have an account yet?  Register";
+"desc.login_with" = "Login With";
 
 //buttons
-
+"btn.sign_in" = "Sign In";
+"btn.reset" = "Reset";
+"btn.resend_otp" = "Resend OTP Again";
+"btn.forgot_pw" = "Forgot password?";
+"btn.register" = "Register";
+"btn.send" = "Send";
+"btn.ok" = "OK";
+"btn.confirm"  = "Confirm";
 
 //hints
 "placeholder.email" = "Email";
 "placeholder.password" = "Password";
+"placeholder.confirm_pw" = "Confirm Password";
+
 
 

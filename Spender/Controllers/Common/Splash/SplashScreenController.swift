@@ -23,7 +23,7 @@ class SplashScreenController: SpenderViewController {
         super.viewDidLoad()
         //print("GOOO: splash screen")
         
-        commonVM.getAppConfig()
+        //commonVM.getAppConfig()
         //commonVM.sendFeedback()
         
         //self.perform(#selector(self.goToLoginScreen), with: nil, afterDelay: 5.0)
