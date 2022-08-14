@@ -31,6 +31,28 @@
 		CB50A57528A8E0CD00A7F082 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57328A8E0CD00A7F082 /* Signup.swift */; };
 		CB50A57628A8E0CD00A7F082 /* Signup.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A57428A8E0CD00A7F082 /* Signup.xib */; };
 		CB50A57A28A8EC2400A7F082 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57928A8EC2400A7F082 /* WebView.swift */; };
+		CB50A57E28A8ECC700A7F082 /* AdditionalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57C28A8ECC700A7F082 /* AdditionalInfo.swift */; };
+		CB50A57F28A8ECC700A7F082 /* AdditionalInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A57D28A8ECC700A7F082 /* AdditionalInfo.xib */; };
+		CB50A58328A8ECEF00A7F082 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A58128A8ECEF00A7F082 /* EditProfile.swift */; };
+		CB50A58428A8ECEF00A7F082 /* EditProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A58228A8ECEF00A7F082 /* EditProfile.xib */; };
+		CB50A58828A8ED1900A7F082 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A58628A8ED1900A7F082 /* Feedback.swift */; };
+		CB50A58928A8ED1900A7F082 /* Feedback.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A58728A8ED1900A7F082 /* Feedback.xib */; };
+		CB50A58D28A8ED3E00A7F082 /* WalletSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A58B28A8ED3E00A7F082 /* WalletSetup.swift */; };
+		CB50A58E28A8ED3E00A7F082 /* WalletSetup.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A58C28A8ED3E00A7F082 /* WalletSetup.xib */; };
+		CB50A59228A8EEF100A7F082 /* AddTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A59028A8EEF100A7F082 /* AddTransaction.swift */; };
+		CB50A59328A8EEF100A7F082 /* AddTransaction.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A59128A8EEF100A7F082 /* AddTransaction.xib */; };
+		CB50A59728A8EF4100A7F082 /* SelectWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A59528A8EF4100A7F082 /* SelectWallet.swift */; };
+		CB50A59828A8EF4100A7F082 /* SelectWallet.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A59628A8EF4100A7F082 /* SelectWallet.xib */; };
+		CB50A59D28A8EFAA00A7F082 /* WalletHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A59B28A8EFAA00A7F082 /* WalletHistory.swift */; };
+		CB50A59E28A8EFAA00A7F082 /* WalletHistory.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A59C28A8EFAA00A7F082 /* WalletHistory.xib */; };
+		CB50A5A228A8EFD000A7F082 /* AllTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A5A028A8EFD000A7F082 /* AllTransactions.swift */; };
+		CB50A5A328A8EFD000A7F082 /* AllTransactions.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A5A128A8EFD000A7F082 /* AllTransactions.xib */; };
+		CB50A5A728A8EFFD00A7F082 /* TransactionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A5A528A8EFFD00A7F082 /* TransactionDetail.swift */; };
+		CB50A5A828A8EFFD00A7F082 /* TransactionDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A5A628A8EFFD00A7F082 /* TransactionDetail.xib */; };
+		CB50A5AD28A8F03000A7F082 /* ConfirmAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A5AB28A8F03000A7F082 /* ConfirmAlert.swift */; };
+		CB50A5AE28A8F03000A7F082 /* ConfirmAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A5AC28A8F03000A7F082 /* ConfirmAlert.xib */; };
+		CB50A5B228A8F09200A7F082 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A5B028A8F09200A7F082 /* Onboarding.swift */; };
+		CB50A5B328A8F09200A7F082 /* Onboarding.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A5B128A8F09200A7F082 /* Onboarding.xib */; };
 		CB51DFC928962362006BCBB3 /* PinCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51DFC828962362006BCBB3 /* PinCodeVC.swift */; };
 		CB51DFCB2896236B006BCBB3 /* PinCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB51DFCA2896236B006BCBB3 /* PinCode.storyboard */; };
 		CB51DFCF289635FE006BCBB3 /* SpenderNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51DFCE289635FE006BCBB3 /* SpenderNavBar.swift */; };
@@ -140,6 +162,28 @@
 		CB50A57328A8E0CD00A7F082 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		CB50A57428A8E0CD00A7F082 /* Signup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Signup.xib; sourceTree = "<group>"; };
 		CB50A57928A8EC2400A7F082 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		CB50A57C28A8ECC700A7F082 /* AdditionalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfo.swift; sourceTree = "<group>"; };
+		CB50A57D28A8ECC700A7F082 /* AdditionalInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdditionalInfo.xib; sourceTree = "<group>"; };
+		CB50A58128A8ECEF00A7F082 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
+		CB50A58228A8ECEF00A7F082 /* EditProfile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfile.xib; sourceTree = "<group>"; };
+		CB50A58628A8ED1900A7F082 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		CB50A58728A8ED1900A7F082 /* Feedback.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Feedback.xib; sourceTree = "<group>"; };
+		CB50A58B28A8ED3E00A7F082 /* WalletSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSetup.swift; sourceTree = "<group>"; };
+		CB50A58C28A8ED3E00A7F082 /* WalletSetup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletSetup.xib; sourceTree = "<group>"; };
+		CB50A59028A8EEF100A7F082 /* AddTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransaction.swift; sourceTree = "<group>"; };
+		CB50A59128A8EEF100A7F082 /* AddTransaction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTransaction.xib; sourceTree = "<group>"; };
+		CB50A59528A8EF4100A7F082 /* SelectWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWallet.swift; sourceTree = "<group>"; };
+		CB50A59628A8EF4100A7F082 /* SelectWallet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectWallet.xib; sourceTree = "<group>"; };
+		CB50A59B28A8EFAA00A7F082 /* WalletHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletHistory.swift; sourceTree = "<group>"; };
+		CB50A59C28A8EFAA00A7F082 /* WalletHistory.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletHistory.xib; sourceTree = "<group>"; };
+		CB50A5A028A8EFD000A7F082 /* AllTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTransactions.swift; sourceTree = "<group>"; };
+		CB50A5A128A8EFD000A7F082 /* AllTransactions.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllTransactions.xib; sourceTree = "<group>"; };
+		CB50A5A528A8EFFD00A7F082 /* TransactionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetail.swift; sourceTree = "<group>"; };
+		CB50A5A628A8EFFD00A7F082 /* TransactionDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetail.xib; sourceTree = "<group>"; };
+		CB50A5AB28A8F03000A7F082 /* ConfirmAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmAlert.swift; sourceTree = "<group>"; };
+		CB50A5AC28A8F03000A7F082 /* ConfirmAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmAlert.xib; sourceTree = "<group>"; };
+		CB50A5B028A8F09200A7F082 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		CB50A5B128A8F09200A7F082 /* Onboarding.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Onboarding.xib; sourceTree = "<group>"; };
 		CB51DFC828962362006BCBB3 /* PinCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeVC.swift; sourceTree = "<group>"; };
 		CB51DFCA2896236B006BCBB3 /* PinCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PinCode.storyboard; sourceTree = "<group>"; };
 		CB51DFCE289635FE006BCBB3 /* SpenderNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpenderNavBar.swift; sourceTree = "<group>"; };
@@ -299,6 +343,9 @@
 		CB0DCAE1285F879B004A87FA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CB50A5AF28A8F06E00A7F082 /* Onboarding */,
+				CB50A5A928A8F00C00A7F082 /* Alerts */,
+				CB50A5A428A8EFE600A7F082 /* TransactionDetail */,
 				CB50A57828A8EC0D00A7F082 /* WebView */,
 				CB50A57728A8EC0400A7F082 /* Splash */,
 				CB0DCAE2285F87C2004A87FA /* CommonVM.swift */,
@@ -410,6 +457,113 @@
 			path = WebView;
 			sourceTree = "<group>";
 		};
+		CB50A57B28A8ECAB00A7F082 /* AdditionalInfo */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A57C28A8ECC700A7F082 /* AdditionalInfo.swift */,
+				CB50A57D28A8ECC700A7F082 /* AdditionalInfo.xib */,
+			);
+			path = AdditionalInfo;
+			sourceTree = "<group>";
+		};
+		CB50A58028A8ECD400A7F082 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A58128A8ECEF00A7F082 /* EditProfile.swift */,
+				CB50A58228A8ECEF00A7F082 /* EditProfile.xib */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		CB50A58528A8ED0800A7F082 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A58628A8ED1900A7F082 /* Feedback.swift */,
+				CB50A58728A8ED1900A7F082 /* Feedback.xib */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		CB50A58A28A8ED3000A7F082 /* WalletSetup */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A58B28A8ED3E00A7F082 /* WalletSetup.swift */,
+				CB50A58C28A8ED3E00A7F082 /* WalletSetup.xib */,
+			);
+			path = WalletSetup;
+			sourceTree = "<group>";
+		};
+		CB50A58F28A8EEDC00A7F082 /* AddTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A59028A8EEF100A7F082 /* AddTransaction.swift */,
+				CB50A59128A8EEF100A7F082 /* AddTransaction.xib */,
+			);
+			path = AddTransaction;
+			sourceTree = "<group>";
+		};
+		CB50A59428A8EF2500A7F082 /* SelectWallet */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A59528A8EF4100A7F082 /* SelectWallet.swift */,
+				CB50A59628A8EF4100A7F082 /* SelectWallet.xib */,
+			);
+			path = SelectWallet;
+			sourceTree = "<group>";
+		};
+		CB50A59A28A8EF9800A7F082 /* WalletHistory */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A59B28A8EFAA00A7F082 /* WalletHistory.swift */,
+				CB50A59C28A8EFAA00A7F082 /* WalletHistory.xib */,
+			);
+			path = WalletHistory;
+			sourceTree = "<group>";
+		};
+		CB50A59F28A8EFBF00A7F082 /* AllTransactions */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A5A028A8EFD000A7F082 /* AllTransactions.swift */,
+				CB50A5A128A8EFD000A7F082 /* AllTransactions.xib */,
+			);
+			path = AllTransactions;
+			sourceTree = "<group>";
+		};
+		CB50A5A428A8EFE600A7F082 /* TransactionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A5A528A8EFFD00A7F082 /* TransactionDetail.swift */,
+				CB50A5A628A8EFFD00A7F082 /* TransactionDetail.xib */,
+			);
+			path = TransactionDetail;
+			sourceTree = "<group>";
+		};
+		CB50A5A928A8F00C00A7F082 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A5AA28A8F01400A7F082 /* ConfirmAlert */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		CB50A5AA28A8F01400A7F082 /* ConfirmAlert */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A5AB28A8F03000A7F082 /* ConfirmAlert.swift */,
+				CB50A5AC28A8F03000A7F082 /* ConfirmAlert.xib */,
+			);
+			path = ConfirmAlert;
+			sourceTree = "<group>";
+		};
+		CB50A5AF28A8F06E00A7F082 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CB50A5B028A8F09200A7F082 /* Onboarding.swift */,
+				CB50A5B128A8F09200A7F082 /* Onboarding.xib */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		CB51DFC728962345006BCBB3 /* PinScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,6 +632,7 @@
 		CB7BF853276F4AAD0090FE0A /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				CB50A57B28A8ECAB00A7F082 /* AdditionalInfo */,
 				CB50A57228A8E0B800A7F082 /* Signup */,
 				CB50A56D28A8E07200A7F082 /* Congratulations */,
 				CB50A55928A8DFBC00A7F082 /* AccountReset */,
@@ -501,6 +656,9 @@
 		CB7BF862276F814A0090FE0A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CB50A59F28A8EFBF00A7F082 /* AllTransactions */,
+				CB50A59428A8EF2500A7F082 /* SelectWallet */,
+				CB50A58F28A8EEDC00A7F082 /* AddTransaction */,
 				CB7BF85A276F7D630090FE0A /* Home.storyboard */,
 				CB7BF857276F4E150090FE0A /* HomeVC.swift */,
 				CB0DCADD285F8719004A87FA /* HomeVM.swift */,
@@ -511,6 +669,7 @@
 		CB7BF863276F81510090FE0A /* Wallets */ = {
 			isa = PBXGroup;
 			children = (
+				CB50A59A28A8EF9800A7F082 /* WalletHistory */,
 				CB7BF85C276F7D700090FE0A /* Wallets.storyboard */,
 				CB7BF866276F81900090FE0A /* WalletsVC.swift */,
 				CB0DCADB285F870C004A87FA /* WalletsVM.swift */,
@@ -531,6 +690,9 @@
 		CB7BF865276F81640090FE0A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				CB50A58A28A8ED3000A7F082 /* WalletSetup */,
+				CB50A58528A8ED0800A7F082 /* Feedback */,
+				CB50A58028A8ECD400A7F082 /* EditProfile */,
 				CB7BF860276F7D9A0090FE0A /* Settings.storyboard */,
 				CB7BF86A276F81A80090FE0A /* SettingsVC.swift */,
 				CB0DCAD5285F86CE004A87FA /* SettingsVM.swift */,
@@ -796,16 +958,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB50A57F28A8ECC700A7F082 /* AdditionalInfo.xib in Resources */,
+				CB50A5AE28A8F03000A7F082 /* ConfirmAlert.xib in Resources */,
 				CB13A6C5277782CD00B89753 /* TransactionTableViewCell.xib in Resources */,
 				CB50A56C28A8E06700A7F082 /* SetNewPassword.xib in Resources */,
 				CB50A55D28A8DFE300A7F082 /* AccountResetMain.storyboard in Resources */,
 				CB9749B3276A4F7800357BF2 /* LaunchScreen.storyboard in Resources */,
+				CB50A5B328A8F09200A7F082 /* Onboarding.xib in Resources */,
 				CB51E0042896D230006BCBB3 /* mm.strings in Resources */,
 				CB51DFD628965305006BCBB3 /* Pyidaungsu.ttf in Resources */,
 				CB51E0052896D230006BCBB3 /* th.strings in Resources */,
+				CB50A58928A8ED1900A7F082 /* Feedback.xib in Resources */,
+				CB50A58E28A8ED3E00A7F082 /* WalletSetup.xib in Resources */,
 				CB9749D7276A52A400357BF2 /* GoogleService-Info.plist in Resources */,
+				CB50A58428A8ECEF00A7F082 /* EditProfile.xib in Resources */,
 				CB51E0032896D230006BCBB3 /* en.strings in Resources */,
 				CB50A56728A8E04900A7F082 /* PinConfirm.xib in Resources */,
+				CB50A59328A8EEF100A7F082 /* AddTransaction.xib in Resources */,
+				CB50A59828A8EF4100A7F082 /* SelectWallet.xib in Resources */,
 				CB7BF85D276F7D700090FE0A /* Wallets.storyboard in Resources */,
 				CB9749B0276A4F7800357BF2 /* Assets.xcassets in Resources */,
 				CB51DFD128963609006BCBB3 /* SpenderNavBar.xib in Resources */,
@@ -813,12 +983,15 @@
 				CB7BF85B276F7D630090FE0A /* Home.storyboard in Resources */,
 				CB9749AE276A4F7700357BF2 /* Main.storyboard in Resources */,
 				CB51DFF828967B77006BCBB3 /* ColorAssets.xcassets in Resources */,
+				CB50A59E28A8EFAA00A7F082 /* WalletHistory.xib in Resources */,
 				CB7BF861276F7D9A0090FE0A /* Settings.storyboard in Resources */,
 				CB51DFCB2896236B006BCBB3 /* PinCode.storyboard in Resources */,
+				CB50A5A328A8EFD000A7F082 /* AllTransactions.xib in Resources */,
 				CB50A57628A8E0CD00A7F082 /* Signup.xib in Resources */,
 				CB7BF852276F387D0090FE0A /* Login.storyboard in Resources */,
 				CB50A56128A8E01300A7F082 /* SendCode.xib in Resources */,
 				CB7BF85F276F7D830090FE0A /* Activity.storyboard in Resources */,
+				CB50A5A828A8EFFD00A7F082 /* TransactionDetail.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,17 +1137,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB51DFDA28965522006BCBB3 /* UIFont + Extensions.swift in Sources */,
+				CB50A5A228A8EFD000A7F082 /* AllTransactions.swift in Sources */,
 				CB8674F82896E50700144558 /* APIHeaders.swift in Sources */,
+				CB50A58828A8ED1900A7F082 /* Feedback.swift in Sources */,
 				CB9749AB276A4F7700357BF2 /* ViewController.swift in Sources */,
 				CB8675042896EFA700144558 /* ExchangeRateAPI.swift in Sources */,
 				CB51DFCF289635FE006BCBB3 /* SpenderNavBar.swift in Sources */,
 				CB0DCAE3285F87C2004A87FA /* CommonVM.swift in Sources */,
 				CB51DFDE2896558B006BCBB3 /* SpenderImageViewController.swift in Sources */,
+				CB50A5AD28A8F03000A7F082 /* ConfirmAlert.swift in Sources */,
 				CB5D527C2898F74600F8CE73 /* APIErrorPlugin.swift in Sources */,
 				CB8675002896EF8900144558 /* AppConfigAPI.swift in Sources */,
+				CB50A5A728A8EFFD00A7F082 /* TransactionDetail.swift in Sources */,
 				CB50A55B28A8DFD100A7F082 /* AccountResetMain.swift in Sources */,
 				CB6A9CAE28A7EF0C00F9BC60 /* LoginRequest.swift in Sources */,
+				CB50A58328A8ECEF00A7F082 /* EditProfile.swift in Sources */,
 				CB51DFEA28966674006BCBB3 /* Locale.swift in Sources */,
+				CB50A57E28A8ECC700A7F082 /* AdditionalInfo.swift in Sources */,
 				CB50A56B28A8E06700A7F082 /* SetNewPassword.swift in Sources */,
 				CB9749A7276A4F7700357BF2 /* AppDelegate.swift in Sources */,
 				CB7BF86B276F81A80090FE0A /* SettingsVC.swift in Sources */,
@@ -982,6 +1161,7 @@
 				CB0DCADA285F8703004A87FA /* ActivityVM.swift in Sources */,
 				CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */,
 				CB0DCAE0285F872E004A87FA /* AuthVM.swift in Sources */,
+				CB50A59228A8EEF100A7F082 /* AddTransaction.swift in Sources */,
 				CBA227C328A237FA00B7E8A2 /* Rx + MoyaProvider.swift in Sources */,
 				CB8675082896F58100144558 /* ErrorResponse.swift in Sources */,
 				CB50A57A28A8EC2400A7F082 /* WebView.swift in Sources */,
@@ -999,8 +1179,10 @@
 				CB8674FC2896EF7200144558 /* WalletAPI.swift in Sources */,
 				CB8674F22896DC6B00144558 /* LoadingButton.swift in Sources */,
 				CB51DFE02896559B006BCBB3 /* SpenderViewController.swift in Sources */,
+				CB50A58D28A8ED3E00A7F082 /* WalletSetup.swift in Sources */,
 				CBADC22D276DCABF00F8003A /* LoginVC.swift in Sources */,
 				CB50A56628A8E04900A7F082 /* PinConfirm.swift in Sources */,
+				CB50A59D28A8EFAA00A7F082 /* WalletHistory.swift in Sources */,
 				CB0DCADC285F870C004A87FA /* WalletsVM.swift in Sources */,
 				CB51DFC928962362006BCBB3 /* PinCodeVC.swift in Sources */,
 				CB7BF867276F81900090FE0A /* WalletsVC.swift in Sources */,
@@ -1014,7 +1196,9 @@
 				CB51DFDC2896553D006BCBB3 /* UIColor + Extensions.swift in Sources */,
 				CB51DFFA2896C650006BCBB3 /* AssociateObject.swift in Sources */,
 				CB50A57028A8E09000A7F082 /* Congratulations.swift in Sources */,
+				CB50A5B228A8F09200A7F082 /* Onboarding.swift in Sources */,
 				CBAC750C28A157AB008D8FCB /* MoyaProvider + Extensions.swift in Sources */,
+				CB50A59728A8EF4100A7F082 /* SelectWallet.swift in Sources */,
 				CB0DCAD6285F86CE004A87FA /* SettingsVM.swift in Sources */,
 				CB9749A9276A4F7700357BF2 /* SceneDelegate.swift in Sources */,
 				CB8674FE2896EF7D00144558 /* TransactionAPI.swift in Sources */,
