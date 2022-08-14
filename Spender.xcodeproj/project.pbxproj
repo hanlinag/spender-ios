@@ -564,6 +564,34 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		CB50A5B428A8F1C000A7F082 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		CB50A5B528A8F1CB00A7F082 /* Wallets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wallets;
+			sourceTree = "<group>";
+		};
+		CB50A5B628A8F1D200A7F082 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CB50A5B728A8F1D800A7F082 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		CB51DFC728962345006BCBB3 /* PinScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -806,6 +834,10 @@
 		CBADC227276DBE8900F8003A /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				CB50A5B728A8F1D800A7F082 /* Home */,
+				CB50A5B628A8F1D200A7F082 /* Settings */,
+				CB50A5B528A8F1CB00A7F082 /* Wallets */,
+				CB50A5B428A8F1C000A7F082 /* Transactions */,
 				CB13A6C2277782CD00B89753 /* TransactionTableViewCell.swift */,
 				CB13A6C3277782CD00B89753 /* TransactionTableViewCell.xib */,
 			);
