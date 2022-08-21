@@ -19,13 +19,11 @@
 		CB10AAD328AF60F4003AB4DC /* WalletResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10AAD228AF60F4003AB4DC /* WalletResponse.swift */; };
 		CB13A6C4277782CD00B89753 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13A6C2277782CD00B89753 /* TransactionTableViewCell.swift */; };
 		CB13A6C5277782CD00B89753 /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB13A6C3277782CD00B89753 /* TransactionTableViewCell.xib */; };
-		CB17254328AAAB0C0016398B /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB17254228AAAB0C0016398B /* Signup.storyboard */; };
 		CB50A55B28A8DFD100A7F082 /* ResetAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A55A28A8DFD100A7F082 /* ResetAccount.swift */; };
 		CB50A55D28A8DFE300A7F082 /* ResetAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB50A55C28A8DFE300A7F082 /* ResetAccount.storyboard */; };
 		CB50A57028A8E09000A7F082 /* Congratulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A56E28A8E09000A7F082 /* Congratulations.swift */; };
 		CB50A57528A8E0CD00A7F082 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57328A8E0CD00A7F082 /* Signup.swift */; };
 		CB50A57E28A8ECC700A7F082 /* AdditionalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57C28A8ECC700A7F082 /* AdditionalInfo.swift */; };
-		CB50A57F28A8ECC700A7F082 /* AdditionalInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A57D28A8ECC700A7F082 /* AdditionalInfo.xib */; };
 		CB50A58328A8ECEF00A7F082 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A58128A8ECEF00A7F082 /* EditProfile.swift */; };
 		CB50A58428A8ECEF00A7F082 /* EditProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A58228A8ECEF00A7F082 /* EditProfile.xib */; };
 		CB50A58828A8ED1900A7F082 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A58628A8ED1900A7F082 /* Feedback.swift */; };
@@ -103,6 +101,8 @@
 		CB9749C8276A4F7800357BF2 /* SpenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9749C7276A4F7800357BF2 /* SpenderUITests.swift */; };
 		CB9749CA276A4F7800357BF2 /* SpenderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9749C9276A4F7800357BF2 /* SpenderUITestsLaunchTests.swift */; };
 		CB9749D7276A52A400357BF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB9749D6276A52A400357BF2 /* GoogleService-Info.plist */; };
+		CB9925A428B1FACD00B194DF /* AdditionalInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9925A328B1FACD00B194DF /* AdditionalInfo.storyboard */; };
+		CB9CAF6C28B1F45600EC0C66 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9CAF6B28B1F45600EC0C66 /* Signup.storyboard */; };
 		CBA227C328A237FA00B7E8A2 /* Rx + MoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA227C228A237FA00B7E8A2 /* Rx + MoyaProvider.swift */; };
 		CBAC750C28A157AB008D8FCB /* MoyaProvider + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC750B28A157AB008D8FCB /* MoyaProvider + Extensions.swift */; };
 		CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADC22A276DC6D900F8003A /* SplashScreenController.swift */; };
@@ -144,13 +144,11 @@
 		CB10AAD228AF60F4003AB4DC /* WalletResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletResponse.swift; sourceTree = "<group>"; };
 		CB13A6C2277782CD00B89753 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		CB13A6C3277782CD00B89753 /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
-		CB17254228AAAB0C0016398B /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		CB50A55A28A8DFD100A7F082 /* ResetAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetAccount.swift; sourceTree = "<group>"; };
 		CB50A55C28A8DFE300A7F082 /* ResetAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetAccount.storyboard; sourceTree = "<group>"; };
 		CB50A56E28A8E09000A7F082 /* Congratulations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congratulations.swift; sourceTree = "<group>"; };
 		CB50A57328A8E0CD00A7F082 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		CB50A57C28A8ECC700A7F082 /* AdditionalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfo.swift; sourceTree = "<group>"; };
-		CB50A57D28A8ECC700A7F082 /* AdditionalInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdditionalInfo.xib; sourceTree = "<group>"; };
 		CB50A58128A8ECEF00A7F082 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
 		CB50A58228A8ECEF00A7F082 /* EditProfile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfile.xib; sourceTree = "<group>"; };
 		CB50A58628A8ED1900A7F082 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
@@ -236,6 +234,8 @@
 		CB9749C7276A4F7800357BF2 /* SpenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpenderUITests.swift; sourceTree = "<group>"; };
 		CB9749C9276A4F7800357BF2 /* SpenderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpenderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB9749D6276A52A400357BF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB9925A328B1FACD00B194DF /* AdditionalInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdditionalInfo.storyboard; sourceTree = "<group>"; };
+		CB9CAF6B28B1F45600EC0C66 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		CBA227C228A237FA00B7E8A2 /* Rx + MoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx + MoyaProvider.swift"; sourceTree = "<group>"; };
 		CBAC750B28A157AB008D8FCB /* MoyaProvider + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider + Extensions.swift"; sourceTree = "<group>"; };
 		CBADC22A276DC6D900F8003A /* SplashScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenController.swift; sourceTree = "<group>"; };
@@ -402,7 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				CB50A57328A8E0CD00A7F082 /* Signup.swift */,
-				CB17254228AAAB0C0016398B /* Signup.storyboard */,
+				CB9CAF6B28B1F45600EC0C66 /* Signup.storyboard */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -419,7 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				CB50A57C28A8ECC700A7F082 /* AdditionalInfo.swift */,
-				CB50A57D28A8ECC700A7F082 /* AdditionalInfo.xib */,
+				CB9925A328B1FACD00B194DF /* AdditionalInfo.storyboard */,
 			);
 			path = AdditionalInfo;
 			sourceTree = "<group>";
@@ -763,6 +763,13 @@
 			path = SpenderUITests;
 			sourceTree = "<group>";
 		};
+		CB9925A528B209CC00B194DF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		CBADC225276DBE6E00F8003A /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -792,6 +799,7 @@
 		CBADC227276DBE8900F8003A /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				CB9925A528B209CC00B194DF /* Auth */,
 				CB50A5B728A8F1D800A7F082 /* Home */,
 				CB50A5B628A8F1D200A7F082 /* Settings */,
 				CB50A5B528A8F1CB00A7F082 /* Wallets */,
@@ -948,7 +956,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB50A57F28A8ECC700A7F082 /* AdditionalInfo.xib in Resources */,
 				CB50A5AE28A8F03000A7F082 /* ConfirmAlert.xib in Resources */,
 				CB13A6C5277782CD00B89753 /* TransactionTableViewCell.xib in Resources */,
 				CB50A55D28A8DFE300A7F082 /* ResetAccount.storyboard in Resources */,
@@ -960,6 +967,7 @@
 				CB50A58928A8ED1900A7F082 /* Feedback.xib in Resources */,
 				CB50A58E28A8ED3E00A7F082 /* WalletSetup.xib in Resources */,
 				CB9749D7276A52A400357BF2 /* GoogleService-Info.plist in Resources */,
+				CB9925A428B1FACD00B194DF /* AdditionalInfo.storyboard in Resources */,
 				CB50A58428A8ECEF00A7F082 /* EditProfile.xib in Resources */,
 				CB51E0032896D230006BCBB3 /* en.strings in Resources */,
 				CB50A59328A8EEF100A7F082 /* AddTransaction.xib in Resources */,
@@ -975,7 +983,7 @@
 				CB7BF861276F7D9A0090FE0A /* Settings.storyboard in Resources */,
 				CB51DFCB2896236B006BCBB3 /* PinCode.storyboard in Resources */,
 				CB50A5A328A8EFD000A7F082 /* AllTransactions.xib in Resources */,
-				CB17254328AAAB0C0016398B /* Signup.storyboard in Resources */,
+				CB9CAF6C28B1F45600EC0C66 /* Signup.storyboard in Resources */,
 				CB7BF852276F387D0090FE0A /* Login.storyboard in Resources */,
 				CB7BF85F276F7D830090FE0A /* Activity.storyboard in Resources */,
 				CB50A5A828A8EFFD00A7F082 /* TransactionDetail.xib in Resources */,

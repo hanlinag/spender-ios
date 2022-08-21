@@ -40,3 +40,5 @@ enum TransactionCategory {
     case freelance
     case gift
 }
+
+let signupTableCell = "SignupTableCell"
