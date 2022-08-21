@@ -85,7 +85,8 @@ class LoginVC: SpenderViewController {
     
     
     @IBAction func onAppleLoginTapped(_ sender: Any) {
-        print("Apple login tapped")
+        debugPrint("Apple login tapped")
+        self.loadSafariView(with: "https://www.apple.com")
         
     }//end of Apple login tap action
     
@@ -102,3 +103,4 @@ class LoginVC: SpenderViewController {
     
     
 }
+

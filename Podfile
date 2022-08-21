@@ -38,6 +38,8 @@ target 'Spender' do
   pod 'Charts'
   #Crypt Algorithms
   pod 'CryptoSwift', '1.5.1'
+  #R-Swift
+  pod 'R.swift'
   
   target 'SpenderTests' do
     # Pods for testing

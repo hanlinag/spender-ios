@@ -43,6 +43,9 @@ class ResetAccount: SpenderViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Disable swipe down to dismiss gesture
+        self.isModalInPresentation = true
+        
         setup()
         
         //set up nav left bar item

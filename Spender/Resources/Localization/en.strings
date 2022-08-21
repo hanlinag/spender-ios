@@ -51,6 +51,7 @@
 "btn.ok" = "OK";
 "btn.confirm"  = "Confirm";
 "btn.get_started" = "Get Started";
+"btn.back" = "Back";
 
 //hints
 "placeholder.email" = "Email";

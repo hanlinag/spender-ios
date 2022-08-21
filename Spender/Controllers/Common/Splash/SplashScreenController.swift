@@ -27,6 +27,8 @@ class SplashScreenController: SpenderViewController {
         //commonVM.sendFeedback()
         
         //self.perform(#selector(self.goToLoginScreen), with: nil, afterDelay: 5.0)
+        
+        
         goToLoginScreen()
     }
     

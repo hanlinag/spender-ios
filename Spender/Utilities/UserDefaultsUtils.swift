@@ -12,7 +12,8 @@ private enum UserDefaultsKey: String {
     case appCurrentLocale         =  "appCurrentLocale"
     case userAccountToken         =  "userAccountLoginToken"
     case isBiometricRegister      =  "isBiometricRegister"
-    case currentUserID             = "spenderUserID"
+    case currentUserID            = "spenderUserID"
+    case currentEnvironment       = "currentEnv"
 }
 
 final class UserDefaultsUtils {
@@ -34,6 +35,11 @@ final class UserDefaultsUtils {
     static var currentUserID: String? {
         set { _set(value: newValue, key: .currentUserID) }
         get { return _get(valueForKey: .currentUserID) as? String ?? "" }
+    }
+    
+    static var currentEnvironment: String? {
+        set { _set(value: newValue, key: .currentEnvironment) }
+        get { return _get(valueForKey: .currentEnvironment) as? String ?? "" }
     }
     
     //MARK: - Remove Methods

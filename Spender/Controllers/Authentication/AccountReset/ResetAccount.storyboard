@@ -58,7 +58,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="r2v-g9-E2h"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceholder" value="placeholder.email"/>
@@ -73,7 +73,7 @@
                                                     <constraint firstAttribute="width" secondItem="3UV-e4-mGA" secondAttribute="height" multiplier="1:1" id="ES6-wg-Ist"/>
                                                     <constraint firstAttribute="height" constant="44" id="iqf-8t-PCg"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="-" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IdB-nU-Hgl" userLabel="tfTwo">
@@ -82,7 +82,7 @@
                                                     <constraint firstAttribute="width" secondItem="IdB-nU-Hgl" secondAttribute="height" multiplier="1:1" id="Bff-Zd-On7"/>
                                                     <constraint firstAttribute="height" constant="44" id="gcJ-4w-0r8"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" textContentType="one-time-code"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="-" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hf1-ih-vJc" userLabel="tfThree">
@@ -91,7 +91,7 @@
                                                     <constraint firstAttribute="height" constant="44" id="vgM-y6-DgM"/>
                                                     <constraint firstAttribute="width" secondItem="hf1-ih-vJc" secondAttribute="height" multiplier="1:1" id="z6F-OM-DMI"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="-" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jt1-Ut-g7f" userLabel="tfFour">
@@ -100,7 +100,7 @@
                                                     <constraint firstAttribute="height" constant="44" id="GDV-rq-Ryw"/>
                                                     <constraint firstAttribute="width" secondItem="Jt1-Ut-g7f" secondAttribute="height" multiplier="1:1" id="Uov-Ej-e1A"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                                             </textField>
                                         </subviews>
@@ -110,7 +110,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="1MU-B3-2Z7"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES" textContentType="new-password"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceholder" value="placeholder.password"/>
@@ -121,7 +121,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="VRV-Xc-QM5"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="new-password"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceholder" value="placeholder.confirm_pw"/>
@@ -130,7 +130,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RJJ-2c-0pX" userLabel="Button Stack View">
-                                <rect key="frame" x="30" y="639" width="315" height="84.333333333333371"/>
+                                <rect key="frame" x="30" y="639" width="315" height="80.666666666666629"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8M-0n-8qA">
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="44"/>
@@ -147,14 +147,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddq-B1-cvt" userLabel="btnResend">
-                                        <rect key="frame" x="0.0" y="54.000000000000007" width="315" height="30.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="53.999999999999993" width="315" height="26.666666666666664"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Resend OTP Again">
                                                     <attributes>
                                                         <color key="NSColor" red="0.92549019610000005" green="0.4039215686" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
+                                                        <font key="NSFont" size="11" name="Helvetica"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
