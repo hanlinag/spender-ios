@@ -102,6 +102,12 @@
 		CB9749CA276A4F7800357BF2 /* SpenderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9749C9276A4F7800357BF2 /* SpenderUITestsLaunchTests.swift */; };
 		CB9749D7276A52A400357BF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB9749D6276A52A400357BF2 /* GoogleService-Info.plist */; };
 		CB9925A428B1FACD00B194DF /* AdditionalInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9925A328B1FACD00B194DF /* AdditionalInfo.storyboard */; };
+		CB9925A928B2314E00B194DF /* SignupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9925A828B2314E00B194DF /* SignupHeaderView.swift */; };
+		CB9925AB28B2315600B194DF /* SignupHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9925AA28B2315600B194DF /* SignupHeaderView.xib */; };
+		CB9925AD28B2843E00B194DF /* SignupFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9925AC28B2843E00B194DF /* SignupFooterView.swift */; };
+		CB9925AF28B2844B00B194DF /* SignupFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9925AE28B2844B00B194DF /* SignupFooterView.xib */; };
+		CB9925B228B29AC500B194DF /* SignupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9925B028B29AC500B194DF /* SignupTableViewCell.swift */; };
+		CB9925B328B29AC500B194DF /* SignupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9925B128B29AC500B194DF /* SignupTableViewCell.xib */; };
 		CB9CAF6C28B1F45600EC0C66 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9CAF6B28B1F45600EC0C66 /* Signup.storyboard */; };
 		CBA227C328A237FA00B7E8A2 /* Rx + MoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA227C228A237FA00B7E8A2 /* Rx + MoyaProvider.swift */; };
 		CBAC750C28A157AB008D8FCB /* MoyaProvider + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC750B28A157AB008D8FCB /* MoyaProvider + Extensions.swift */; };
@@ -235,6 +241,12 @@
 		CB9749C9276A4F7800357BF2 /* SpenderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpenderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB9749D6276A52A400357BF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB9925A328B1FACD00B194DF /* AdditionalInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdditionalInfo.storyboard; sourceTree = "<group>"; };
+		CB9925A828B2314E00B194DF /* SignupHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupHeaderView.swift; sourceTree = "<group>"; };
+		CB9925AA28B2315600B194DF /* SignupHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupHeaderView.xib; sourceTree = "<group>"; };
+		CB9925AC28B2843E00B194DF /* SignupFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFooterView.swift; sourceTree = "<group>"; };
+		CB9925AE28B2844B00B194DF /* SignupFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupFooterView.xib; sourceTree = "<group>"; };
+		CB9925B028B29AC500B194DF /* SignupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTableViewCell.swift; sourceTree = "<group>"; };
+		CB9925B128B29AC500B194DF /* SignupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupTableViewCell.xib; sourceTree = "<group>"; };
 		CB9CAF6B28B1F45600EC0C66 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		CBA227C228A237FA00B7E8A2 /* Rx + MoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx + MoyaProvider.swift"; sourceTree = "<group>"; };
 		CBAC750B28A157AB008D8FCB /* MoyaProvider + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider + Extensions.swift"; sourceTree = "<group>"; };
@@ -763,11 +775,26 @@
 			path = SpenderUITests;
 			sourceTree = "<group>";
 		};
-		CB9925A528B209CC00B194DF /* Auth */ = {
+		CB9925A628B230E800B194DF /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				CB9925A728B230F000B194DF /* SignupCells */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		CB9925A728B230F000B194DF /* SignupCells */ = {
+			isa = PBXGroup;
+			children = (
+				CB9925A828B2314E00B194DF /* SignupHeaderView.swift */,
+				CB9925AA28B2315600B194DF /* SignupHeaderView.xib */,
+				CB9925AC28B2843E00B194DF /* SignupFooterView.swift */,
+				CB9925AE28B2844B00B194DF /* SignupFooterView.xib */,
+				CB9925B028B29AC500B194DF /* SignupTableViewCell.swift */,
+				CB9925B128B29AC500B194DF /* SignupTableViewCell.xib */,
+			);
+			name = SignupCells;
+			path = "../New Group/SignupCells";
 			sourceTree = "<group>";
 		};
 		CBADC225276DBE6E00F8003A /* Views */ = {
@@ -799,7 +826,7 @@
 		CBADC227276DBE8900F8003A /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				CB9925A528B209CC00B194DF /* Auth */,
+				CB9925A628B230E800B194DF /* Auth */,
 				CB50A5B728A8F1D800A7F082 /* Home */,
 				CB50A5B628A8F1D200A7F082 /* Settings */,
 				CB50A5B528A8F1CB00A7F082 /* Wallets */,
@@ -957,6 +984,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB50A5AE28A8F03000A7F082 /* ConfirmAlert.xib in Resources */,
+				CB9925B328B29AC500B194DF /* SignupTableViewCell.xib in Resources */,
 				CB13A6C5277782CD00B89753 /* TransactionTableViewCell.xib in Resources */,
 				CB50A55D28A8DFE300A7F082 /* ResetAccount.storyboard in Resources */,
 				CB9749B3276A4F7800357BF2 /* LaunchScreen.storyboard in Resources */,
@@ -973,6 +1001,7 @@
 				CB50A59328A8EEF100A7F082 /* AddTransaction.xib in Resources */,
 				CB50A59828A8EF4100A7F082 /* SelectWallet.xib in Resources */,
 				CB7BF85D276F7D700090FE0A /* Wallets.storyboard in Resources */,
+				CB9925AF28B2844B00B194DF /* SignupFooterView.xib in Resources */,
 				CB9749B0276A4F7800357BF2 /* Assets.xcassets in Resources */,
 				CB50A5BF28A95D4A00A7F082 /* Congratulations.storyboard in Resources */,
 				CB51DFD128963609006BCBB3 /* SpenderNavBar.xib in Resources */,
@@ -987,6 +1016,7 @@
 				CB7BF852276F387D0090FE0A /* Login.storyboard in Resources */,
 				CB7BF85F276F7D830090FE0A /* Activity.storyboard in Resources */,
 				CB50A5A828A8EFFD00A7F082 /* TransactionDetail.xib in Resources */,
+				CB9925AB28B2315600B194DF /* SignupHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1142,12 +1172,14 @@
 				CB51DFDE2896558B006BCBB3 /* SpenderImageViewController.swift in Sources */,
 				CB50A5AD28A8F03000A7F082 /* ConfirmAlert.swift in Sources */,
 				CB5D527C2898F74600F8CE73 /* APIErrorPlugin.swift in Sources */,
+				CB9925A928B2314E00B194DF /* SignupHeaderView.swift in Sources */,
 				CB8675002896EF8900144558 /* AppConfigAPI.swift in Sources */,
 				CB50A5A728A8EFFD00A7F082 /* TransactionDetail.swift in Sources */,
 				CB50A55B28A8DFD100A7F082 /* ResetAccount.swift in Sources */,
 				CB6A9CAE28A7EF0C00F9BC60 /* LoginRequest.swift in Sources */,
 				CB50A58328A8ECEF00A7F082 /* EditProfile.swift in Sources */,
 				CB51DFEA28966674006BCBB3 /* Locale.swift in Sources */,
+				CB9925AD28B2843E00B194DF /* SignupFooterView.swift in Sources */,
 				CB50A57E28A8ECC700A7F082 /* AdditionalInfo.swift in Sources */,
 				CB9749A7276A4F7700357BF2 /* AppDelegate.swift in Sources */,
 				CB7BF86B276F81A80090FE0A /* SettingsVC.swift in Sources */,
@@ -1172,6 +1204,7 @@
 				CB8674F22896DC6B00144558 /* LoadingButton.swift in Sources */,
 				CB51DFE02896559B006BCBB3 /* SpenderViewController.swift in Sources */,
 				CB50A58D28A8ED3E00A7F082 /* WalletSetup.swift in Sources */,
+				CB9925B228B29AC500B194DF /* SignupTableViewCell.swift in Sources */,
 				CBADC22D276DCABF00F8003A /* LoginVC.swift in Sources */,
 				CB50A59D28A8EFAA00A7F082 /* WalletHistory.swift in Sources */,
 				CB0DCADC285F870C004A87FA /* WalletsVM.swift in Sources */,

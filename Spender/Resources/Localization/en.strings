@@ -30,6 +30,7 @@
 "title.forgot_pw" = "Forgot Password";
 "title.set_new_pw" = "Set New Password";
 "title.congrats" = "Congratulations!";
+"title.create_account" = "Create Account";
 
 //labels
 "desc.login"  = "Please login to your account to get to know more about your spending behavior.";
@@ -40,6 +41,7 @@
 "desc.login_with" = "Login With";
 "desc.reset_congrats" = "Your password has been resetted successfully.";
 "desc.create_congrats" = "We've successfully created your Spender account.";
+"desc.create_account" = "Fill out all the required info to set up a new account. ";
 
 //buttons
 "btn.sign_in" = "Sign In";

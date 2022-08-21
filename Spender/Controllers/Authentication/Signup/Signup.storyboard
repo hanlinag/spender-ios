@@ -3,7 +3,9 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,28 +18,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="45O-qN-Ttl">
-                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="45O-qN-Ttl">
+                                <rect key="frame" x="5" y="88" width="365" height="526.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SignupCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SignupTableCell" id="dx5-mr-SNC">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SignupCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SignupTableCell" id="dx5-mr-SNC">
+                                        <rect key="frame" x="0.0" y="49" width="365" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dx5-mr-SNC" id="dxY-uv-IKV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account? Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4y-gp-VBS">
+                                <rect key="frame" x="72.666666666666671" y="729" width="229.66666666666663" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5Mu-8U-EF8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOp-Zb-QTp">
+                                <rect key="frame" x="25" y="675" width="325" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="shc-am-oKz"/>
+                                </constraints>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Register"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ewr-WF-5vl">
+                                <rect key="frame" x="25" y="622.33333333333337" width="325" height="37.666666666666629"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick-off" translatesAutoresizingMaskIntoConstraints="NO" id="EMV-hQ-pxd">
+                                        <rect key="frame" x="0.0" y="7" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="EMV-hQ-pxd" secondAttribute="height" multiplier="1:1" id="X88-Is-fdQ"/>
+                                            <constraint firstAttribute="height" constant="24" id="j9u-Yp-Igx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing up, you have already agreed to our Terms of Use and Privacy Policies." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cNk-Aq-hq8">
+                                        <rect key="frame" x="32" y="0.0" width="293" height="37.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f6B-n5-Oqh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="45O-qN-Ttl" firstAttribute="top" secondItem="f6B-n5-Oqh" secondAttribute="top" id="0iU-eU-QeT"/>
-                            <constraint firstItem="45O-qN-Ttl" firstAttribute="leading" secondItem="f6B-n5-Oqh" secondAttribute="leading" id="FpJ-au-shG"/>
-                            <constraint firstItem="f6B-n5-Oqh" firstAttribute="bottom" secondItem="45O-qN-Ttl" secondAttribute="bottom" id="R2Q-rO-4qz"/>
-                            <constraint firstItem="f6B-n5-Oqh" firstAttribute="trailing" secondItem="45O-qN-Ttl" secondAttribute="trailing" id="oqw-86-NlA"/>
+                            <constraint firstItem="f6B-n5-Oqh" firstAttribute="bottom" secondItem="U4y-gp-VBS" secondAttribute="bottom" constant="5" id="4Ux-Le-xQ4"/>
+                            <constraint firstItem="U4y-gp-VBS" firstAttribute="top" secondItem="AOp-Zb-QTp" secondAttribute="bottom" constant="10" id="CGs-Xd-gYI"/>
+                            <constraint firstItem="45O-qN-Ttl" firstAttribute="leading" secondItem="f6B-n5-Oqh" secondAttribute="leading" constant="5" id="FpJ-au-shG"/>
+                            <constraint firstAttribute="trailing" secondItem="ewr-WF-5vl" secondAttribute="trailing" constant="25" id="RNb-4a-z7V"/>
+                            <constraint firstItem="AOp-Zb-QTp" firstAttribute="top" secondItem="ewr-WF-5vl" secondAttribute="bottom" constant="15" id="Xte-dL-WeB"/>
+                            <constraint firstItem="AOp-Zb-QTp" firstAttribute="leading" secondItem="It5-4f-MyA" secondAttribute="leading" constant="25" id="aEY-mg-chh"/>
+                            <constraint firstItem="U4y-gp-VBS" firstAttribute="centerX" secondItem="It5-4f-MyA" secondAttribute="centerX" id="btb-cl-g1D"/>
+                            <constraint firstItem="f6B-n5-Oqh" firstAttribute="trailing" secondItem="AOp-Zb-QTp" secondAttribute="trailing" constant="25" id="d7C-Kn-2Lc"/>
+                            <constraint firstItem="ewr-WF-5vl" firstAttribute="top" secondItem="45O-qN-Ttl" secondAttribute="bottom" constant="8" symbolic="YES" id="k51-J3-iYa"/>
+                            <constraint firstItem="f6B-n5-Oqh" firstAttribute="trailing" secondItem="45O-qN-Ttl" secondAttribute="trailing" constant="5" id="oqw-86-NlA"/>
+                            <constraint firstItem="ewr-WF-5vl" firstAttribute="leading" secondItem="f6B-n5-Oqh" secondAttribute="leading" constant="25" id="sXL-lE-gpM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Fiy-Sg-x4w"/>
@@ -69,6 +115,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="tick-off" width="19" height="19"/>
+        <namedColor name="AccentColor">
+            <color red="0.92500001192092896" green="0.40400001406669617" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
