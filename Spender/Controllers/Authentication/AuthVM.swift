@@ -13,7 +13,7 @@ final class AuthVM: NSObject {
     
     var accountStatus: String? = ""
     
-    var signupMode: SignupMode = .providers //Default
+    var signupMode: SignupMode = .normal //Default
     
     func clearAuthInfo() {
         self.accountStatus = nil

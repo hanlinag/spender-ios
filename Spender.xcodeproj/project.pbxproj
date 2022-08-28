@@ -22,7 +22,7 @@
 		CB50A55B28A8DFD100A7F082 /* ResetAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A55A28A8DFD100A7F082 /* ResetAccount.swift */; };
 		CB50A55D28A8DFE300A7F082 /* ResetAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB50A55C28A8DFE300A7F082 /* ResetAccount.storyboard */; };
 		CB50A57028A8E09000A7F082 /* Congratulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A56E28A8E09000A7F082 /* Congratulations.swift */; };
-		CB50A57528A8E0CD00A7F082 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57328A8E0CD00A7F082 /* Signup.swift */; };
+		CB50A57528A8E0CD00A7F082 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57328A8E0CD00A7F082 /* SignupVC.swift */; };
 		CB50A57E28A8ECC700A7F082 /* AdditionalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57C28A8ECC700A7F082 /* AdditionalInfo.swift */; };
 		CB50A58328A8ECEF00A7F082 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A58128A8ECEF00A7F082 /* EditProfile.swift */; };
 		CB50A58428A8ECEF00A7F082 /* EditProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A58228A8ECEF00A7F082 /* EditProfile.xib */; };
@@ -155,7 +155,7 @@
 		CB50A55A28A8DFD100A7F082 /* ResetAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetAccount.swift; sourceTree = "<group>"; };
 		CB50A55C28A8DFE300A7F082 /* ResetAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetAccount.storyboard; sourceTree = "<group>"; };
 		CB50A56E28A8E09000A7F082 /* Congratulations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congratulations.swift; sourceTree = "<group>"; };
-		CB50A57328A8E0CD00A7F082 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		CB50A57328A8E0CD00A7F082 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		CB50A57C28A8ECC700A7F082 /* AdditionalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfo.swift; sourceTree = "<group>"; };
 		CB50A58128A8ECEF00A7F082 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
 		CB50A58228A8ECEF00A7F082 /* EditProfile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfile.xib; sourceTree = "<group>"; };
@@ -418,7 +418,7 @@
 		CB50A57228A8E0B800A7F082 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				CB50A57328A8E0CD00A7F082 /* Signup.swift */,
+				CB50A57328A8E0CD00A7F082 /* SignupVC.swift */,
 				CB9CAF6B28B1F45600EC0C66 /* Signup.storyboard */,
 			);
 			path = Signup;
@@ -1219,7 +1219,7 @@
 				CB10AAD328AF60F4003AB4DC /* WalletResponse.swift in Sources */,
 				CB7BF867276F81900090FE0A /* WalletsVC.swift in Sources */,
 				CB8674F62896E1B900144558 /* API.swift in Sources */,
-				CB50A57528A8E0CD00A7F082 /* Signup.swift in Sources */,
+				CB50A57528A8E0CD00A7F082 /* SignupVC.swift in Sources */,
 				CB8675062896F53300144558 /* AppConfigResponse.swift in Sources */,
 				CB6A9CB228A80DD700F9BC60 /* LoginResponse.swift in Sources */,
 				CB51DFF028967440006BCBB3 /* Localizable.swift in Sources */,

@@ -38,13 +38,15 @@
 "desc.forgot_pw" = "Please enter your email to reset your password.";
 "desc.confirmation" = "Please enter the code sent to your email: %s";
 "desc.set_new_pw" = "Please enter your new password for your account.";
-"desc.dont_have_account" = "Don’t have an account yet?  Register";
+"desc.dont_have_account" = "Don’t have an account yet?";
 "desc.login_with" = "Login With";
 "desc.reset_congrats" = "Your password has been resetted successfully.";
 "desc.create_congrats" = "We've successfully created your Spender account.";
 "desc.create_account" = "Fill out all the required infomation to set up a new account.";
 "desc.optional" = " (optional)";
 "desc.one_more_step" = "Please fill out the required information to continue setting up the acccount.";
+"desc.terms_and_conditions" = "By signing up, you have already agreed to our Terms of Use and Privacy Policies.";
+"desc.already_have_an_account" = "Already have an account? Login";
 
 //buttons
 "btn.sign_in" = "Sign In";
@@ -57,6 +59,7 @@
 "btn.confirm"  = "Confirm";
 "btn.get_started" = "Get Started";
 "btn.back" = "Back";
+"btn.create_account" = "Create Account";
 
 //placeholder
 "placeholder.email" = "Email";

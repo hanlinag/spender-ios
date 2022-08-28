@@ -8,15 +8,23 @@
 
 import UIKit
 
-class Signup: SpenderViewController {
+class SignupVC: SpenderViewController {
     
+    @IBOutlet weak var imgTick: UIImageView!
+    @IBOutlet weak var lblTandC: UILabel!
+    
+    @IBOutlet weak var btnRegister: UIButton!
+    
+    @IBOutlet weak var lblLogin: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
     
-    let vm = AuthVM.shared
-    
     private var tableHeaderHeight: CGFloat?
     private var tableCellHeight: CGFloat?
+    
+    private var isTicked: Bool = false
+    
+    let vm = AuthVM.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +39,42 @@ class Signup: SpenderViewController {
         tableView.register(SignupHeaderTableViewCell.nib(), forCellReuseIdentifier: SignupHeaderTableViewCell.identifier)
         tableView.register(SignupTableViewCell.nib(), forCellReuseIdentifier: SignupTableViewCell.identifier)
         
+        if self.vm.signupMode == .normal {
+            btnRegister.setTitle("btn.register".localized, for: .normal)
+            
+            lblLogin.isHidden = false
+        } else {
+            btnRegister.setTitle("btn.create_account".localized, for: .normal)
+            lblLogin.isHidden = true
+        }
+        
+        //Actions
+        let imgTickGesture = UITapGestureRecognizer(target: self, action: #selector(imgTickDidPress(_:)))
+        imgTick.addGestureRecognizer(imgTickGesture)
+        
+        let loginGesture  = UITapGestureRecognizer(target: self, action: #selector(loginDidPress(_:)))
+        lblLogin.addGestureRecognizer(loginGesture)
         
     }
+    
+    @IBAction func registerButtonDidPress(_ sender: Any) {
+        //TO DO: Call Register API
+    }
+    
+    @objc func loginDidPress(_ sender: UITapGestureRecognizer) {
+        self.dismiss(animated: true) {
+            self.vm.clearAuthInfo()
+        }
+    }
+    
+    @objc func imgTickDidPress(_ sender: UITapGestureRecognizer) {
+        imgTick.image =  self.isTicked ? UIImage(named: "tick-off") :  UIImage(named: "tick-on")
+        self.isTicked = !self.isTicked
+    }
+    
 }
 
-extension Signup: UITableViewDelegate, UITableViewDataSource {
+extension SignupVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if self.vm.signupMode == .normal {
             return signupTableCellModel.count + 1
