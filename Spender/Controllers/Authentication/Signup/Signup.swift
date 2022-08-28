@@ -15,40 +15,67 @@ class Signup: SpenderViewController {
     
     let vm = AuthVM.shared
     
+    private var tableHeaderHeight: CGFloat?
+    private var tableCellHeight: CGFloat?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.isHidden = true
+        
+        tableHeaderHeight = view.frame.size.height * 0.28
+        tableCellHeight = view.frame.size.height * 0.07
+        
         tableView.delegate   = self
         tableView.dataSource = self
-        tableView.register(SignupHeaderView.nib(), forHeaderFooterViewReuseIdentifier: SignupHeaderView.identifier)
+        tableView.register(SignupHeaderTableViewCell.nib(), forCellReuseIdentifier: SignupHeaderTableViewCell.identifier)
+        tableView.register(SignupTableViewCell.nib(), forCellReuseIdentifier: SignupTableViewCell.identifier)
+        
         
     }
 }
 
 extension Signup: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return vm.signupTableCells.count 
+        if self.vm.signupMode == .normal {
+            return signupTableCellModel.count + 1
+            
+        } else {
+            return signupWithProvidersTableCellModel.count + 1
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: signupTableCell, for: indexPath)
         
-        let imgLogo = UIImageView(frame: CGRect(x: 0, y: 0, width: (self.view.frame.size.height * 0.1 ), height: (self.view.frame.size.height * 0.1 )))
-        imgLogo.image = UIImage(named: "logo-text-orange")
-        //imgLogo.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.1).isActive = true
-        cell.contentView.addSubview(imgLogo)
+        if indexPath.row == 0 {
+            let header = tableView.dequeueReusableCell(withIdentifier: SignupHeaderTableViewCell.identifier, for: indexPath) as! SignupHeaderTableViewCell
+            
+            header.configure(signupMode: self.vm.signupMode)
+            
+            return header
+            
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: SignupTableViewCell.identifier, for: indexPath) as! SignupTableViewCell
+            
+            if self.vm.signupMode == .normal {
+                cell.configure(dataModel: signupTableCellModel[indexPath.row - 1])
+            } else {
+                cell.configure(dataModel: signupWithProvidersTableCellModel[indexPath.row - 1])
+            }
+            
+            cell.frame.size.height = self.tableCellHeight ?? 40.0
+            return cell
+        }
         
         
-        return cell
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: SignupHeaderView.identifier) as! SignupHeaderView
-       
-        header.configure(title: "title.create_account", description: "desc.create_account")
-        header.frame.size.height = self.view.frame.height * 0.25
-        
-        return header
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return self.tableHeaderHeight ?? 200.0
+        } else {
+            return self.tableCellHeight ?? 44.0
+        }
     }
     
     

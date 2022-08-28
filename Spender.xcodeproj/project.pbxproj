@@ -102,10 +102,6 @@
 		CB9749CA276A4F7800357BF2 /* SpenderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9749C9276A4F7800357BF2 /* SpenderUITestsLaunchTests.swift */; };
 		CB9749D7276A52A400357BF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB9749D6276A52A400357BF2 /* GoogleService-Info.plist */; };
 		CB9925A428B1FACD00B194DF /* AdditionalInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9925A328B1FACD00B194DF /* AdditionalInfo.storyboard */; };
-		CB9925A928B2314E00B194DF /* SignupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9925A828B2314E00B194DF /* SignupHeaderView.swift */; };
-		CB9925AB28B2315600B194DF /* SignupHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9925AA28B2315600B194DF /* SignupHeaderView.xib */; };
-		CB9925AD28B2843E00B194DF /* SignupFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9925AC28B2843E00B194DF /* SignupFooterView.swift */; };
-		CB9925AF28B2844B00B194DF /* SignupFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9925AE28B2844B00B194DF /* SignupFooterView.xib */; };
 		CB9925B228B29AC500B194DF /* SignupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9925B028B29AC500B194DF /* SignupTableViewCell.swift */; };
 		CB9925B328B29AC500B194DF /* SignupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9925B128B29AC500B194DF /* SignupTableViewCell.xib */; };
 		CB9CAF6C28B1F45600EC0C66 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9CAF6B28B1F45600EC0C66 /* Signup.storyboard */; };
@@ -113,6 +109,12 @@
 		CBAC750C28A157AB008D8FCB /* MoyaProvider + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC750B28A157AB008D8FCB /* MoyaProvider + Extensions.swift */; };
 		CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADC22A276DC6D900F8003A /* SplashScreenController.swift */; };
 		CBADC22D276DCABF00F8003A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADC22C276DCABF00F8003A /* LoginVC.swift */; };
+		CBFF44DA28BB65EA008493C3 /* SignupTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF44D928BB65EA008493C3 /* SignupTableViewCellModel.swift */; };
+		CBFF44DD28BBB769008493C3 /* SignupHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF44DB28BBB769008493C3 /* SignupHeaderTableViewCell.swift */; };
+		CBFF44DE28BBB769008493C3 /* SignupHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBFF44DC28BBB769008493C3 /* SignupHeaderTableViewCell.xib */; };
+		CBFF44E028BBD2D9008493C3 /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF44DF28BBD2D9008493C3 /* UIView + Extensions.swift */; };
+		CBFF44E228BBD819008493C3 /* UITextField + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF44E128BBD819008493C3 /* UITextField + Extensions.swift */; };
+		CBFF44E428BBD90D008493C3 /* UIImage + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF44E328BBD90D008493C3 /* UIImage + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,10 +243,6 @@
 		CB9749C9276A4F7800357BF2 /* SpenderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpenderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB9749D6276A52A400357BF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB9925A328B1FACD00B194DF /* AdditionalInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdditionalInfo.storyboard; sourceTree = "<group>"; };
-		CB9925A828B2314E00B194DF /* SignupHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupHeaderView.swift; sourceTree = "<group>"; };
-		CB9925AA28B2315600B194DF /* SignupHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupHeaderView.xib; sourceTree = "<group>"; };
-		CB9925AC28B2843E00B194DF /* SignupFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFooterView.swift; sourceTree = "<group>"; };
-		CB9925AE28B2844B00B194DF /* SignupFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupFooterView.xib; sourceTree = "<group>"; };
 		CB9925B028B29AC500B194DF /* SignupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTableViewCell.swift; sourceTree = "<group>"; };
 		CB9925B128B29AC500B194DF /* SignupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupTableViewCell.xib; sourceTree = "<group>"; };
 		CB9CAF6B28B1F45600EC0C66 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
@@ -252,6 +250,12 @@
 		CBAC750B28A157AB008D8FCB /* MoyaProvider + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider + Extensions.swift"; sourceTree = "<group>"; };
 		CBADC22A276DC6D900F8003A /* SplashScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenController.swift; sourceTree = "<group>"; };
 		CBADC22C276DCABF00F8003A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CBFF44D928BB65EA008493C3 /* SignupTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTableViewCellModel.swift; sourceTree = "<group>"; };
+		CBFF44DB28BBB769008493C3 /* SignupHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		CBFF44DC28BBB769008493C3 /* SignupHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		CBFF44DF28BBD2D9008493C3 /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
+		CBFF44E128BBD819008493C3 /* UITextField + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Extensions.swift"; sourceTree = "<group>"; };
+		CBFF44E328BBD90D008493C3 /* UIImage + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extensions.swift"; sourceTree = "<group>"; };
 		CC4A85D7CEC8AA7DA6041D72 /* Pods-Spender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spender.release.xcconfig"; path = "Target Support Files/Pods-Spender/Pods-Spender.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -388,6 +392,7 @@
 			children = (
 				CB6A9CAD28A7EF0C00F9BC60 /* LoginRequest.swift */,
 				CB6A9CB128A80DD700F9BC60 /* LoginResponse.swift */,
+				CBFF44D928BB65EA008493C3 /* SignupTableViewCellModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -786,12 +791,10 @@
 		CB9925A728B230F000B194DF /* SignupCells */ = {
 			isa = PBXGroup;
 			children = (
-				CB9925A828B2314E00B194DF /* SignupHeaderView.swift */,
-				CB9925AA28B2315600B194DF /* SignupHeaderView.xib */,
-				CB9925AC28B2843E00B194DF /* SignupFooterView.swift */,
-				CB9925AE28B2844B00B194DF /* SignupFooterView.xib */,
 				CB9925B028B29AC500B194DF /* SignupTableViewCell.swift */,
 				CB9925B128B29AC500B194DF /* SignupTableViewCell.xib */,
+				CBFF44DB28BBB769008493C3 /* SignupHeaderTableViewCell.swift */,
+				CBFF44DC28BBB769008493C3 /* SignupHeaderTableViewCell.xib */,
 			);
 			name = SignupCells;
 			path = "../New Group/SignupCells";
@@ -845,6 +848,9 @@
 				CB51DFDB2896553D006BCBB3 /* UIColor + Extensions.swift */,
 				CBAC750B28A157AB008D8FCB /* MoyaProvider + Extensions.swift */,
 				CB6A9CAB28A7E83600F9BC60 /* UIDevice + Extension.swift */,
+				CBFF44DF28BBD2D9008493C3 /* UIView + Extensions.swift */,
+				CBFF44E128BBD819008493C3 /* UITextField + Extensions.swift */,
+				CBFF44E328BBD90D008493C3 /* UIImage + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -995,13 +1001,13 @@
 				CB50A58928A8ED1900A7F082 /* Feedback.xib in Resources */,
 				CB50A58E28A8ED3E00A7F082 /* WalletSetup.xib in Resources */,
 				CB9749D7276A52A400357BF2 /* GoogleService-Info.plist in Resources */,
+				CBFF44DE28BBB769008493C3 /* SignupHeaderTableViewCell.xib in Resources */,
 				CB9925A428B1FACD00B194DF /* AdditionalInfo.storyboard in Resources */,
 				CB50A58428A8ECEF00A7F082 /* EditProfile.xib in Resources */,
 				CB51E0032896D230006BCBB3 /* en.strings in Resources */,
 				CB50A59328A8EEF100A7F082 /* AddTransaction.xib in Resources */,
 				CB50A59828A8EF4100A7F082 /* SelectWallet.xib in Resources */,
 				CB7BF85D276F7D700090FE0A /* Wallets.storyboard in Resources */,
-				CB9925AF28B2844B00B194DF /* SignupFooterView.xib in Resources */,
 				CB9749B0276A4F7800357BF2 /* Assets.xcassets in Resources */,
 				CB50A5BF28A95D4A00A7F082 /* Congratulations.storyboard in Resources */,
 				CB51DFD128963609006BCBB3 /* SpenderNavBar.xib in Resources */,
@@ -1016,7 +1022,6 @@
 				CB7BF852276F387D0090FE0A /* Login.storyboard in Resources */,
 				CB7BF85F276F7D830090FE0A /* Activity.storyboard in Resources */,
 				CB50A5A828A8EFFD00A7F082 /* TransactionDetail.xib in Resources */,
-				CB9925AB28B2315600B194DF /* SignupHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1164,6 +1169,7 @@
 				CB51DFDA28965522006BCBB3 /* UIFont + Extensions.swift in Sources */,
 				CB50A5A228A8EFD000A7F082 /* AllTransactions.swift in Sources */,
 				CB8674F82896E50700144558 /* APIHeaders.swift in Sources */,
+				CBFF44E228BBD819008493C3 /* UITextField + Extensions.swift in Sources */,
 				CB50A58828A8ED1900A7F082 /* Feedback.swift in Sources */,
 				CB9749AB276A4F7700357BF2 /* ViewController.swift in Sources */,
 				CB8675042896EFA700144558 /* ExchangeRateAPI.swift in Sources */,
@@ -1172,19 +1178,19 @@
 				CB51DFDE2896558B006BCBB3 /* SpenderImageViewController.swift in Sources */,
 				CB50A5AD28A8F03000A7F082 /* ConfirmAlert.swift in Sources */,
 				CB5D527C2898F74600F8CE73 /* APIErrorPlugin.swift in Sources */,
-				CB9925A928B2314E00B194DF /* SignupHeaderView.swift in Sources */,
 				CB8675002896EF8900144558 /* AppConfigAPI.swift in Sources */,
+				CBFF44DD28BBB769008493C3 /* SignupHeaderTableViewCell.swift in Sources */,
 				CB50A5A728A8EFFD00A7F082 /* TransactionDetail.swift in Sources */,
 				CB50A55B28A8DFD100A7F082 /* ResetAccount.swift in Sources */,
 				CB6A9CAE28A7EF0C00F9BC60 /* LoginRequest.swift in Sources */,
 				CB50A58328A8ECEF00A7F082 /* EditProfile.swift in Sources */,
 				CB51DFEA28966674006BCBB3 /* Locale.swift in Sources */,
-				CB9925AD28B2843E00B194DF /* SignupFooterView.swift in Sources */,
 				CB50A57E28A8ECC700A7F082 /* AdditionalInfo.swift in Sources */,
 				CB9749A7276A4F7700357BF2 /* AppDelegate.swift in Sources */,
 				CB7BF86B276F81A80090FE0A /* SettingsVC.swift in Sources */,
 				CB0DCADE285F8719004A87FA /* HomeVM.swift in Sources */,
 				CB0DCADA285F8703004A87FA /* ActivityVM.swift in Sources */,
+				CBFF44E028BBD2D9008493C3 /* UIView + Extensions.swift in Sources */,
 				CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */,
 				CB0DCAE0285F872E004A87FA /* AuthVM.swift in Sources */,
 				CB50A59228A8EEF100A7F082 /* AddTransaction.swift in Sources */,
@@ -1199,6 +1205,7 @@
 				CB7BF858276F4E150090FE0A /* HomeVC.swift in Sources */,
 				CB7BF856276F4B2A0090FE0A /* MainTabBarViewController.swift in Sources */,
 				CB5D527E2898F77F00F8CE73 /* APIProvider.swift in Sources */,
+				CBFF44E428BBD90D008493C3 /* UIImage + Extensions.swift in Sources */,
 				CB8674F42896DC7A00144558 /* SpenderPrimaryButton.swift in Sources */,
 				CB8674FC2896EF7200144558 /* WalletAPI.swift in Sources */,
 				CB8674F22896DC6B00144558 /* LoadingButton.swift in Sources */,
@@ -1217,6 +1224,7 @@
 				CB6A9CB228A80DD700F9BC60 /* LoginResponse.swift in Sources */,
 				CB51DFF028967440006BCBB3 /* Localizable.swift in Sources */,
 				CB7BF850276F2C990090FE0A /* ViewController + Extensions.swift in Sources */,
+				CBFF44DA28BB65EA008493C3 /* SignupTableViewCellModel.swift in Sources */,
 				CB13A6C4277782CD00B89753 /* TransactionTableViewCell.swift in Sources */,
 				CB51DFDC2896553D006BCBB3 /* UIColor + Extensions.swift in Sources */,
 				CB51DFFA2896C650006BCBB3 /* AssociateObject.swift in Sources */,

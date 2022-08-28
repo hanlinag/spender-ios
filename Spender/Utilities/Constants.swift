@@ -41,4 +41,25 @@ enum TransactionCategory {
     case gift
 }
 
-let signupTableCell = "SignupTableCell"
+enum SignupMode {
+    case normal
+    case providers
+}
+
+let signupTableCellModel = [
+    SignupTableViewCellModel(title: "placeholder.name",       inputType: .textfield, value: ""),
+    SignupTableViewCellModel(title: "placeholder.nickname",   inputType: .textfield, value: "", optional: true),
+    SignupTableViewCellModel(title: "placeholder.email",      inputType: .email,     value: ""),
+    SignupTableViewCellModel(title: "placeholder.dob",        inputType: .selector,  value: "", icon: "calendar"),
+    SignupTableViewCellModel(title: "placeholder.occupation", inputType: .selector,  value: "", icon: "chevron.down"),
+    SignupTableViewCellModel(title: "placeholder.password",   inputType: .password,  value: "", icon: "eye.fill"),
+    SignupTableViewCellModel(title: "placeholder.confirm_pw", inputType: .password,  value: "", icon: "eye.fill")
+]
+
+let signupWithProvidersTableCellModel = [
+    SignupTableViewCellModel(title: "placeholder.name",       inputType: .textfield, value: "", locked: true),
+    SignupTableViewCellModel(title: "placeholder.nickname",   inputType: .textfield, value: "", optional: true),
+    SignupTableViewCellModel(title: "placeholder.email",      inputType: .email,     value: "", locked: true),
+    SignupTableViewCellModel(title: "placeholder.dob",        inputType: .selector,  value: "", icon: "calendar"),
+    SignupTableViewCellModel(title: "placeholder.occupation", inputType: .selector,  value: "", icon: "chevron.down")
+]

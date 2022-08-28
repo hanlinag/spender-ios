@@ -31,6 +31,7 @@
 "title.set_new_pw" = "Set New Password";
 "title.congrats" = "Congratulations!";
 "title.create_account" = "Create Account";
+"title.one_more_step" = "One More Step";
 
 //labels
 "desc.login"  = "Please login to your account to get to know more about your spending behavior.";
@@ -41,7 +42,9 @@
 "desc.login_with" = "Login With";
 "desc.reset_congrats" = "Your password has been resetted successfully.";
 "desc.create_congrats" = "We've successfully created your Spender account.";
-"desc.create_account" = "Fill out all the required info to set up a new account. ";
+"desc.create_account" = "Fill out all the required infomation to set up a new account.";
+"desc.optional" = " (optional)";
+"desc.one_more_step" = "Please fill out the required information to continue setting up the acccount.";
 
 //buttons
 "btn.sign_in" = "Sign In";
@@ -55,10 +58,15 @@
 "btn.get_started" = "Get Started";
 "btn.back" = "Back";
 
-//hints
+//placeholder
 "placeholder.email" = "Email";
 "placeholder.password" = "Password";
 "placeholder.confirm_pw" = "Confirm Password";
+"placeholder.nickname" = "Nickname (optional)";
+"placeholder.name" = "Name";
+"placeholder.nickname" = "Nickname";
+"placeholder.dob" = "Date Of Birth";
+"placeholder.occupation" = "Occoupation";
 
 
 

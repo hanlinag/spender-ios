@@ -13,22 +13,7 @@ final class AuthVM: NSObject {
     
     var accountStatus: String? = ""
     
-    let signupTableCells :[String] = [
-    
-        "imgLogo",
-        "lblTitle",
-        "lblDescription",
-        "tfName",
-        "tfNickname",
-        "tfEmail",
-        "tfDOB",
-        "tfOccupation",
-        "tfPassword",
-        "tfConfirmPassword",
-        "viewTandC",
-        "btnRegister",
-        "viewLogin",
-    ]
+    var signupMode: SignupMode = .providers //Default
     
     func clearAuthInfo() {
         self.accountStatus = nil
