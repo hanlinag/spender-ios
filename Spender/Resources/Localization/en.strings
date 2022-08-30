@@ -32,6 +32,7 @@
 "title.congrats" = "Congratulations!";
 "title.create_account" = "Create Account";
 "title.one_more_step" = "One More Step";
+"title.404" = "Service Unavailable";
 
 //labels
 "desc.login"  = "Please login to your account to get to know more about your spending behavior.";
@@ -47,6 +48,7 @@
 "desc.one_more_step" = "Please fill out the required information to continue setting up the acccount.";
 "desc.terms_and_conditions" = "By signing up, you have already agreed to our Terms of Use and Privacy Policies.";
 "desc.already_have_an_account" = "Already have an account? Login";
+"desc.404" = "The service you are looking for does’t seem to be available at the moment.";
 
 //buttons
 "btn.sign_in" = "Sign In";

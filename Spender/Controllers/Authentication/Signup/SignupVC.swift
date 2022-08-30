@@ -153,7 +153,12 @@ extension SignupVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func showUIDatePicker() {
-        
+        let storyboard = UIStoryboard(name: "SpenderDatePicker", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "SpenderDatePicker") as! SpenderDatePicker
+        vc.modalTransitionStyle     = .crossDissolve
+        vc.modalPresentationStyle   = .overCurrentContext
+        vc.delegate = self //very important
+        self.present(vc, animated: true)
     }
     
 }
@@ -175,7 +180,6 @@ extension SignupVC: SpenderUIPickerDelegate {
             cell.configure(dataModel: (signupTableCells?[selectorItemIndex - 1])!)
             tableView.reloadRows(at: [indexPath], with: .fade)
         }
-        
     }
 }
 
@@ -183,8 +187,19 @@ extension SignupVC: SpenderUIPickerDelegate {
 //MARK: - UIDatePicker Delegate
 extension SignupVC: SpenderDatePickerDelegate {
     func spenderDatePickerDidSelect(selectedDate: String) {
+        debugPrint("Selected date \(selectedDate)")
+        signupTableCells?[dateSelectorItemIndex - 1].value = selectedDate
         
-        signupTableCells?[dateSelectorItemIndex].value = selectedDate
+        signupTableCells = signupTableCells?.sorted(by: {
+            $0.order < $1.order
+        })
         
+        let indexPath = IndexPath(item: dateSelectorItemIndex , section: 0)
+        
+        if let cell = tableView.cellForRow(at: indexPath) as? SignupTableViewCell {
+            //cell?.reloadInputViews()
+            cell.configure(dataModel: (signupTableCells?[dateSelectorItemIndex - 1])!)
+            tableView.reloadRows(at: [indexPath], with: .fade)
+        }
     }
 }

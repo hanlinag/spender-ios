@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TTM-xd-h7U">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,20 +12,90 @@
         <!--Spender Date Picker-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="SpenderDatePicker" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SpenderDatePicker" id="Y6W-OH-hqX" customClass="SpenderDatePicker" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2M-Kd-UaL">
+                                <rect key="frame" x="0.0" y="672" width="414" height="224"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="Eqy-0E-hNR">
+                                <rect key="frame" x="0.0" y="672" width="414" height="224"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </datePicker>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ts-rL-Sy9">
+                                <rect key="frame" x="0.0" y="628" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <items>
+                                    <barButtonItem title="Done" id="ZsU-kG-Vwl">
+                                        <color key="tintColor" name="ColorAccent"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="btn.done"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonDoneDidPress:" destination="Y6W-OH-hqX" id="X2W-WF-EbU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="ColorGreyTransparent"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Eqy-0E-hNR" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="0Ct-ld-Q6K"/>
+                            <constraint firstAttribute="bottom" secondItem="Eqy-0E-hNR" secondAttribute="bottom" id="8K1-dA-ANR"/>
+                            <constraint firstItem="1Ts-rL-Sy9" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ESd-OX-wuy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Q2M-Kd-UaL" secondAttribute="trailing" id="SWY-XV-v6o"/>
+                            <constraint firstItem="Eqy-0E-hNR" firstAttribute="top" secondItem="1Ts-rL-Sy9" secondAttribute="bottom" id="Sli-fP-Eko"/>
+                            <constraint firstItem="1Ts-rL-Sy9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="UF8-Yv-h2M"/>
+                            <constraint firstItem="Eqy-0E-hNR" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.25" id="W86-zq-9Eu"/>
+                            <constraint firstAttribute="bottom" secondItem="Q2M-Kd-UaL" secondAttribute="bottom" id="mfn-y7-7cE"/>
+                            <constraint firstItem="Q2M-Kd-UaL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sc3-cE-9r3"/>
+                            <constraint firstItem="Q2M-Kd-UaL" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.25" id="uOE-vH-4rv"/>
+                            <constraint firstItem="Eqy-0E-hNR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vMV-6a-UsE"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="e21-re-AJ5"/>
+                    <connections>
+                        <outlet property="baseView" destination="5EZ-qb-Rvc" id="xk4-AR-8Mg"/>
+                        <outlet property="btnDone" destination="ZsU-kG-Vwl" id="ZB6-S1-f3y"/>
+                        <outlet property="datePicker" destination="Eqy-0E-hNR" id="K1m-lj-dWH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="91"/>
+            <point key="canvasLocation" x="1031.8840579710145" y="90.401785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YSd-18-Iw0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TTM-xd-h7U" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uRk-Hr-uwq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="ZMQ-Ie-i64"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDZ-nt-KM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="90.401785714285708"/>
         </scene>
     </scenes>
     <resources>
+        <namedColor name="ColorAccent">
+            <color red="0.92500001192092896" green="0.40400001406669617" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="ColorGreyTransparent">
+            <color red="0.18400000035762787" green="0.21199999749660492" blue="0.23899999260902405" alpha="0.18000000715255737" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

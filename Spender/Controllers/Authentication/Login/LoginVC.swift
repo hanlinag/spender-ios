@@ -25,16 +25,11 @@ class LoginVC: SpenderViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("GOOO: login view now")
-        
-        
-        
         
     }
     
     
     @IBAction func onLoginButtonAction(_ sender: Any) {
-        print("GOOO: Login Button touched...")
         
         //go to tab bar controller aka main
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -45,7 +40,6 @@ class LoginVC: SpenderViewController {
     }
     
     @IBAction func onGoogleLoginAction(_ sender: Any) {
-        print("GOOO: Google Login Button touched...")
         
         guard let clientID = FirebaseApp.app()?.options.clientID else {return}
         
@@ -55,7 +49,7 @@ class LoginVC: SpenderViewController {
         //start sign in flow
         GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) {[unowned self] user , error  in
             if let error = error {
-                print("GOOO: GIDSignIn, error occured.. \(error.localizedDescription)")
+                debugPrint("GOOO: GIDSignIn, error occured.. \(error.localizedDescription)")
                 return
             }
             
@@ -65,7 +59,7 @@ class LoginVC: SpenderViewController {
             _ = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
             
             //get the account and do the rest
-            print("GOOO: Hello, \(String(describing: Auth.auth().currentUser?.displayName))")
+            debugPrint("GOOO: Hello, \(String(describing: Auth.auth().currentUser?.displayName))")
             
         }//end of google signin
         
@@ -74,10 +68,15 @@ class LoginVC: SpenderViewController {
     }//end of button tap action
     
     @IBAction func onFacebookLoginTap(_ sender: Any) {
-        print("Facebook login tapped")
+        debugPrint("Facebook login tapped")
         //let loginButton = FBLoginButton()
         //loginButton.delegate = self
         
+        let storyboard = UIStoryboard(name: "ServiceUnavailable", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ServiceUnavailable") as! ServiceUnavailableVC
+        vc.modalTransitionStyle     = .crossDissolve
+        vc.modalPresentationStyle   = .overCurrentContext
+        self.present(vc, animated: true)
         
         
     }//end of Facebook button tap action

@@ -46,7 +46,6 @@ class SignupTableViewCell: UITableViewCell {
         }
         
         if let value = dataModel.value, !value.isEmpty {
-            debugPrint("Index: \(dataModel.title)")
             textFieldd.text = value
         }
         

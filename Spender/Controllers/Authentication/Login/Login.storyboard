@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gCl-g2-hby">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gCl-g2-hby">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-text-orange" translatesAutoresizingMaskIntoConstraints="NO" id="9P2-ou-zhk">
@@ -306,7 +306,7 @@
     </scenes>
     <designables>
         <designable name="ncS-zk-Cje">
-            <size key="intrinsicContentSize" width="95.666666666666671" height="31"/>
+            <size key="intrinsicContentSize" width="76.666666666666671" height="34"/>
         </designable>
     </designables>
     <resources>
