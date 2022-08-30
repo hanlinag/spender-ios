@@ -22,6 +22,7 @@
 		CB1442FF28BE598200D37E5B /* Common + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1442FE28BE598200D37E5B /* Common + Extensions.swift */; };
 		CB14430228BE5FED00D37E5B /* ServiceUnavailableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB14430128BE5FED00D37E5B /* ServiceUnavailableVC.swift */; };
 		CB14430428BE5FF900D37E5B /* ServiceUnavailable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB14430328BE5FF900D37E5B /* ServiceUnavailable.storyboard */; };
+		CB14430628BE721F00D37E5B /* ConfirmAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB14430528BE721F00D37E5B /* ConfirmAlert.storyboard */; };
 		CB50A55B28A8DFD100A7F082 /* ResetAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A55A28A8DFD100A7F082 /* ResetAccount.swift */; };
 		CB50A55D28A8DFE300A7F082 /* ResetAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB50A55C28A8DFE300A7F082 /* ResetAccount.storyboard */; };
 		CB50A57028A8E09000A7F082 /* Congratulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A56E28A8E09000A7F082 /* Congratulations.swift */; };
@@ -43,8 +44,7 @@
 		CB50A5A328A8EFD000A7F082 /* AllTransactions.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A5A128A8EFD000A7F082 /* AllTransactions.xib */; };
 		CB50A5A728A8EFFD00A7F082 /* TransactionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A5A528A8EFFD00A7F082 /* TransactionDetail.swift */; };
 		CB50A5A828A8EFFD00A7F082 /* TransactionDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A5A628A8EFFD00A7F082 /* TransactionDetail.xib */; };
-		CB50A5AD28A8F03000A7F082 /* ConfirmAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A5AB28A8F03000A7F082 /* ConfirmAlert.swift */; };
-		CB50A5AE28A8F03000A7F082 /* ConfirmAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A5AC28A8F03000A7F082 /* ConfirmAlert.xib */; };
+		CB50A5AD28A8F03000A7F082 /* ConfirmAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A5AB28A8F03000A7F082 /* ConfirmAlertVC.swift */; };
 		CB50A5B228A8F09200A7F082 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A5B028A8F09200A7F082 /* Onboarding.swift */; };
 		CB50A5B328A8F09200A7F082 /* Onboarding.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A5B128A8F09200A7F082 /* Onboarding.xib */; };
 		CB50A5BF28A95D4A00A7F082 /* Congratulations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB50A5BE28A95D4A00A7F082 /* Congratulations.storyboard */; };
@@ -162,6 +162,7 @@
 		CB1442FE28BE598200D37E5B /* Common + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common + Extensions.swift"; sourceTree = "<group>"; };
 		CB14430128BE5FED00D37E5B /* ServiceUnavailableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceUnavailableVC.swift; sourceTree = "<group>"; };
 		CB14430328BE5FF900D37E5B /* ServiceUnavailable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServiceUnavailable.storyboard; sourceTree = "<group>"; };
+		CB14430528BE721F00D37E5B /* ConfirmAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmAlert.storyboard; sourceTree = "<group>"; };
 		CB50A55A28A8DFD100A7F082 /* ResetAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetAccount.swift; sourceTree = "<group>"; };
 		CB50A55C28A8DFE300A7F082 /* ResetAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetAccount.storyboard; sourceTree = "<group>"; };
 		CB50A56E28A8E09000A7F082 /* Congratulations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congratulations.swift; sourceTree = "<group>"; };
@@ -183,8 +184,7 @@
 		CB50A5A128A8EFD000A7F082 /* AllTransactions.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllTransactions.xib; sourceTree = "<group>"; };
 		CB50A5A528A8EFFD00A7F082 /* TransactionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetail.swift; sourceTree = "<group>"; };
 		CB50A5A628A8EFFD00A7F082 /* TransactionDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetail.xib; sourceTree = "<group>"; };
-		CB50A5AB28A8F03000A7F082 /* ConfirmAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmAlert.swift; sourceTree = "<group>"; };
-		CB50A5AC28A8F03000A7F082 /* ConfirmAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmAlert.xib; sourceTree = "<group>"; };
+		CB50A5AB28A8F03000A7F082 /* ConfirmAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmAlertVC.swift; sourceTree = "<group>"; };
 		CB50A5B028A8F09200A7F082 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		CB50A5B128A8F09200A7F082 /* Onboarding.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Onboarding.xib; sourceTree = "<group>"; };
 		CB50A5BE28A95D4A00A7F082 /* Congratulations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Congratulations.storyboard; sourceTree = "<group>"; };
@@ -549,8 +549,8 @@
 		CB50A5AA28A8F01400A7F082 /* ConfirmAlert */ = {
 			isa = PBXGroup;
 			children = (
-				CB50A5AB28A8F03000A7F082 /* ConfirmAlert.swift */,
-				CB50A5AC28A8F03000A7F082 /* ConfirmAlert.xib */,
+				CB50A5AB28A8F03000A7F082 /* ConfirmAlertVC.swift */,
+				CB14430528BE721F00D37E5B /* ConfirmAlert.storyboard */,
 			);
 			path = ConfirmAlert;
 			sourceTree = "<group>";
@@ -1026,11 +1026,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB50A5AE28A8F03000A7F082 /* ConfirmAlert.xib in Resources */,
 				CB68CB5928BD09E3006E5427 /* SpenderDatePicker.storyboard in Resources */,
 				CB9925B328B29AC500B194DF /* SignupTableViewCell.xib in Resources */,
 				CB13A6C5277782CD00B89753 /* TransactionTableViewCell.xib in Resources */,
 				CB50A55D28A8DFE300A7F082 /* ResetAccount.storyboard in Resources */,
+				CB14430628BE721F00D37E5B /* ConfirmAlert.storyboard in Resources */,
 				CB9749B3276A4F7800357BF2 /* LaunchScreen.storyboard in Resources */,
 				CB50A5B328A8F09200A7F082 /* Onboarding.xib in Resources */,
 				CB51E0042896D230006BCBB3 /* mm.strings in Resources */,
@@ -1217,7 +1217,7 @@
 				CB51DFCF289635FE006BCBB3 /* SpenderNavBar.swift in Sources */,
 				CB0DCAE3285F87C2004A87FA /* CommonVM.swift in Sources */,
 				CB51DFDE2896558B006BCBB3 /* SpenderImageViewController.swift in Sources */,
-				CB50A5AD28A8F03000A7F082 /* ConfirmAlert.swift in Sources */,
+				CB50A5AD28A8F03000A7F082 /* ConfirmAlertVC.swift in Sources */,
 				CB5D527C2898F74600F8CE73 /* APIErrorPlugin.swift in Sources */,
 				CB8675002896EF8900144558 /* AppConfigAPI.swift in Sources */,
 				CBFF44DD28BBB769008493C3 /* SignupHeaderTableViewCell.swift in Sources */,
