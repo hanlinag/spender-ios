@@ -64,6 +64,10 @@
 		CB51E0052896D230006BCBB3 /* th.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB51E0022896D230006BCBB3 /* th.strings */; };
 		CB5D527C2898F74600F8CE73 /* APIErrorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D527B2898F74600F8CE73 /* APIErrorPlugin.swift */; };
 		CB5D527E2898F77F00F8CE73 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D527D2898F77F00F8CE73 /* APIProvider.swift */; };
+		CB68CB5328BD0301006E5427 /* SpenderUIPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB68CB5228BD0301006E5427 /* SpenderUIPicker.swift */; };
+		CB68CB5528BD030E006E5427 /* SpenderUIPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB68CB5428BD030E006E5427 /* SpenderUIPicker.storyboard */; };
+		CB68CB5728BD09DC006E5427 /* SpenderDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB68CB5628BD09DC006E5427 /* SpenderDatePicker.swift */; };
+		CB68CB5928BD09E3006E5427 /* SpenderDatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB68CB5828BD09E3006E5427 /* SpenderDatePicker.storyboard */; };
 		CB6A9CAC28A7E83600F9BC60 /* UIDevice + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A9CAB28A7E83600F9BC60 /* UIDevice + Extension.swift */; };
 		CB6A9CAE28A7EF0C00F9BC60 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A9CAD28A7EF0C00F9BC60 /* LoginRequest.swift */; };
 		CB6A9CB028A8041200F9BC60 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A9CAF28A8041200F9BC60 /* Constants.swift */; };
@@ -201,6 +205,10 @@
 		CB51E0022896D230006BCBB3 /* th.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = th.strings; sourceTree = "<group>"; };
 		CB5D527B2898F74600F8CE73 /* APIErrorPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorPlugin.swift; sourceTree = "<group>"; };
 		CB5D527D2898F77F00F8CE73 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		CB68CB5228BD0301006E5427 /* SpenderUIPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpenderUIPicker.swift; sourceTree = "<group>"; };
+		CB68CB5428BD030E006E5427 /* SpenderUIPicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpenderUIPicker.storyboard; sourceTree = "<group>"; };
+		CB68CB5628BD09DC006E5427 /* SpenderDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpenderDatePicker.swift; sourceTree = "<group>"; };
+		CB68CB5828BD09E3006E5427 /* SpenderDatePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpenderDatePicker.storyboard; sourceTree = "<group>"; };
 		CB6A9CAB28A7E83600F9BC60 /* UIDevice + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice + Extension.swift"; sourceTree = "<group>"; };
 		CB6A9CAD28A7EF0C00F9BC60 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		CB6A9CAF28A8041200F9BC60 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -348,6 +356,7 @@
 		CB0DCAE1285F879B004A87FA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CB68CB4F28BD0292006E5427 /* SpenderUIPicker */,
 				CB50A5AF28A8F06E00A7F082 /* Onboarding */,
 				CB50A5A928A8F00C00A7F082 /* Alerts */,
 				CB50A5A428A8EFE600A7F082 /* TransactionDetail */,
@@ -630,6 +639,17 @@
 				CBA227C228A237FA00B7E8A2 /* Rx + MoyaProvider.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CB68CB4F28BD0292006E5427 /* SpenderUIPicker */ = {
+			isa = PBXGroup;
+			children = (
+				CB68CB5228BD0301006E5427 /* SpenderUIPicker.swift */,
+				CB68CB5428BD030E006E5427 /* SpenderUIPicker.storyboard */,
+				CB68CB5628BD09DC006E5427 /* SpenderDatePicker.swift */,
+				CB68CB5828BD09E3006E5427 /* SpenderDatePicker.storyboard */,
+			);
+			path = SpenderUIPicker;
 			sourceTree = "<group>";
 		};
 		CB7BF853276F4AAD0090FE0A /* Authentication */ = {
@@ -990,6 +1010,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB50A5AE28A8F03000A7F082 /* ConfirmAlert.xib in Resources */,
+				CB68CB5928BD09E3006E5427 /* SpenderDatePicker.storyboard in Resources */,
 				CB9925B328B29AC500B194DF /* SignupTableViewCell.xib in Resources */,
 				CB13A6C5277782CD00B89753 /* TransactionTableViewCell.xib in Resources */,
 				CB50A55D28A8DFE300A7F082 /* ResetAccount.storyboard in Resources */,
@@ -1015,6 +1036,7 @@
 				CB9749AE276A4F7700357BF2 /* Main.storyboard in Resources */,
 				CB51DFF828967B77006BCBB3 /* ColorAssets.xcassets in Resources */,
 				CB50A59E28A8EFAA00A7F082 /* WalletHistory.xib in Resources */,
+				CB68CB5528BD030E006E5427 /* SpenderUIPicker.storyboard in Resources */,
 				CB7BF861276F7D9A0090FE0A /* Settings.storyboard in Resources */,
 				CB51DFCB2896236B006BCBB3 /* PinCode.storyboard in Resources */,
 				CB50A5A328A8EFD000A7F082 /* AllTransactions.xib in Resources */,
@@ -1166,6 +1188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB68CB5728BD09DC006E5427 /* SpenderDatePicker.swift in Sources */,
 				CB51DFDA28965522006BCBB3 /* UIFont + Extensions.swift in Sources */,
 				CB50A5A228A8EFD000A7F082 /* AllTransactions.swift in Sources */,
 				CB8674F82896E50700144558 /* APIHeaders.swift in Sources */,
@@ -1189,6 +1212,7 @@
 				CB9749A7276A4F7700357BF2 /* AppDelegate.swift in Sources */,
 				CB7BF86B276F81A80090FE0A /* SettingsVC.swift in Sources */,
 				CB0DCADE285F8719004A87FA /* HomeVM.swift in Sources */,
+				CB68CB5328BD0301006E5427 /* SpenderUIPicker.swift in Sources */,
 				CB0DCADA285F8703004A87FA /* ActivityVM.swift in Sources */,
 				CBFF44E028BBD2D9008493C3 /* UIView + Extensions.swift in Sources */,
 				CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */,

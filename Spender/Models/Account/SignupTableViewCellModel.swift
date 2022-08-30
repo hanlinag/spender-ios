@@ -12,6 +12,7 @@ enum InputType {
     case textfield
     case email
     case selector
+    case dateSelector
     case password
 }
 
@@ -23,14 +24,6 @@ struct SignupTableViewCellModel {
     var optional: Bool? = false
     var locked: Bool? = false
     var icon: String?
-    
-//    var name: String?
-//    var nickname: String?
-//    var email: String?
-//    var dob: String?
-//    var occupation: String?
-//    var password: String?
-//    var confirmPassword: String?
-    
+    var order: Int
     
 }

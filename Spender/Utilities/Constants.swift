@@ -46,20 +46,30 @@ enum SignupMode {
     case providers
 }
 
-let signupTableCellModel = [
-    SignupTableViewCellModel(title: "placeholder.name",       inputType: .textfield, value: ""),
-    SignupTableViewCellModel(title: "placeholder.nickname",   inputType: .textfield, value: "", optional: true),
-    SignupTableViewCellModel(title: "placeholder.email",      inputType: .email,     value: ""),
-    SignupTableViewCellModel(title: "placeholder.dob",        inputType: .selector,  value: "", icon: "calendar"),
-    SignupTableViewCellModel(title: "placeholder.occupation", inputType: .selector,  value: "", icon: "chevron.down"),
-    SignupTableViewCellModel(title: "placeholder.password",   inputType: .password,  value: "", icon: "eye.fill"),
-    SignupTableViewCellModel(title: "placeholder.confirm_pw", inputType: .password,  value: "", icon: "eye.fill")
+private var signupTableCellModel = [
+    SignupTableViewCellModel(title: "placeholder.name",       inputType: .textfield, value: "", order: 0),
+    SignupTableViewCellModel(title: "placeholder.nickname",   inputType: .textfield, value: "", optional: true, order: 1),
+    SignupTableViewCellModel(title: "placeholder.email",      inputType: .email,     value: "", order: 2),
+    SignupTableViewCellModel(title: "placeholder.dob",        inputType: .dateSelector,  value: "", icon: "calendar", order: 3),
+    SignupTableViewCellModel(title: "placeholder.occupation", inputType: .selector,  value: "", icon: "chevron.down", order: 4),
+    SignupTableViewCellModel(title: "placeholder.password",   inputType: .password,  value: "", icon: "eye.fill", order: 5),
+    SignupTableViewCellModel(title: "placeholder.confirm_pw", inputType: .password,  value: "", icon: "eye.fill", order: 6)
 ]
 
-let signupWithProvidersTableCellModel = [
-    SignupTableViewCellModel(title: "placeholder.name",       inputType: .textfield, value: "", locked: true),
-    SignupTableViewCellModel(title: "placeholder.nickname",   inputType: .textfield, value: "", optional: true),
-    SignupTableViewCellModel(title: "placeholder.email",      inputType: .email,     value: "", locked: true),
-    SignupTableViewCellModel(title: "placeholder.dob",        inputType: .selector,  value: "", icon: "calendar"),
-    SignupTableViewCellModel(title: "placeholder.occupation", inputType: .selector,  value: "", icon: "chevron.down")
+func getSignupTableCellModel() -> [SignupTableViewCellModel] {
+    return signupTableCellModel.sorted { $0.order < $1.order }
+}
+
+private var signupWithProvidersTableCellModel = [
+    SignupTableViewCellModel(title: "placeholder.name",       inputType: .textfield, value: "", locked: true, order: 0),
+    SignupTableViewCellModel(title: "placeholder.nickname",   inputType: .textfield, value: "", optional: true, order: 1),
+    SignupTableViewCellModel(title: "placeholder.email",      inputType: .email,     value: "", locked: true, order: 2),
+    SignupTableViewCellModel(title: "placeholder.dob",        inputType: .dateSelector,  value: "", icon: "calendar", order: 3),
+    SignupTableViewCellModel(title: "placeholder.occupation", inputType: .selector,  value: "", icon: "chevron.down", order: 4)
 ]
+
+func getSignupWithProvidersTableCellModel() -> [SignupTableViewCellModel] {
+    return signupWithProvidersTableCellModel.sorted { $0.order < $1.order }
+}
+
+let occupations = ["Artist", "Business Analyst", "Construction Worker", "Desiger", "Entrepreneur", "Freelancer", "Social Worker", "Physicians", "Nurses", "Veterinarians", "Schoolteachers", "College Professors", "Lecturers", "Aeronautic Engineer", "Mechanical Engineer", "Chemical Engineer", "Software Engineer", "Accountant", "General Worker"]

@@ -60,6 +60,7 @@
 "btn.get_started" = "Get Started";
 "btn.back" = "Back";
 "btn.create_account" = "Create Account";
+"btn.done" = "Done";
 
 //placeholder
 "placeholder.email" = "Email";

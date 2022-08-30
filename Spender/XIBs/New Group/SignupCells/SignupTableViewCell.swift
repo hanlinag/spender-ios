@@ -11,9 +11,6 @@ import UIKit
 class SignupTableViewCell: UITableViewCell {
     
     @IBOutlet weak var textFieldd: UITextField!
-   //@IBOutlet weak var icon: UIImageView!
-    
-
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -48,6 +45,11 @@ class SignupTableViewCell: UITableViewCell {
             textFieldd.isEnabled = false
         }
         
+        if let value = dataModel.value, !value.isEmpty {
+            debugPrint("Index: \(dataModel.title)")
+            textFieldd.text = value
+        }
+        
         switch dataModel.inputType {
         case .textfield:
             textFieldd.textContentType = .username
@@ -60,13 +62,18 @@ class SignupTableViewCell: UITableViewCell {
             textFieldd.setRightImage(icon: UIImage(systemName: "eye.fill"))
             break
         case .selector:
-            textFieldd.textContentType = .dateTime
+            textFieldd.textContentType          = .dateTime
+            textFieldd.isUserInteractionEnabled = false
             textFieldd.setRightImage(icon: UIImage(systemName: "chevron.down"))
             break
         case .email:
             textFieldd.textContentType = .emailAddress
             textFieldd.keyboardType    = .emailAddress
             break
+        case .dateSelector:
+            textFieldd.textContentType          = .dateTime
+            textFieldd.isUserInteractionEnabled = false
+            textFieldd.setRightImage(icon: UIImage(systemName: "chevron.down"))
         }
     }
     

@@ -22,7 +22,12 @@ class SignupVC: SpenderViewController {
     private var tableHeaderHeight: CGFloat?
     private var tableCellHeight: CGFloat?
     
+    private var selectorItemIndex = 0
+    private var dateSelectorItemIndex = 0
+    
     private var isTicked: Bool = false
+    
+    private var signupTableCells: [SignupTableViewCellModel]?
     
     let vm = AuthVM.shared
     
@@ -34,19 +39,26 @@ class SignupVC: SpenderViewController {
         tableHeaderHeight = view.frame.size.height * 0.28
         tableCellHeight = view.frame.size.height * 0.07
         
+        if self.vm.signupMode == .normal {
+            btnRegister.setTitle("btn.register".localized, for: .normal)
+            lblLogin.isHidden = false
+            
+            signupTableCells = getSignupTableCellModel()
+            
+        } else {
+            btnRegister.setTitle("btn.create_account".localized, for: .normal)
+            lblLogin.isHidden = true
+            
+            signupTableCells = getSignupWithProvidersTableCellModel()
+        }
+        
+        
         tableView.delegate   = self
         tableView.dataSource = self
         tableView.register(SignupHeaderTableViewCell.nib(), forCellReuseIdentifier: SignupHeaderTableViewCell.identifier)
         tableView.register(SignupTableViewCell.nib(), forCellReuseIdentifier: SignupTableViewCell.identifier)
         
-        if self.vm.signupMode == .normal {
-            btnRegister.setTitle("btn.register".localized, for: .normal)
-            
-            lblLogin.isHidden = false
-        } else {
-            btnRegister.setTitle("btn.create_account".localized, for: .normal)
-            lblLogin.isHidden = true
-        }
+        
         
         //Actions
         let imgTickGesture = UITapGestureRecognizer(target: self, action: #selector(imgTickDidPress(_:)))
@@ -56,6 +68,7 @@ class SignupVC: SpenderViewController {
         lblLogin.addGestureRecognizer(loginGesture)
         
     }
+    
     
     @IBAction func registerButtonDidPress(_ sender: Any) {
         //TO DO: Call Register API
@@ -76,12 +89,9 @@ class SignupVC: SpenderViewController {
 
 extension SignupVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if self.vm.signupMode == .normal {
-            return signupTableCellModel.count + 1
-            
-        } else {
-            return signupWithProvidersTableCellModel.count + 1
-        }
+        
+        return (signupTableCells?.count ?? 0) + 1
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -96,12 +106,10 @@ extension SignupVC: UITableViewDelegate, UITableViewDataSource {
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: SignupTableViewCell.identifier, for: indexPath) as! SignupTableViewCell
             
-            if self.vm.signupMode == .normal {
-                cell.configure(dataModel: signupTableCellModel[indexPath.row - 1])
-            } else {
-                cell.configure(dataModel: signupWithProvidersTableCellModel[indexPath.row - 1])
-            }
             
+            cell.configure(dataModel: (signupTableCells?[indexPath.row - 1])!)
+            
+            cell.selectionStyle = .none
             cell.frame.size.height = self.tableCellHeight ?? 40.0
             return cell
         }
@@ -117,5 +125,66 @@ extension SignupVC: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if self.vm.signupMode == .normal {
+            
+            if signupTableCells?[indexPath.row - 1].inputType == .selector {
+                selectorItemIndex = indexPath.row
+                showUIPicker()
+            } else if signupTableCells?[indexPath.row - 1].inputType == .dateSelector {
+                dateSelectorItemIndex = indexPath.row
+                showUIDatePicker()
+            }
+        }
+    }
     
+    
+    
+    func showUIPicker() {
+        let sortedOccupation = occupations.sorted { $0.localizedCaseInsensitiveCompare($1) == ComparisonResult.orderedAscending }
+        
+        let storyboard = UIStoryboard(name: "SpenderUIPicker", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "SpenderUIPicker") as! SpenderUIPicker
+        vc.modalTransitionStyle     = .crossDissolve
+        vc.modalPresentationStyle   = .overCurrentContext
+        vc.delegate = self //very important
+        vc.data = sortedOccupation
+        self.present(vc, animated: true)
+    }
+    
+    func showUIDatePicker() {
+        
+    }
+    
+}
+
+//MARK: - UIPicker Delegate
+extension SignupVC: SpenderUIPickerDelegate {
+    func spenderPickerDidSelect(selectedItem: String) {
+        
+        signupTableCells?[selectorItemIndex - 1].value = selectedItem
+        
+        signupTableCells = signupTableCells?.sorted(by: {
+            $0.order < $1.order
+        })
+        
+        let indexPath = IndexPath(item: selectorItemIndex , section: 0)
+        
+        if let cell = tableView.cellForRow(at: indexPath) as? SignupTableViewCell {
+            //cell?.reloadInputViews()
+            cell.configure(dataModel: (signupTableCells?[selectorItemIndex - 1])!)
+            tableView.reloadRows(at: [indexPath], with: .fade)
+        }
+        
+    }
+}
+
+
+//MARK: - UIDatePicker Delegate
+extension SignupVC: SpenderDatePickerDelegate {
+    func spenderDatePickerDidSelect(selectedDate: String) {
+        
+        signupTableCells?[dateSelectorItemIndex].value = selectedDate
+        
+    }
 }
