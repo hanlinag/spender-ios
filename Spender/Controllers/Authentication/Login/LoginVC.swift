@@ -85,7 +85,11 @@ class LoginVC: SpenderViewController {
     
     @IBAction func onAppleLoginTapped(_ sender: Any) {
         debugPrint("Apple login tapped")
-        self.loadSafariView(with: "https://www.apple.com")
+        //self.loadSafariView(with: "https://www.apple.com")
+        self.showAlert(title: "Spender Alert", subtitle: "This is testing alert", type: .normal, secondaryLabel: "nope", primaryLabel: "ok", secondaryAction: {}, primaryAction: {
+            debugPrint("On alert proceed")
+            self.dismiss(animated: true)
+        })
         
     }//end of Apple login tap action
     

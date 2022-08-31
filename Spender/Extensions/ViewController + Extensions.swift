@@ -22,6 +22,7 @@ extension UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
 }
 
 extension UIViewController: LoginButtonDelegate {
@@ -45,5 +46,29 @@ extension UIViewController {
         // Present SFSafariViewController
         let safariVC = SFSafariViewController(url: url)
         self.present(safariVC, animated: true, completion: nil)
+    }
+}
+
+//MARK: - Alert
+extension UIViewController {
+    func showAlert(title: String, subtitle: String, type: SpenderAlertType = .normal, showSecondary: Bool = true, secondaryLabel: String? = nil, primaryLabel: String, secondaryAction: (() -> ())?, primaryAction: (() -> ())?) {
+        
+        let config = AlertConfig(
+            title: title,
+            subtitle: subtitle,
+            type: type,
+            showSecondary: showSecondary,
+            secondaryLabel: secondaryLabel,
+            primaryLabel: primaryLabel,
+            secondaryAction: secondaryAction,
+            primaryAction: primaryAction)
+        
+        
+        let storyboard = UIStoryboard(name: "ConfirmAlert", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ConfirmAlert") as! ConfirmAlertVC
+        vc.config = config
+        vc.modalTransitionStyle     = .crossDissolve
+        vc.modalPresentationStyle   = .overCurrentContext
+        self.present(vc, animated: true)
     }
 }

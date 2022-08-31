@@ -116,6 +116,7 @@
 		CBAC750C28A157AB008D8FCB /* MoyaProvider + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC750B28A157AB008D8FCB /* MoyaProvider + Extensions.swift */; };
 		CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADC22A276DC6D900F8003A /* SplashScreenController.swift */; };
 		CBADC22D276DCABF00F8003A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADC22C276DCABF00F8003A /* LoginVC.swift */; };
+		CBD7D5D128BFCCDD0043A07E /* AlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7D5D028BFCCDD0043A07E /* AlertConfig.swift */; };
 		CBFF44DA28BB65EA008493C3 /* SignupTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF44D928BB65EA008493C3 /* SignupTableViewCellModel.swift */; };
 		CBFF44DD28BBB769008493C3 /* SignupHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF44DB28BBB769008493C3 /* SignupHeaderTableViewCell.swift */; };
 		CBFF44DE28BBB769008493C3 /* SignupHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBFF44DC28BBB769008493C3 /* SignupHeaderTableViewCell.xib */; };
@@ -264,6 +265,7 @@
 		CBAC750B28A157AB008D8FCB /* MoyaProvider + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider + Extensions.swift"; sourceTree = "<group>"; };
 		CBADC22A276DC6D900F8003A /* SplashScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenController.swift; sourceTree = "<group>"; };
 		CBADC22C276DCABF00F8003A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CBD7D5D028BFCCDD0043A07E /* AlertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConfig.swift; sourceTree = "<group>"; };
 		CBFF44D928BB65EA008493C3 /* SignupTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTableViewCellModel.swift; sourceTree = "<group>"; };
 		CBFF44DB28BBB769008493C3 /* SignupHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		CBFF44DC28BBB769008493C3 /* SignupHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupHeaderTableViewCell.xib; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 				CB39377928982958009781F3 /* Wallet */,
 				CB3937782898294D009781F3 /* AppConfig */,
 				CB8675072896F58100144558 /* ErrorResponse.swift */,
+				CBD7D5D028BFCCDD0043A07E /* AlertConfig.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1239,6 +1242,7 @@
 				CB50A59228A8EEF100A7F082 /* AddTransaction.swift in Sources */,
 				CBA227C328A237FA00B7E8A2 /* Rx + MoyaProvider.swift in Sources */,
 				CB8675082896F58100144558 /* ErrorResponse.swift in Sources */,
+				CBD7D5D128BFCCDD0043A07E /* AlertConfig.swift in Sources */,
 				CB14430228BE5FED00D37E5B /* ServiceUnavailableVC.swift in Sources */,
 				CB8674FA2896EF6A00144558 /* AuthAPI.swift in Sources */,
 				CB8675022896EF9400144558 /* FeedbackAPI.swift in Sources */,

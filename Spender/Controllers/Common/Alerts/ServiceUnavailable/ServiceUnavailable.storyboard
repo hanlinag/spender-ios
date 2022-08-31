@@ -23,7 +23,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="mUu-fX-huV">
                                         <rect key="frame" x="0.0" y="0.0" width="352" height="582"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="404" translatesAutoresizingMaskIntoConstraints="NO" id="V0P-xM-zqU">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="500" translatesAutoresizingMaskIntoConstraints="NO" id="V0P-xM-zqU">
                                         <rect key="frame" x="10" y="20" width="332" height="233"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="GJU-Cq-kxT">
@@ -119,13 +119,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="404" width="351" height="234"/>
+        <image name="500" width="386" height="289"/>
         <image name="background" width="390" height="844"/>
         <namedColor name="ColorAccent">
             <color red="0.92500001192092896" green="0.40400001406669617" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="ColorGreyTransparent-1">
-            <color red="0.18400000035762787" green="0.21199999749660492" blue="0.23899999260902405" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.18400000035762787" green="0.21199999749660492" blue="0.23899999260902405" alpha="0.64999997615814209" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

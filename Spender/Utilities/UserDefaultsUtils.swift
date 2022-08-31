@@ -14,6 +14,7 @@ private enum UserDefaultsKey: String {
     case isBiometricRegister      =  "isBiometricRegister"
     case currentUserID            = "spenderUserID"
     case currentEnvironment       = "currentEnv"
+    case hasShownOnboarding       = "hasShownOnboarding"
 }
 
 final class UserDefaultsUtils {
@@ -42,6 +43,11 @@ final class UserDefaultsUtils {
         get { return _get(valueForKey: .currentEnvironment) as? String ?? "" }
     }
     
+    static var shownOnboarding: String? {
+        set { _set(value: newValue, key: .hasShownOnboarding) }
+        get { return _get(valueForKey: .hasShownOnboarding) as? String ?? "" }
+    }
+    
     //MARK: - Remove Methods
     static func deleteCurrentLocale() {
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.appCurrentLocale.rawValue)
@@ -57,6 +63,10 @@ final class UserDefaultsUtils {
     
     static func deleteCurrentUserID() {
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.currentUserID.rawValue)
+    }
+    
+    static func deleteShownOnboarding() {
+        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.hasShownOnboarding.rawValue)
     }
     
     //MARK: - private methods
