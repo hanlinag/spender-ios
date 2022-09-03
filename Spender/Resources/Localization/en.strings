@@ -34,6 +34,7 @@
 "title.one_more_step" = "One More Step";
 "title.404" = "Service Unavailable";
 
+
 //labels
 "desc.login"  = "Please login to your account to get to know more about your spending behavior.";
 "desc.forgot_pw" = "Please enter your email to reset your password.";

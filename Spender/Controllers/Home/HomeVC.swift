@@ -8,61 +8,72 @@
 
 import UIKit
 
-class HomeVC: SpenderViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
-
-    @IBOutlet weak var mainScrollView: UIScrollView!
-    @IBOutlet var transactionTableView: UITableView!
+class HomeVC: SpenderViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //register nib for table view
-        transactionTableView.register(TransactionTableViewCell.nib(), forCellReuseIdentifier: TransactionTableViewCell.identifier)
         
-        print("GOOO: Home View controller now")
-        // Do any additional setup after loading the view.
         
-        //configure naviation controller
-        //self.navigationController?.navigationBar.prefersLargeTitles = true
-        //self.navigationController?.navigationBar.title = "Hello"
+        tableView.delegate = self
+        tableView.dataSource = self
         
-        mainScrollView.delegate = self
-        mainScrollView.isScrollEnabled = true
+        tableView.register(HomeCardCell.nib(), forCellReuseIdentifier: HomeCardCell.identifier)
+        tableView.register(HomeMiddleCell.nib(), forCellReuseIdentifier: HomeMiddleCell.identifier)
+        tableView.register(HomeFooterCell.nib(), forCellReuseIdentifier: HomeFooterCell.identifier)
         
-        transactionTableView.delegate = self
-        transactionTableView.dataSource = self
-        transactionTableView.isScrollEnabled = true
+        
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//MARK: - Table View Delegate and Datasource
+extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
-    */
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = transactionTableView.dequeueReusableCell(withIdentifier: TransactionTableViewCell.identifier, for: indexPath) as! TransactionTableViewCell
-        
-        cell.configure(image: "moon", title: "Hello Custom", date: "Today, 12:00 AM", amount: "6700")
-        return cell 
+        switch indexPath.row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: HomeCardCell.identifier, for: indexPath) as! HomeCardCell
+            
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: HomeMiddleCell.identifier, for: indexPath) as! HomeMiddleCell
+            
+            return cell
+            
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: HomeFooterCell.identifier, for: indexPath) as! HomeFooterCell
+            
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: HomeCardCell.identifier, for: indexPath) as! HomeCardCell
+            
+            return cell
+        }//end of switch
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        return
-    }
-
-    @IBAction func seeAllPressed(_ sender: Any) {
-        //Test
-        Locale.currentLocale = .MM
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case 0:
+            return self.view.frame.size.height * 0.3
+        case 1:
+            return self.view.frame.size.height * 0.3
+        case 2:
+            return self.view.frame.size.height * 0.3
+        default:
+            return 0
+            
+        }
     }
     
 }

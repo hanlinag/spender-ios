@@ -23,6 +23,14 @@
 		CB14430228BE5FED00D37E5B /* ServiceUnavailableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB14430128BE5FED00D37E5B /* ServiceUnavailableVC.swift */; };
 		CB14430428BE5FF900D37E5B /* ServiceUnavailable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB14430328BE5FF900D37E5B /* ServiceUnavailable.storyboard */; };
 		CB14430628BE721F00D37E5B /* ConfirmAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB14430528BE721F00D37E5B /* ConfirmAlert.storyboard */; };
+		CB18F10428C25C27007F998D /* HomeCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18F10228C25C27007F998D /* HomeCardCell.swift */; };
+		CB18F10528C25C27007F998D /* HomeCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB18F10328C25C27007F998D /* HomeCardCell.xib */; };
+		CB18F10828C25C40007F998D /* HomeMiddleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18F10628C25C40007F998D /* HomeMiddleCell.swift */; };
+		CB18F10928C25C40007F998D /* HomeMiddleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB18F10728C25C40007F998D /* HomeMiddleCell.xib */; };
+		CB18F10C28C25C58007F998D /* HomeFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18F10A28C25C58007F998D /* HomeFooterCell.swift */; };
+		CB18F10D28C25C58007F998D /* HomeFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB18F10B28C25C58007F998D /* HomeFooterCell.xib */; };
+		CB18F11228C25E09007F998D /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18F11028C25E09007F998D /* CardCell.swift */; };
+		CB18F11328C25E09007F998D /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB18F11128C25E09007F998D /* CardCell.xib */; };
 		CB50A55B28A8DFD100A7F082 /* ResetAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A55A28A8DFD100A7F082 /* ResetAccount.swift */; };
 		CB50A55D28A8DFE300A7F082 /* ResetAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB50A55C28A8DFE300A7F082 /* ResetAccount.storyboard */; };
 		CB50A57028A8E09000A7F082 /* Congratulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A56E28A8E09000A7F082 /* Congratulations.swift */; };
@@ -164,6 +172,14 @@
 		CB14430128BE5FED00D37E5B /* ServiceUnavailableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceUnavailableVC.swift; sourceTree = "<group>"; };
 		CB14430328BE5FF900D37E5B /* ServiceUnavailable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServiceUnavailable.storyboard; sourceTree = "<group>"; };
 		CB14430528BE721F00D37E5B /* ConfirmAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmAlert.storyboard; sourceTree = "<group>"; };
+		CB18F10228C25C27007F998D /* HomeCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardCell.swift; sourceTree = "<group>"; };
+		CB18F10328C25C27007F998D /* HomeCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCardCell.xib; sourceTree = "<group>"; };
+		CB18F10628C25C40007F998D /* HomeMiddleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMiddleCell.swift; sourceTree = "<group>"; };
+		CB18F10728C25C40007F998D /* HomeMiddleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMiddleCell.xib; sourceTree = "<group>"; };
+		CB18F10A28C25C58007F998D /* HomeFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFooterCell.swift; sourceTree = "<group>"; };
+		CB18F10B28C25C58007F998D /* HomeFooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFooterCell.xib; sourceTree = "<group>"; };
+		CB18F11028C25E09007F998D /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		CB18F11128C25E09007F998D /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		CB50A55A28A8DFD100A7F082 /* ResetAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetAccount.swift; sourceTree = "<group>"; };
 		CB50A55C28A8DFE300A7F082 /* ResetAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetAccount.storyboard; sourceTree = "<group>"; };
 		CB50A56E28A8E09000A7F082 /* Congratulations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congratulations.swift; sourceTree = "<group>"; };
@@ -392,6 +408,38 @@
 			path = ServiceUnavailable;
 			sourceTree = "<group>";
 		};
+		CB18F10128C25C14007F998D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CB18F10F28C25DED007F998D /* CardCollectionCell */,
+				CB18F10228C25C27007F998D /* HomeCardCell.swift */,
+				CB18F10328C25C27007F998D /* HomeCardCell.xib */,
+				CB18F10628C25C40007F998D /* HomeMiddleCell.swift */,
+				CB18F10728C25C40007F998D /* HomeMiddleCell.xib */,
+				CB18F10A28C25C58007F998D /* HomeFooterCell.swift */,
+				CB18F10B28C25C58007F998D /* HomeFooterCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CB18F10E28C25C6E007F998D /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				CB13A6C2277782CD00B89753 /* TransactionTableViewCell.swift */,
+				CB13A6C3277782CD00B89753 /* TransactionTableViewCell.xib */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		CB18F10F28C25DED007F998D /* CardCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				CB18F11028C25E09007F998D /* CardCell.swift */,
+				CB18F11128C25E09007F998D /* CardCell.xib */,
+			);
+			path = CardCollectionCell;
+			sourceTree = "<group>";
+		};
 		CB3937782898294D009781F3 /* AppConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -567,13 +615,6 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		CB50A5B428A8F1C000A7F082 /* Transactions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Transactions;
-			sourceTree = "<group>";
-		};
 		CB50A5B528A8F1CB00A7F082 /* Wallets */ = {
 			isa = PBXGroup;
 			children = (
@@ -586,13 +627,6 @@
 			children = (
 			);
 			path = Settings;
-			sourceTree = "<group>";
-		};
-		CB50A5B728A8F1D800A7F082 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		CB51DFC728962345006BCBB3 /* PinScreen */ = {
@@ -868,13 +902,11 @@
 		CBADC227276DBE8900F8003A /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				CB18F10E28C25C6E007F998D /* Transactions */,
+				CB18F10128C25C14007F998D /* Home */,
 				CB9925A628B230E800B194DF /* Auth */,
-				CB50A5B728A8F1D800A7F082 /* Home */,
 				CB50A5B628A8F1D200A7F082 /* Settings */,
 				CB50A5B528A8F1CB00A7F082 /* Wallets */,
-				CB50A5B428A8F1C000A7F082 /* Transactions */,
-				CB13A6C2277782CD00B89753 /* TransactionTableViewCell.swift */,
-				CB13A6C3277782CD00B89753 /* TransactionTableViewCell.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -1036,6 +1068,7 @@
 				CB14430628BE721F00D37E5B /* ConfirmAlert.storyboard in Resources */,
 				CB9749B3276A4F7800357BF2 /* LaunchScreen.storyboard in Resources */,
 				CB50A5B328A8F09200A7F082 /* Onboarding.xib in Resources */,
+				CB18F11328C25E09007F998D /* CardCell.xib in Resources */,
 				CB51E0042896D230006BCBB3 /* mm.strings in Resources */,
 				CB51DFD628965305006BCBB3 /* Pyidaungsu.ttf in Resources */,
 				CB51E0052896D230006BCBB3 /* th.strings in Resources */,
@@ -1053,6 +1086,7 @@
 				CB9749B0276A4F7800357BF2 /* Assets.xcassets in Resources */,
 				CB50A5BF28A95D4A00A7F082 /* Congratulations.storyboard in Resources */,
 				CB51DFD128963609006BCBB3 /* SpenderNavBar.xib in Resources */,
+				CB18F10528C25C27007F998D /* HomeCardCell.xib in Resources */,
 				CB7BF85B276F7D630090FE0A /* Home.storyboard in Resources */,
 				CB9749AE276A4F7700357BF2 /* Main.storyboard in Resources */,
 				CB51DFF828967B77006BCBB3 /* ColorAssets.xcassets in Resources */,
@@ -1061,10 +1095,12 @@
 				CB7BF861276F7D9A0090FE0A /* Settings.storyboard in Resources */,
 				CB51DFCB2896236B006BCBB3 /* PinCode.storyboard in Resources */,
 				CB50A5A328A8EFD000A7F082 /* AllTransactions.xib in Resources */,
+				CB18F10D28C25C58007F998D /* HomeFooterCell.xib in Resources */,
 				CB9CAF6C28B1F45600EC0C66 /* Signup.storyboard in Resources */,
 				CB7BF852276F387D0090FE0A /* Login.storyboard in Resources */,
 				CB7BF85F276F7D830090FE0A /* Activity.storyboard in Resources */,
 				CB50A5A828A8EFFD00A7F082 /* TransactionDetail.xib in Resources */,
+				CB18F10928C25C40007F998D /* HomeMiddleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1210,14 +1246,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB68CB5728BD09DC006E5427 /* SpenderDatePicker.swift in Sources */,
+				CB18F10C28C25C58007F998D /* HomeFooterCell.swift in Sources */,
 				CB51DFDA28965522006BCBB3 /* UIFont + Extensions.swift in Sources */,
 				CB50A5A228A8EFD000A7F082 /* AllTransactions.swift in Sources */,
 				CB8674F82896E50700144558 /* APIHeaders.swift in Sources */,
 				CBFF44E228BBD819008493C3 /* UITextField + Extensions.swift in Sources */,
+				CB18F10428C25C27007F998D /* HomeCardCell.swift in Sources */,
 				CB50A58828A8ED1900A7F082 /* Feedback.swift in Sources */,
 				CB9749AB276A4F7700357BF2 /* ViewController.swift in Sources */,
 				CB8675042896EFA700144558 /* ExchangeRateAPI.swift in Sources */,
 				CB51DFCF289635FE006BCBB3 /* SpenderNavBar.swift in Sources */,
+				CB18F11228C25E09007F998D /* CardCell.swift in Sources */,
 				CB0DCAE3285F87C2004A87FA /* CommonVM.swift in Sources */,
 				CB51DFDE2896558B006BCBB3 /* SpenderImageViewController.swift in Sources */,
 				CB50A5AD28A8F03000A7F082 /* ConfirmAlertVC.swift in Sources */,
@@ -1235,6 +1274,7 @@
 				CB7BF86B276F81A80090FE0A /* SettingsVC.swift in Sources */,
 				CB0DCADE285F8719004A87FA /* HomeVM.swift in Sources */,
 				CB68CB5328BD0301006E5427 /* SpenderUIPicker.swift in Sources */,
+				CB18F10828C25C40007F998D /* HomeMiddleCell.swift in Sources */,
 				CB0DCADA285F8703004A87FA /* ActivityVM.swift in Sources */,
 				CBFF44E028BBD2D9008493C3 /* UIView + Extensions.swift in Sources */,
 				CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */,
