@@ -10,22 +10,51 @@ import UIKit
 
 class SettingsVC: SpenderViewController {
 
+    @IBOutlet weak var imgProfile: UIImageView!
+    
+    @IBOutlet weak var lblVersio: UILabel!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblOccupation: UILabel!
+    
+    @IBOutlet weak var btnLogout: UILabel!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print("GOOO: Settings View controller now")
+        self.navigationController?.navigationBar.isHidden = true
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(SettingsCell.nib(), forCellReuseIdentifier: SettingsCell.identifier)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnLogoutDidPressed(_ sender: Any) {
     }
-    */
+    
+   
+}
 
+//MARK: - UITableViewDelegate, UITableViewDataSource
+extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        6
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: SettingsCell.identifier, for: indexPath) as! SettingsCell
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return self.view.frame.size.height * 0.06
+    }
 }

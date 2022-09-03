@@ -35,6 +35,8 @@
 "title.404" = "Service Unavailable";
 "title.total_wealth" = "Total Wealth";
 "title.transactions" = "Transactions";
+"title.my_wallets" = "My Wallets";
+
 
 
 //labels
@@ -68,6 +70,7 @@
 "btn.done" = "Done";
 "btn.add_transaction" = "Add Transaction";
 "btn.see_all" = "See All";
+"btn.logout" = "Logout";
 
 //placeholder
 "placeholder.email" = "Email";
