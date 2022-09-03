@@ -19,6 +19,8 @@ class CardCell: UICollectionViewCell {
     @IBOutlet weak var balanceAmount: UILabel!
     @IBOutlet weak var currency: UILabel!
     
+    @IBOutlet weak var cardView: UIView!
+    
     static var identifier = "CardCell"
     
     static func nib() -> UINib {
@@ -28,6 +30,9 @@ class CardCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        cardView.layer.masksToBounds = true
+        cardView.layer.cornerRadius  = 20
     }
     
     func config() {

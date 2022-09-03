@@ -33,6 +33,8 @@
 "title.create_account" = "Create Account";
 "title.one_more_step" = "One More Step";
 "title.404" = "Service Unavailable";
+"title.total_wealth" = "Total Wealth";
+"title.transactions" = "Transactions";
 
 
 //labels
@@ -64,6 +66,8 @@
 "btn.back" = "Back";
 "btn.create_account" = "Create Account";
 "btn.done" = "Done";
+"btn.add_transaction" = "Add Transaction";
+"btn.see_all" = "See All";
 
 //placeholder
 "placeholder.email" = "Email";

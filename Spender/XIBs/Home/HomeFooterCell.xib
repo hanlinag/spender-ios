@@ -38,22 +38,27 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </stackView>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bpz-96-7WV">
-                        <rect key="frame" x="0.0" y="48.5" width="358" height="204.5"/>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bpz-96-7WV">
+                        <rect key="frame" x="15" y="48.5" width="328" height="204.5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </tableView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="2e0-BV-nBw" secondAttribute="trailing" constant="20" symbolic="YES" id="SgI-Jc-lvl"/>
                     <constraint firstAttribute="bottom" secondItem="Bpz-96-7WV" secondAttribute="bottom" id="XOp-Jo-aZv"/>
-                    <constraint firstAttribute="trailing" secondItem="Bpz-96-7WV" secondAttribute="trailing" id="b5q-sI-R4d"/>
+                    <constraint firstAttribute="trailing" secondItem="Bpz-96-7WV" secondAttribute="trailing" constant="15" id="b5q-sI-R4d"/>
                     <constraint firstItem="Bpz-96-7WV" firstAttribute="top" secondItem="2e0-BV-nBw" secondAttribute="bottom" constant="8" symbolic="YES" id="cnX-iV-bQc"/>
                     <constraint firstItem="2e0-BV-nBw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="f7R-FV-0dl"/>
                     <constraint firstItem="2e0-BV-nBw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" symbolic="YES" id="nNT-PH-iUv"/>
-                    <constraint firstItem="Bpz-96-7WV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xfn-Gg-1Nr"/>
+                    <constraint firstItem="Bpz-96-7WV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="xfn-Gg-1Nr"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblSeeAll" destination="dOs-e0-Sse" id="eJH-BA-PSi"/>
+                <outlet property="lblTransactions" destination="jzv-g7-xD3" id="b5N-zM-ue7"/>
+                <outlet property="tableView" destination="Bpz-96-7WV" id="iYZ-3k-zah"/>
+            </connections>
             <point key="canvasLocation" x="104.34782608695653" y="110.15625"/>
         </tableViewCell>
     </objects>

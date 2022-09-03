@@ -24,7 +24,6 @@ class HomeVC: SpenderViewController {
         tableView.register(HomeMiddleCell.nib(), forCellReuseIdentifier: HomeMiddleCell.identifier)
         tableView.register(HomeFooterCell.nib(), forCellReuseIdentifier: HomeFooterCell.identifier)
         
-        
     }
     
 }
@@ -65,11 +64,12 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
-            return self.view.frame.size.height * 0.3
+            return self.view.frame.size.height * 0.30
         case 1:
-            return self.view.frame.size.height * 0.3
+            return self.view.frame.size.height * 0.2
         case 2:
-            return self.view.frame.size.height * 0.3
+            //return self.view.frame.size.height * 0.65
+            return CGFloat((self.view.frame.size.height * 0.06 * 14))
         default:
             return 0
             
