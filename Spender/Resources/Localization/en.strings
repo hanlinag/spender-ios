@@ -36,7 +36,8 @@
 "title.total_wealth" = "Total Wealth";
 "title.transactions" = "Transactions";
 "title.my_wallets" = "My Wallets";
-
+"title.terms_of_use" = "Terms of Use";
+"title.privacy_policy" = "Privacy Policy";
 
 
 //labels

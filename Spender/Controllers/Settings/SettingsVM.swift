@@ -21,9 +21,19 @@ class SettingsVM: NSObject {
         ]
     
     let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown"
+    
+    let legalAndPrivacy = [
+        LegalAndPrivacy(title: "title.terms_of_use", url: "https://deceipt.vercel.app/terms.html"),
+        LegalAndPrivacy(title: "title.privacy_policy", url: "https://deceipt.vercel.app/privacy.html")
+    ]
 }
 
 struct SettingsElement {
     var title: String
     var icon: String
+}
+
+struct LegalAndPrivacy {
+    var title: String
+    var url: String
 }
