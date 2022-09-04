@@ -64,4 +64,9 @@ extension AllTransactionsVC: UITableViewDelegate, UITableViewDataSource {
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = getViewControllerFromInstantiateStoryboard(for: .TransactionDetail) as! TransactionDetailVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

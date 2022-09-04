@@ -41,7 +41,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWq-uL-ISa">
-                                <rect key="frame" x="20" y="709" width="335" height="44"/>
+                                <rect key="frame" x="20" y="724" width="335" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="alk-jO-cbQ"/>
                                 </constraints>
@@ -159,7 +159,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QJe-lX-d9f">
-                                <rect key="frame" x="20" y="241.33333333333334" width="335" height="459.66666666666663"/>
+                                <rect key="frame" x="20" y="241.33333333333334" width="335" height="474.66666666666663"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -169,7 +169,7 @@
                             <constraint firstItem="gjs-p7-YbO" firstAttribute="trailing" secondItem="jWq-uL-ISa" secondAttribute="trailing" constant="20" id="2DR-ie-Mgi"/>
                             <constraint firstItem="Wu2-j3-9O0" firstAttribute="leading" secondItem="gjs-p7-YbO" secondAttribute="leading" constant="20" id="5Ov-9f-qmp"/>
                             <constraint firstItem="QJe-lX-d9f" firstAttribute="top" secondItem="Eri-pJ-kcJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Ahh-2D-HZ1"/>
-                            <constraint firstItem="gjs-p7-YbO" firstAttribute="bottom" secondItem="jWq-uL-ISa" secondAttribute="bottom" constant="25" id="FTE-Bi-m5D"/>
+                            <constraint firstItem="gjs-p7-YbO" firstAttribute="bottom" secondItem="jWq-uL-ISa" secondAttribute="bottom" constant="10" id="FTE-Bi-m5D"/>
                             <constraint firstItem="Eri-pJ-kcJ" firstAttribute="leading" secondItem="gjs-p7-YbO" secondAttribute="leading" constant="20" id="JIx-5b-siN"/>
                             <constraint firstItem="Wu2-j3-9O0" firstAttribute="top" secondItem="gjs-p7-YbO" secondAttribute="top" constant="15" id="OrS-Au-fUk"/>
                             <constraint firstItem="Eri-pJ-kcJ" firstAttribute="top" secondItem="Wu2-j3-9O0" secondAttribute="bottom" constant="20" id="Phy-dR-Nef"/>

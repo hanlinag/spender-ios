@@ -21,11 +21,6 @@ class WalletsVC: SpenderViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    //    lazy var customNavBar: SpenderNavBar = {
-    //        let nav = SpenderNavBar(frame: self.navigationController?.navigationBar.frame ?? CGRect(x: 0, y: 0, width: 200, height: 45))
-    //
-    //        return nav
-    //    }()
     lazy var lblNavTitle: UILabel = {
         let title = UILabel()
         title.text = "title.total_wealth".localized
