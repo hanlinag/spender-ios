@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddTransaction: UIViewController {
+class AddTransactionVC: SpenderViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
