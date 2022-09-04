@@ -41,6 +41,9 @@ class SettingsVC: SpenderViewController {
     
     
     @IBAction func btnLogoutDidPressed(_ sender: Any) {
+        let vc = getViewControllerFromInstantiateStoryboard(for: .PinCode, transitionStype: .coverVertical, presentationStyle: .fullScreen) as! PinCodeVC
+        vc.hidesBottomBarWhenPushed = true
+        self.present(vc, animated: true)
     }
     
     
