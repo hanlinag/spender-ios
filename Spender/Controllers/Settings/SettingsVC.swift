@@ -9,7 +9,7 @@
 import UIKit
 
 class SettingsVC: SpenderViewController {
-
+    
     @IBOutlet weak var imgProfile: UIImageView!
     
     @IBOutlet weak var lblVersio: UILabel!
@@ -24,9 +24,11 @@ class SettingsVC: SpenderViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         self.navigationController?.navigationBar.isHidden = true
+        
+        
         
         imgProfile.makeCircleImageView()
         
@@ -37,11 +39,11 @@ class SettingsVC: SpenderViewController {
         tableView.register(SettingsCell.nib(), forCellReuseIdentifier: SettingsCell.identifier)
     }
     
-
+    
     @IBAction func btnLogoutDidPressed(_ sender: Any) {
     }
     
-   
+    
 }
 
 //MARK: - UITableViewDelegate, UITableViewDataSource
@@ -57,6 +59,7 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SettingsCell.identifier, for: indexPath) as! SettingsCell
         cell.configure(for: vm.appSettings[indexPath.row])
+        cell.selectionStyle = .none
         return cell
     }
     
@@ -65,21 +68,44 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
+        self.goToNextScreen(row: indexPath.row)
+    }
+}
+
+//MARK: - Navigation
+extension SettingsVC {
+    func goToNextScreen(row: Int) {
+        switch row {
         case 0:
+            let vc = getViewControllerFromInstantiateStoryboard(for: .EditProfile, presentationStyle: .overFullScreen, hideBottomBar: true) as! EditProfileVC
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         case 1:
+            let vc = getViewControllerFromInstantiateStoryboard(for: .ChangePassword, presentationStyle: .overFullScreen, hideBottomBar: true) as! ChangePasswordVC
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         case 2:
+            let vc = getViewControllerFromInstantiateStoryboard(for: .WalletSetup, presentationStyle: .overFullScreen, hideBottomBar: true) as! WalletSetupVC
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         case 3:
+            let vc = getViewControllerFromInstantiateStoryboard(for: .ChangeLanguage, presentationStyle: .overFullScreen, hideBottomBar: true) as! ChangeLanguageVC
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         case 4:
+            let vc = getViewControllerFromInstantiateStoryboard(for: .LegalAndPrivacy, presentationStyle: .overFullScreen, hideBottomBar: true) as! LegalAndPrivacyVC
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         case 5:
+            let vc = getViewControllerFromInstantiateStoryboard(for: .Feedback, presentationStyle: .overFullScreen, hideBottomBar: true) as! FeedbackVC
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         default:
             break
         }
     }
+    
+    
 }
+
+

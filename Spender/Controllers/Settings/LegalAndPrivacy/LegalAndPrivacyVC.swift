@@ -8,12 +8,13 @@
 
 import UIKit
 
-class LegalAndPrivacyVC: UIViewController {
+class LegalAndPrivacyVC: SpenderViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.isHidden = false
     }
     
 

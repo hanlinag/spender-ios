@@ -8,6 +8,7 @@
 
 import Foundation
 
+//MARK: - Enums
 enum LoginType: Codable {
     case email
     case facebook
@@ -46,6 +47,20 @@ enum SignupMode {
     case providers
 }
 
+enum StoryboardType: String {
+    case EditProfile
+    case Feedback
+    case WalletSetup
+    case ChangeLanguage
+    case ChangePassword
+    case LegalAndPrivacy
+    
+    var string: String {
+        return self.rawValue
+    }
+}
+
+//MARK: - Local Data
 private var signupTableCellModel = [
     SignupTableViewCellModel(title: "placeholder.name",       inputType: .textfield,    value: "", order: 0),
     SignupTableViewCellModel(title: "placeholder.nickname",   inputType: .textfield,    value: "", optional: true,  order: 1),
