@@ -143,6 +143,7 @@
             <point key="canvasLocation" x="-535" y="2529"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="ColorAccent"/>
     <resources>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="prifile-pic" width="500" height="500"/>

@@ -71,11 +71,14 @@
 "btn.add_transaction" = "Add Transaction";
 "btn.see_all" = "See All";
 "btn.logout" = "Logout";
+"btn.change_password" = "Change Password";
 
 //placeholder
 "placeholder.email" = "Email";
 "placeholder.password" = "Password";
 "placeholder.confirm_pw" = "Confirm Password";
+"placeholder.new_password" = "New Password";
+"placeholder.current_password" = "Current Password";
 "placeholder.nickname" = "Nickname (optional)";
 "placeholder.name" = "Name";
 "placeholder.nickname" = "Nickname";

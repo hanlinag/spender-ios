@@ -64,8 +64,12 @@
             <point key="canvasLocation" x="-3327.5362318840585" y="2528.5714285714284"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="ColorAccent"/>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <namedColor name="ColorAccent">
+            <color red="0.92500001192092896" green="0.40400001406669617" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

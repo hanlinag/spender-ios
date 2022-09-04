@@ -10,6 +10,10 @@ import UIKit
 
 class ChangePasswordVC: SpenderViewController {
 
+    @IBOutlet weak var textFieldCurrentPassword: UITextField!
+    @IBOutlet weak var textFieldNewPassword: UITextField!
+    @IBOutlet weak var textFieldConfirmPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,15 +21,20 @@ class ChangePasswordVC: SpenderViewController {
         self.navigationController?.navigationBar.isHidden = false
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonChangeDidPress(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
-    */
+    
+    
+}
 
+//MARK: - TextField Delegate
+extension ChangePasswordVC: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+    }
 }
