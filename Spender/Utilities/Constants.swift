@@ -56,6 +56,7 @@ enum StoryboardType: String {
     case LegalAndPrivacy
     case AllTransactions
     case TransactionDetail
+    case AddTransaction
     
     var string: String {
         return self.rawValue
@@ -106,4 +107,4 @@ let dateFormatForAPI  = "yyyy-MM-dd"
  12.09.18                          --> dd.MM.yy
  10:41:02.112                      --> HH:mm:ss.SSS
  */
- 
+

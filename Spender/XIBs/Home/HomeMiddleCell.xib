@@ -47,6 +47,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="btn.add_transaction"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonAddTransactionDidTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZXF-k1-prk"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jzC-b9-uDZ">
                                 <rect key="frame" x="0.0" y="98" width="270" height="79"/>

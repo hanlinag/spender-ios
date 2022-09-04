@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AddTransactionButtonDelegate {
+    func addTransactionDidPress()
+}
+
 class HomeMiddleCell: UITableViewCell {
 
     @IBOutlet weak var lblTitle: UILabel!
@@ -22,6 +26,8 @@ class HomeMiddleCell: UITableViewCell {
     
     @IBOutlet weak var imgOutcome: UIImageView!
     @IBOutlet weak var lblOutcomeAmount: UILabel!
+    
+    var delegate: AddTransactionButtonDelegate?
     
     static var identifier = "HomeMiddleCell"
     
@@ -40,4 +46,8 @@ class HomeMiddleCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    
+    @IBAction func buttonAddTransactionDidTap(_ sender: Any) {
+        delegate?.addTransactionDidPress()
+    }
 }

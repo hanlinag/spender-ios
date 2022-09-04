@@ -48,12 +48,15 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: HomeMiddleCell.identifier, for: indexPath) as! HomeMiddleCell
             cell.selectionStyle = .none
+            cell.delegate = self
+            cell.isUserInteractionEnabled = true
             return cell
             
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: HomeFooterCell.identifier, for: indexPath) as! HomeFooterCell
             cell.delegate = self
             cell.selectionStyle = .none
+            cell.isUserInteractionEnabled = true
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: HomeCardCell.identifier, for: indexPath) as! HomeCardCell
@@ -85,6 +88,18 @@ extension HomeVC: SeeAllTappedDelegate {
         let vc = getViewControllerFromInstantiateStoryboard(for: .AllTransactions) as! AllTransactionsVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    
+}
+
+//MARK: - Listen to SeeAllTapped Delegate
+extension HomeVC: AddTransactionButtonDelegate {
+    func addTransactionDidPress() {
+        let vc = getViewControllerFromInstantiateStoryboard(for: .AddTransaction) as! AddTransactionVC
+        navigationItem.backButtonTitle = "Back"
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     
 }

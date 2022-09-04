@@ -24,6 +24,10 @@
 "tab.activity"  = "Activity";
 "tab.settings"  = "Settings";
 
+//segmented control
+"segment.income" = "Income";
+"segment.outcome" = "Outcome";
+
 //titles
 "title.login"  = "Login";
 "title.confirmation" = "Confirmation";
