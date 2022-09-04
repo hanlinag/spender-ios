@@ -8,17 +8,118 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--FeedbackVC-->
+        <!--Feedback-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="Feedback" id="Y6W-OH-hqX" customClass="FeedbackVC" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Smi-nm-Vx5">
+                                <rect key="frame" x="0.0" y="162.5" width="414" height="392"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How was your experience with us?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBs-ug-5H7">
+                                        <rect key="frame" x="69" y="0.0" width="276" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="desc.feedback"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feedback" translatesAutoresizingMaskIntoConstraints="NO" id="kvI-43-6Jb">
+                                        <rect key="frame" x="103.5" y="45" width="207" height="207"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kvI-43-6Jb" secondAttribute="height" multiplier="1:1" id="nNf-Ug-0XV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5DT-87-LuD">
+                                        <rect key="frame" x="112" y="277" width="190" height="30"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="s8p-9N-k1l">
+                                                <rect key="frame" x="0.0" y="-0.5" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="h3Q-ou-bYU"/>
+                                                    <constraint firstAttribute="width" secondItem="s8p-9N-k1l" secondAttribute="height" multiplier="1:1" id="xch-Ye-XYT"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="n4y-XM-gtS">
+                                                <rect key="frame" x="40" y="-0.5" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="n4y-XM-gtS" secondAttribute="height" multiplier="1:1" id="7Qg-s8-ybo"/>
+                                                    <constraint firstAttribute="height" constant="30" id="Pn9-4u-i9r"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="D5W-2s-mi8">
+                                                <rect key="frame" x="80" y="-0.5" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="D5W-2s-mi8" secondAttribute="height" multiplier="1:1" id="69O-Kb-vmd"/>
+                                                    <constraint firstAttribute="height" constant="30" id="sdS-Qz-Iqg"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lqJ-so-pWb">
+                                                <rect key="frame" x="120" y="-0.5" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="lqJ-so-pWb" secondAttribute="height" multiplier="1:1" id="ry5-po-cwY"/>
+                                                    <constraint firstAttribute="height" constant="30" id="sVc-p3-N2x"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MKa-Me-Wq7">
+                                                <rect key="frame" x="160" y="-0.5" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Xwi-bv-GIu"/>
+                                                    <constraint firstAttribute="width" secondItem="MKa-Me-Wq7" secondAttribute="height" multiplier="1:1" id="wi3-vy-CKC"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="D5W-2s-mi8" firstAttribute="width" secondItem="D5W-2s-mi8" secondAttribute="height" multiplier="1:1" id="AD0-Jd-4jf"/>
+                                            <constraint firstItem="MKa-Me-Wq7" firstAttribute="width" secondItem="MKa-Me-Wq7" secondAttribute="height" multiplier="1:1" id="fqF-eu-P85"/>
+                                            <constraint firstItem="n4y-XM-gtS" firstAttribute="width" secondItem="n4y-XM-gtS" secondAttribute="height" multiplier="1:1" id="oex-bA-h1J"/>
+                                            <constraint firstItem="lqJ-so-pWb" firstAttribute="width" secondItem="lqJ-so-pWb" secondAttribute="height" multiplier="1:1" id="ujd-xR-pc7"/>
+                                        </constraints>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your feedback here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gOJ-JR-7MP">
+                                        <rect key="frame" x="42" y="332" width="330" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="gOJ-JR-7MP" secondAttribute="height" multiplier="55:10" id="Csq-E3-gl9"/>
+                                            <constraint firstAttribute="height" constant="60" id="tgV-Rh-SSu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Eu-mm-bFD">
+                                <rect key="frame" x="20" y="803" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WPe-jr-21x"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="btn.submit"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Smi-nm-Vx5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="5sZ-X8-bVe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Smi-nm-Vx5" secondAttribute="trailing" id="8by-LD-u2O"/>
+                            <constraint firstItem="Smi-nm-Vx5" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.8" id="CwJ-nO-Brr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6Eu-mm-bFD" secondAttribute="bottom" constant="15" id="Je0-xk-Nl2"/>
+                            <constraint firstItem="kvI-43-6Jb" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.5" id="hmp-21-Z6A"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6Eu-mm-bFD" secondAttribute="trailing" constant="20" id="iRg-HZ-LwQ"/>
+                            <constraint firstItem="6Eu-mm-bFD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ub3-tx-JVy"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NkD-OW-hNN"/>
+                    <navigationItem key="navigationItem" title="Feedback" id="NkD-OW-hNN">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="settings.feedback"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,6 +146,8 @@
     </scenes>
     <color key="tintColor" name="ColorAccent"/>
     <resources>
+        <image name="feedback" width="259" height="259"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <namedColor name="ColorAccent">
             <color red="0.92500001192092896" green="0.40400001406669617" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

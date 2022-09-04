@@ -55,6 +55,7 @@
 "desc.terms_and_conditions" = "By signing up, you have already agreed to our Terms of Use and Privacy Policies.";
 "desc.already_have_an_account" = "Already have an account? Login";
 "desc.404" = "The service you are looking for does’t seem to be available at the moment.";
+"desc.feedback" = "How was your experience with us?";
 
 //buttons
 "btn.sign_in" = "Sign In";
@@ -73,6 +74,7 @@
 "btn.see_all" = "See All";
 "btn.logout" = "Logout";
 "btn.change_password" = "Change Password";
+"btn.submit" = "Submit";
 
 //placeholder
 "placeholder.email" = "Email";
