@@ -39,11 +39,8 @@
 		CB50A57528A8E0CD00A7F082 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57328A8E0CD00A7F082 /* SignupVC.swift */; };
 		CB50A57E28A8ECC700A7F082 /* AdditionalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A57C28A8ECC700A7F082 /* AdditionalInfo.swift */; };
 		CB50A58328A8ECEF00A7F082 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A58128A8ECEF00A7F082 /* EditProfile.swift */; };
-		CB50A58428A8ECEF00A7F082 /* EditProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A58228A8ECEF00A7F082 /* EditProfile.xib */; };
-		CB50A58828A8ED1900A7F082 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A58628A8ED1900A7F082 /* Feedback.swift */; };
-		CB50A58928A8ED1900A7F082 /* Feedback.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A58728A8ED1900A7F082 /* Feedback.xib */; };
-		CB50A58D28A8ED3E00A7F082 /* WalletSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A58B28A8ED3E00A7F082 /* WalletSetup.swift */; };
-		CB50A58E28A8ED3E00A7F082 /* WalletSetup.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A58C28A8ED3E00A7F082 /* WalletSetup.xib */; };
+		CB50A58828A8ED1900A7F082 /* FeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A58628A8ED1900A7F082 /* FeedbackVC.swift */; };
+		CB50A58D28A8ED3E00A7F082 /* WalletSetupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A58B28A8ED3E00A7F082 /* WalletSetupVC.swift */; };
 		CB50A59228A8EEF100A7F082 /* AddTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A59028A8EEF100A7F082 /* AddTransaction.swift */; };
 		CB50A59328A8EEF100A7F082 /* AddTransaction.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50A59128A8EEF100A7F082 /* AddTransaction.xib */; };
 		CB50A59728A8EF4100A7F082 /* SelectWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50A59528A8EF4100A7F082 /* SelectWallet.swift */; };
@@ -123,6 +120,15 @@
 		CB9925B328B29AC500B194DF /* SignupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9925B128B29AC500B194DF /* SignupTableViewCell.xib */; };
 		CB9CAF6C28B1F45600EC0C66 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9CAF6B28B1F45600EC0C66 /* Signup.storyboard */; };
 		CBA227C328A237FA00B7E8A2 /* Rx + MoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA227C228A237FA00B7E8A2 /* Rx + MoyaProvider.swift */; };
+		CBA97DAB28C4563E00BC9971 /* EditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA97DAA28C4563E00BC9971 /* EditProfile.storyboard */; };
+		CBA97DB028C456A600BC9971 /* LegalAndPrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA97DAF28C456A600BC9971 /* LegalAndPrivacyVC.swift */; };
+		CBA97DB228C456B400BC9971 /* LegalAndPrivacy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA97DB128C456B400BC9971 /* LegalAndPrivacy.storyboard */; };
+		CBA97DB428C456CA00BC9971 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA97DB328C456CA00BC9971 /* ChangePasswordVC.swift */; };
+		CBA97DB628C456D200BC9971 /* ChangePasswordVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA97DB528C456D200BC9971 /* ChangePasswordVC.storyboard */; };
+		CBA97DB828C456E800BC9971 /* ChangeLanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA97DB728C456E800BC9971 /* ChangeLanguageVC.swift */; };
+		CBA97DBA28C456EF00BC9971 /* ChangeLanguageVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA97DB928C456EF00BC9971 /* ChangeLanguageVC.storyboard */; };
+		CBA97DBC28C4570C00BC9971 /* WalletSetup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA97DBB28C4570C00BC9971 /* WalletSetup.storyboard */; };
+		CBA97DBE28C4573400BC9971 /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA97DBD28C4573400BC9971 /* Feedback.storyboard */; };
 		CBAC750C28A157AB008D8FCB /* MoyaProvider + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC750B28A157AB008D8FCB /* MoyaProvider + Extensions.swift */; };
 		CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADC22A276DC6D900F8003A /* SplashScreenController.swift */; };
 		CBADC22D276DCABF00F8003A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADC22C276DCABF00F8003A /* LoginVC.swift */; };
@@ -192,11 +198,8 @@
 		CB50A57328A8E0CD00A7F082 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		CB50A57C28A8ECC700A7F082 /* AdditionalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfo.swift; sourceTree = "<group>"; };
 		CB50A58128A8ECEF00A7F082 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
-		CB50A58228A8ECEF00A7F082 /* EditProfile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfile.xib; sourceTree = "<group>"; };
-		CB50A58628A8ED1900A7F082 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
-		CB50A58728A8ED1900A7F082 /* Feedback.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Feedback.xib; sourceTree = "<group>"; };
-		CB50A58B28A8ED3E00A7F082 /* WalletSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSetup.swift; sourceTree = "<group>"; };
-		CB50A58C28A8ED3E00A7F082 /* WalletSetup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletSetup.xib; sourceTree = "<group>"; };
+		CB50A58628A8ED1900A7F082 /* FeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackVC.swift; sourceTree = "<group>"; };
+		CB50A58B28A8ED3E00A7F082 /* WalletSetupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSetupVC.swift; sourceTree = "<group>"; };
 		CB50A59028A8EEF100A7F082 /* AddTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransaction.swift; sourceTree = "<group>"; };
 		CB50A59128A8EEF100A7F082 /* AddTransaction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTransaction.xib; sourceTree = "<group>"; };
 		CB50A59528A8EF4100A7F082 /* SelectWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWallet.swift; sourceTree = "<group>"; };
@@ -284,6 +287,15 @@
 		CB9925B128B29AC500B194DF /* SignupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupTableViewCell.xib; sourceTree = "<group>"; };
 		CB9CAF6B28B1F45600EC0C66 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		CBA227C228A237FA00B7E8A2 /* Rx + MoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx + MoyaProvider.swift"; sourceTree = "<group>"; };
+		CBA97DAA28C4563E00BC9971 /* EditProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfile.storyboard; sourceTree = "<group>"; };
+		CBA97DAF28C456A600BC9971 /* LegalAndPrivacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalAndPrivacyVC.swift; sourceTree = "<group>"; };
+		CBA97DB128C456B400BC9971 /* LegalAndPrivacy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LegalAndPrivacy.storyboard; sourceTree = "<group>"; };
+		CBA97DB328C456CA00BC9971 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		CBA97DB528C456D200BC9971 /* ChangePasswordVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePasswordVC.storyboard; sourceTree = "<group>"; };
+		CBA97DB728C456E800BC9971 /* ChangeLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageVC.swift; sourceTree = "<group>"; };
+		CBA97DB928C456EF00BC9971 /* ChangeLanguageVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangeLanguageVC.storyboard; sourceTree = "<group>"; };
+		CBA97DBB28C4570C00BC9971 /* WalletSetup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalletSetup.storyboard; sourceTree = "<group>"; };
+		CBA97DBD28C4573400BC9971 /* Feedback.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feedback.storyboard; sourceTree = "<group>"; };
 		CBAC750B28A157AB008D8FCB /* MoyaProvider + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider + Extensions.swift"; sourceTree = "<group>"; };
 		CBADC22A276DC6D900F8003A /* SplashScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenController.swift; sourceTree = "<group>"; };
 		CBADC22C276DCABF00F8003A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -537,7 +549,7 @@
 			isa = PBXGroup;
 			children = (
 				CB50A58128A8ECEF00A7F082 /* EditProfile.swift */,
-				CB50A58228A8ECEF00A7F082 /* EditProfile.xib */,
+				CBA97DAA28C4563E00BC9971 /* EditProfile.storyboard */,
 			);
 			path = EditProfile;
 			sourceTree = "<group>";
@@ -545,8 +557,8 @@
 		CB50A58528A8ED0800A7F082 /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
-				CB50A58628A8ED1900A7F082 /* Feedback.swift */,
-				CB50A58728A8ED1900A7F082 /* Feedback.xib */,
+				CB50A58628A8ED1900A7F082 /* FeedbackVC.swift */,
+				CBA97DBD28C4573400BC9971 /* Feedback.storyboard */,
 			);
 			path = Feedback;
 			sourceTree = "<group>";
@@ -554,8 +566,8 @@
 		CB50A58A28A8ED3000A7F082 /* WalletSetup */ = {
 			isa = PBXGroup;
 			children = (
-				CB50A58B28A8ED3E00A7F082 /* WalletSetup.swift */,
-				CB50A58C28A8ED3E00A7F082 /* WalletSetup.xib */,
+				CB50A58B28A8ED3E00A7F082 /* WalletSetupVC.swift */,
+				CBA97DBB28C4570C00BC9971 /* WalletSetup.storyboard */,
 			);
 			path = WalletSetup;
 			sourceTree = "<group>";
@@ -769,6 +781,9 @@
 		CB7BF865276F81640090FE0A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				CBA97DAE28C4568800BC9971 /* LegalAndPrivacy */,
+				CBA97DAD28C4567800BC9971 /* ChangePassword */,
+				CBA97DAC28C4566300BC9971 /* ChangeLanguage */,
 				CB50A58A28A8ED3000A7F082 /* WalletSetup */,
 				CB50A58528A8ED0800A7F082 /* Feedback */,
 				CB50A58028A8ECD400A7F082 /* EditProfile */,
@@ -874,6 +889,33 @@
 			);
 			name = SignupCells;
 			path = "../New Group/SignupCells";
+			sourceTree = "<group>";
+		};
+		CBA97DAC28C4566300BC9971 /* ChangeLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				CBA97DB728C456E800BC9971 /* ChangeLanguageVC.swift */,
+				CBA97DB928C456EF00BC9971 /* ChangeLanguageVC.storyboard */,
+			);
+			path = ChangeLanguage;
+			sourceTree = "<group>";
+		};
+		CBA97DAD28C4567800BC9971 /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				CBA97DB328C456CA00BC9971 /* ChangePasswordVC.swift */,
+				CBA97DB528C456D200BC9971 /* ChangePasswordVC.storyboard */,
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		CBA97DAE28C4568800BC9971 /* LegalAndPrivacy */ = {
+			isa = PBXGroup;
+			children = (
+				CBA97DAF28C456A600BC9971 /* LegalAndPrivacyVC.swift */,
+				CBA97DB128C456B400BC9971 /* LegalAndPrivacy.storyboard */,
+			);
+			path = LegalAndPrivacy;
 			sourceTree = "<group>";
 		};
 		CBADC225276DBE6E00F8003A /* Views */ = {
@@ -1082,15 +1124,15 @@
 				CB9749B3276A4F7800357BF2 /* LaunchScreen.storyboard in Resources */,
 				CB50A5B328A8F09200A7F082 /* Onboarding.xib in Resources */,
 				CB18F11328C25E09007F998D /* CardCell.xib in Resources */,
+				CBA97DBC28C4570C00BC9971 /* WalletSetup.storyboard in Resources */,
 				CB51E0042896D230006BCBB3 /* mm.strings in Resources */,
+				CBA97DBA28C456EF00BC9971 /* ChangeLanguageVC.storyboard in Resources */,
 				CB51DFD628965305006BCBB3 /* Pyidaungsu.ttf in Resources */,
 				CB51E0052896D230006BCBB3 /* th.strings in Resources */,
-				CB50A58928A8ED1900A7F082 /* Feedback.xib in Resources */,
-				CB50A58E28A8ED3E00A7F082 /* WalletSetup.xib in Resources */,
 				CB9749D7276A52A400357BF2 /* GoogleService-Info.plist in Resources */,
 				CBFF44DE28BBB769008493C3 /* SignupHeaderTableViewCell.xib in Resources */,
 				CB9925A428B1FACD00B194DF /* AdditionalInfo.storyboard in Resources */,
-				CB50A58428A8ECEF00A7F082 /* EditProfile.xib in Resources */,
+				CBA97DBE28C4573400BC9971 /* Feedback.storyboard in Resources */,
 				CB51E0032896D230006BCBB3 /* en.strings in Resources */,
 				CB14430428BE5FF900D37E5B /* ServiceUnavailable.storyboard in Resources */,
 				CB50A59328A8EEF100A7F082 /* AddTransaction.xib in Resources */,
@@ -1099,17 +1141,20 @@
 				CB7BF85D276F7D700090FE0A /* Wallets.storyboard in Resources */,
 				CB9749B0276A4F7800357BF2 /* Assets.xcassets in Resources */,
 				CB50A5BF28A95D4A00A7F082 /* Congratulations.storyboard in Resources */,
+				CBA97DB228C456B400BC9971 /* LegalAndPrivacy.storyboard in Resources */,
 				CB51DFD128963609006BCBB3 /* SpenderNavBar.xib in Resources */,
 				CB18F10528C25C27007F998D /* HomeCardCell.xib in Resources */,
 				CB7BF85B276F7D630090FE0A /* Home.storyboard in Resources */,
 				CB9749AE276A4F7700357BF2 /* Main.storyboard in Resources */,
 				CB51DFF828967B77006BCBB3 /* ColorAssets.xcassets in Resources */,
 				CB50A59E28A8EFAA00A7F082 /* WalletHistory.xib in Resources */,
+				CBA97DB628C456D200BC9971 /* ChangePasswordVC.storyboard in Resources */,
 				CB68CB5528BD030E006E5427 /* SpenderUIPicker.storyboard in Resources */,
 				CB7BF861276F7D9A0090FE0A /* Settings.storyboard in Resources */,
 				CB51DFCB2896236B006BCBB3 /* PinCode.storyboard in Resources */,
 				CB50A5A328A8EFD000A7F082 /* AllTransactions.xib in Resources */,
 				CB18F10D28C25C58007F998D /* HomeFooterCell.xib in Resources */,
+				CBA97DAB28C4563E00BC9971 /* EditProfile.storyboard in Resources */,
 				CB9CAF6C28B1F45600EC0C66 /* Signup.storyboard in Resources */,
 				CB7BF852276F387D0090FE0A /* Login.storyboard in Resources */,
 				CB7BF85F276F7D830090FE0A /* Activity.storyboard in Resources */,
@@ -1266,7 +1311,8 @@
 				CB8674F82896E50700144558 /* APIHeaders.swift in Sources */,
 				CBFF44E228BBD819008493C3 /* UITextField + Extensions.swift in Sources */,
 				CB18F10428C25C27007F998D /* HomeCardCell.swift in Sources */,
-				CB50A58828A8ED1900A7F082 /* Feedback.swift in Sources */,
+				CBA97DB428C456CA00BC9971 /* ChangePasswordVC.swift in Sources */,
+				CB50A58828A8ED1900A7F082 /* FeedbackVC.swift in Sources */,
 				CB9749AB276A4F7700357BF2 /* ViewController.swift in Sources */,
 				CB8675042896EFA700144558 /* ExchangeRateAPI.swift in Sources */,
 				CB51DFCF289635FE006BCBB3 /* SpenderNavBar.swift in Sources */,
@@ -1306,6 +1352,7 @@
 				CB51DFEE28966B06006BCBB3 /* UserDefaultsUtils.swift in Sources */,
 				CB47EBF228C3B8EA00C3E1C0 /* WalletsCell.swift in Sources */,
 				CB6A9CB028A8041200F9BC60 /* Constants.swift in Sources */,
+				CBA97DB828C456E800BC9971 /* ChangeLanguageVC.swift in Sources */,
 				CB7BF858276F4E150090FE0A /* HomeVC.swift in Sources */,
 				CB7BF856276F4B2A0090FE0A /* MainTabBarViewController.swift in Sources */,
 				CB5D527E2898F77F00F8CE73 /* APIProvider.swift in Sources */,
@@ -1314,10 +1361,11 @@
 				CB8674FC2896EF7200144558 /* WalletAPI.swift in Sources */,
 				CB8674F22896DC6B00144558 /* LoadingButton.swift in Sources */,
 				CB51DFE02896559B006BCBB3 /* SpenderViewController.swift in Sources */,
-				CB50A58D28A8ED3E00A7F082 /* WalletSetup.swift in Sources */,
+				CB50A58D28A8ED3E00A7F082 /* WalletSetupVC.swift in Sources */,
 				CB9925B228B29AC500B194DF /* SignupTableViewCell.swift in Sources */,
 				CBADC22D276DCABF00F8003A /* LoginVC.swift in Sources */,
 				CB50A59D28A8EFAA00A7F082 /* WalletHistory.swift in Sources */,
+				CBA97DB028C456A600BC9971 /* LegalAndPrivacyVC.swift in Sources */,
 				CB0DCADC285F870C004A87FA /* WalletsVM.swift in Sources */,
 				CB51DFC928962362006BCBB3 /* PinCodeVC.swift in Sources */,
 				CB10AAD328AF60F4003AB4DC /* WalletResponse.swift in Sources */,

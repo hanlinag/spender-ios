@@ -1,21 +1,21 @@
 //
-//  Feedback.swift
+//  LegalAndPrivacyVC.swift
 //  Spender
 //
-//  Created by Tyler on 14/08/2022.
+//  Created by Tyler on 04/09/2022.
 //  Copyright © 2022 Tyler. All rights reserved.
 //
 
 import UIKit
 
-class Feedback: UIViewController {
+class LegalAndPrivacyVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    
 
     /*
     // MARK: - Navigation

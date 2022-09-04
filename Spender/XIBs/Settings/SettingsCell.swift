@@ -10,6 +10,9 @@ import UIKit
 
 class SettingsCell: UITableViewCell {
 
+    @IBOutlet weak var imgSettings: UIImageView!
+    @IBOutlet weak var lblSettings: UILabel!
+    
     static var identifier = "SettingsCell"
     
     static func nib() -> UINib {
@@ -28,4 +31,8 @@ class SettingsCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configure(for data: SettingsElement) {
+        lblSettings.text = data.title.localized
+        imgSettings.image = UIImage(systemName: data.icon)
+    }
 }

@@ -23,3 +23,13 @@ extension UIImage {
         return UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(self.renderingMode)
     }
 }
+
+extension UIImageView {
+    func makeCircleImageView() {
+        self.layer.borderWidth = 1.0
+        self.layer.masksToBounds = false
+        self.layer.borderColor = UIColor.gray.cgColor
+        self.layer.cornerRadius = self.frame.size.height/2
+        self.clipsToBounds = true
+    }
+}

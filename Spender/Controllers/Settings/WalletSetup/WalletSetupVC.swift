@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WalletSetup: UIViewController {
+class WalletSetupVC: SpenderViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

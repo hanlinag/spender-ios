@@ -84,3 +84,11 @@
 
 
 
+//settings
+"settings.edit_profile" = "Edit Profile";
+"settings.change_password" = "Change Password";
+"settings.wallet_setup" = "Wallet Setup";
+"settings.change_language" = "Change Language";
+"settings.legal_privacy" = "Legal & Privacy";
+"settings.feedback" = "Feedback";
+
