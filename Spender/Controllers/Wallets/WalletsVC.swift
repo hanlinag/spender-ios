@@ -9,7 +9,7 @@
 import UIKit
 
 class WalletsVC: SpenderViewController {
-
+    
     @IBOutlet weak var imgIncome: UIImageView!
     @IBOutlet weak var lblIncome: UILabel!
     
@@ -21,15 +21,52 @@ class WalletsVC: SpenderViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    //    lazy var customNavBar: SpenderNavBar = {
+    //        let nav = SpenderNavBar(frame: self.navigationController?.navigationBar.frame ?? CGRect(x: 0, y: 0, width: 200, height: 45))
+    //
+    //        return nav
+    //    }()
+    lazy var lblNavTitle: UILabel = {
+        let title = UILabel()
+        title.text = "title.total_wealth".localized
+        title.font = .systemFont(ofSize: 13.0)
+        title.textAlignment = .center
+        
+        return title
+    }()
+    
+    lazy var lblNavAmount: UILabel = {
+        let title = UILabel()
+        title.text = "00000.00 MMK"
+        title.font = .systemFont(ofSize: 18.0, weight: .medium)
+        title.textAlignment = .center
+        
+        return title
+    }()
+    
+    lazy var customNav: UIStackView = {
+        let nav = UIStackView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50))
+        
+        nav.axis = .vertical
+        nav.alignment = .center
+        nav.distribution = .fillProportionally
+        nav.addArrangedSubview(lblNavTitle)
+        nav.addArrangedSubview(lblNavAmount)
+        
+        return nav
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        self.navigationItem.titleView = customNav
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(WalletsCell.nib(), forCellReuseIdentifier: WalletsCell.identifier)
     }
-
+    
 }
 
 //MARK: - TableViewDelegate, TableViewDataSource

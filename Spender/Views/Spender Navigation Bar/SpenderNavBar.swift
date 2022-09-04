@@ -10,12 +10,21 @@ import UIKit
 
 class SpenderNavBar: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblTotal: UILabel!
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
     }
-    */
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    
 
 }

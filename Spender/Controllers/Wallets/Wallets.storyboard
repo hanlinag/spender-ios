@@ -32,7 +32,7 @@
             </objects>
             <point key="canvasLocation" x="-2386.4000000000001" y="1783.7438423645322"/>
         </scene>
-        <!--total wealth-->
+        <!--Total Wealth-->
         <scene sceneID="Zi3-dX-taS">
             <objects>
                 <viewController storyboardIdentifier="WalletsViewBoard" id="YvU-PK-UuZ" customClass="WalletsVC" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
@@ -177,7 +177,7 @@
                             <constraint firstItem="gjs-p7-YbO" firstAttribute="trailing" secondItem="QJe-lX-d9f" secondAttribute="trailing" constant="20" id="pSN-04-ZvP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="total wealth" id="54t-Bt-eFr"/>
+                    <navigationItem key="navigationItem" title="Total Wealth" id="54t-Bt-eFr"/>
                     <connections>
                         <outlet property="btnAddTransaction" destination="jWq-uL-ISa" id="q3z-3X-2lT"/>
                         <outlet property="imgIncome" destination="JrE-Nd-qLj" id="8JM-ct-0JE"/>
