@@ -26,6 +26,12 @@ class SettingsVM: NSObject {
         LegalAndPrivacy(title: "title.terms_of_use", url: "https://deceipt.vercel.app/terms.html"),
         LegalAndPrivacy(title: "title.privacy_policy", url: "https://deceipt.vercel.app/privacy.html")
     ]
+    
+    let languageElement = [
+        LanguageElement(title: "🇺🇸 English ", selected: true),
+        LanguageElement(title: "🇹🇭 Thai "),
+        LanguageElement(title: "🇲🇲 Myanmar ")
+    ]
 }
 
 struct SettingsElement {
@@ -36,4 +42,9 @@ struct SettingsElement {
 struct LegalAndPrivacy {
     var title: String
     var url: String
+}
+
+struct LanguageElement {
+    var title: String
+    var selected: Bool = false
 }
