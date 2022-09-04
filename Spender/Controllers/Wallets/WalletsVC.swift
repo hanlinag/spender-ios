@@ -67,6 +67,13 @@ class WalletsVC: SpenderViewController {
         tableView.register(WalletsCell.nib(), forCellReuseIdentifier: WalletsCell.identifier)
     }
     
+    @IBAction func buttonAddTransactionDidTap(_ sender: Any) {
+        let vc = getViewControllerFromInstantiateStoryboard(for: .AllTransactions) as! AllTransactionsVC
+        vc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }
 
 //MARK: - TableViewDelegate, TableViewDataSource

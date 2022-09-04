@@ -24,7 +24,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vWD-kx-t2F"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" name="ColorAccent"/>
                         <constraints>
                             <constraint firstItem="ZAq-Vy-brX" firstAttribute="centerX" secondItem="O1x-tW-NlQ" secondAttribute="centerX" id="1rQ-b6-IWM"/>
                             <constraint firstItem="ZAq-Vy-brX" firstAttribute="centerY" secondItem="O1x-tW-NlQ" secondAttribute="centerY" multiplier="0.9" id="SQO-M5-13u"/>
@@ -83,6 +83,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="ColorAccent"/>
+                        <color key="selectedImageTintColor" name="ColorAccent"/>
                     </tabBar>
                     <connections>
                         <segue destination="d7w-43-R3o" kind="relationship" relationship="viewControllers" id="aou-3o-5dI"/>
@@ -96,10 +98,11 @@
             <point key="canvasLocation" x="-2615" y="938"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="ColorAccent"/>
     <resources>
         <image name="logo-text-white" width="182" height="182"/>
-        <namedColor name="AccentColor">
-            <color red="0.97254901960784312" green="0.29411764705882354" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        <namedColor name="ColorAccent">
+            <color red="0.92500001192092896" green="0.40400001406669617" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

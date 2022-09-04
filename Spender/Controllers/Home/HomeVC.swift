@@ -43,20 +43,21 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: HomeCardCell.identifier, for: indexPath) as! HomeCardCell
-            
+            cell.selectionStyle = .none
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: HomeMiddleCell.identifier, for: indexPath) as! HomeMiddleCell
-            
+            cell.selectionStyle = .none
             return cell
             
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: HomeFooterCell.identifier, for: indexPath) as! HomeFooterCell
-            
+            cell.delegate = self
+            cell.selectionStyle = .none
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: HomeCardCell.identifier, for: indexPath) as! HomeCardCell
-            
+            cell.selectionStyle = .none
             return cell
         }//end of switch
     }
@@ -68,12 +69,22 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return self.view.frame.size.height * 0.2
         case 2:
-            //return self.view.frame.size.height * 0.65
             return CGFloat((self.view.frame.size.height * 0.06 * 14))
         default:
             return 0
             
         }
     }
+    
+}
+
+//MARK: - Listen to SeeAllTapped Delegate
+extension HomeVC: SeeAllTappedDelegate {
+    
+    func seeAllDidTapped() {
+        let vc = getViewControllerFromInstantiateStoryboard(for: .AllTransactions) as! AllTransactionsVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
 }

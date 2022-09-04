@@ -8,11 +8,17 @@
 
 import UIKit
 
+protocol SeeAllTappedDelegate {
+    func seeAllDidTapped()
+}
+
 class HomeFooterCell: UITableViewCell {
 
     @IBOutlet weak var lblTransactions: UILabel!
     @IBOutlet weak var lblSeeAll: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    
+    var delegate: SeeAllTappedDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +28,8 @@ class HomeFooterCell: UITableViewCell {
         tableView.dataSource = self
         tableView.register(TransactionTableViewCell.nib(), forCellReuseIdentifier: TransactionTableViewCell.identifier)
         
+        let seeAllGesture  = UITapGestureRecognizer(target: self, action: #selector(goToAllTransactions(_:)))
+        lblSeeAll.addGestureRecognizer(seeAllGesture)
     }
 
     static var identifier = "HomeFooterCell"
@@ -34,6 +42,11 @@ class HomeFooterCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    @objc func goToAllTransactions(_ sender: UITapGestureRecognizer) {
+        debugPrint("Working")
+        delegate?.seeAllDidTapped()
     }
     
 }
@@ -55,5 +68,8 @@ extension HomeFooterCell: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UIScreen.main.bounds.height * 0.07
+    }
     
 }

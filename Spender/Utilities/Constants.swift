@@ -54,6 +54,7 @@ enum StoryboardType: String {
     case ChangeLanguage
     case ChangePassword
     case LegalAndPrivacy
+    case AllTransactions
     
     var string: String {
         return self.rawValue
