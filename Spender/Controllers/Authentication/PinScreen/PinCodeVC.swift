@@ -11,6 +11,8 @@ import LocalAuthentication
 
 class PinCodeVC: SpenderViewController {
     
+    @IBOutlet var buttonCollection: [UIButton]!
+    
     //Biometric
     var context: LAContext?
     var biometry: LABiometryType?
@@ -27,9 +29,16 @@ class PinCodeVC: SpenderViewController {
         // If error is an instance of LAError
         context =  LAContext()
         biometry = context?.biometryType
-        authenticateBiometricData()
         
+        buttonCollection.forEach {
+            $0.titleLabel?.font = UIFont.appBold(size: 20.0)
+        }
     }
+    
+    @IBAction func crossButtonDidTap(_ sender: Any) {
+        authenticateBiometricData()
+    }
+    
     
     
     func authenticateBiometricData(){

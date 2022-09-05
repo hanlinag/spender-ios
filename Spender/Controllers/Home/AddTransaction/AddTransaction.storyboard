@@ -32,7 +32,7 @@
                                 </userDefinedRuntimeAttributes>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJN-UU-4wZ">
-                                <rect key="frame" x="20" y="139" width="374" height="50"/>
+                                <rect key="frame" x="20" y="149" width="374" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Ns-Nz-I1G">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
@@ -70,13 +70,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gky-yu-bU7">
-                                <rect key="frame" x="20" y="209" width="122.5" height="20.5"/>
+                                <rect key="frame" x="20" y="219" width="122.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EJe-OJ-QJN">
-                                <rect key="frame" x="20" y="239.5" width="374" height="44"/>
+                                <rect key="frame" x="20" y="249.5" width="374" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="SLH-TO-eXd"/>
@@ -90,13 +90,13 @@
                                 <cells/>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mW-1a-dEQ">
-                                <rect key="frame" x="20" y="303.5" width="60" height="20.5"/>
+                                <rect key="frame" x="20" y="313.5" width="60" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgi-uY-lBg">
-                                <rect key="frame" x="20" y="332" width="374" height="50"/>
+                                <rect key="frame" x="20" y="342" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2Nt-mK-wi6"/>
                                 </constraints>
@@ -104,7 +104,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="saQ-HN-PD0">
-                                <rect key="frame" x="20" y="390" width="374" height="50"/>
+                                <rect key="frame" x="20" y="400" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6yz-fD-v8C"/>
                                 </constraints>
@@ -112,7 +112,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNW-1H-Wfa">
-                                <rect key="frame" x="20" y="778" width="374" height="44"/>
+                                <rect key="frame" x="20" y="808" width="374" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="LIg-pz-J4A"/>
                                 </constraints>
@@ -133,13 +133,13 @@
                             <constraint firstItem="saQ-HN-PD0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="AlF-nS-GgO"/>
                             <constraint firstItem="6mW-1a-dEQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Bnf-UX-9Hr"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EJe-OJ-QJN" secondAttribute="trailing" constant="20" id="DaC-Xb-7xl"/>
-                            <constraint firstItem="GJN-UU-4wZ" firstAttribute="top" secondItem="cI2-cS-CEg" secondAttribute="bottom" constant="10" id="F9Y-4d-XJu"/>
+                            <constraint firstItem="GJN-UU-4wZ" firstAttribute="top" secondItem="cI2-cS-CEg" secondAttribute="bottom" constant="20" id="F9Y-4d-XJu"/>
                             <constraint firstItem="gky-yu-bU7" firstAttribute="top" secondItem="GJN-UU-4wZ" secondAttribute="bottom" constant="20" id="Jef-if-2gP"/>
                             <constraint firstItem="GJN-UU-4wZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="KHH-xm-TM6"/>
                             <constraint firstItem="saQ-HN-PD0" firstAttribute="top" secondItem="cgi-uY-lBg" secondAttribute="bottom" constant="8" symbolic="YES" id="LeK-6d-icy"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="saQ-HN-PD0" secondAttribute="trailing" constant="20" id="Yev-iG-osc"/>
                             <constraint firstItem="EJe-OJ-QJN" firstAttribute="top" secondItem="gky-yu-bU7" secondAttribute="bottom" constant="10" id="Zcf-fE-DAI"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="kNW-1H-Wfa" secondAttribute="bottom" constant="40" id="aEZ-qR-4pu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="kNW-1H-Wfa" secondAttribute="bottom" constant="10" id="aEZ-qR-4pu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kNW-1H-Wfa" secondAttribute="trailing" constant="20" id="fAn-CB-Rur"/>
                             <constraint firstItem="cgi-uY-lBg" firstAttribute="top" secondItem="6mW-1a-dEQ" secondAttribute="bottom" constant="8" symbolic="YES" id="fr1-0y-6v3"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GJN-UU-4wZ" secondAttribute="trailing" constant="20" id="lml-z7-557"/>
