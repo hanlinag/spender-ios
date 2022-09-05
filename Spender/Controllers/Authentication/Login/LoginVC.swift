@@ -86,10 +86,13 @@ class LoginVC: SpenderViewController {
     @IBAction func onAppleLoginTapped(_ sender: Any) {
         debugPrint("Apple login tapped")
         //self.loadSafariView(with: "https://www.apple.com")
-        self.showAlert(title: "Spender Alert", subtitle: "This is testing alert", type: .normal, secondaryLabel: "nope", primaryLabel: "ok", secondaryAction: {}, primaryAction: {
-            debugPrint("On alert proceed")
-            self.dismiss(animated: true)
-        })
+//        self.showAlert(title: "Spender Alert", subtitle: "This is testing alert", type: .normal, secondaryLabel: "nope", primaryLabel: "ok", secondaryAction: {}, primaryAction: {
+//            debugPrint("On alert proceed")
+//            self.dismiss(animated: true)
+//        })
+        
+        let vc = getViewControllerFromInstantiateStoryboard(for: .PinCode) as! PinCodeVC
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }//end of Apple login tap action
     

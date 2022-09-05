@@ -58,6 +58,7 @@ enum StoryboardType: String {
     case TransactionDetail
     case AddTransaction
     case PinCode
+    case Onboarding
     
     var string: String {
         return self.rawValue
