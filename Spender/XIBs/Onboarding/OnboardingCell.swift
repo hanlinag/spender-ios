@@ -9,7 +9,12 @@
 import UIKit
 
 class OnboardingCell: UICollectionViewCell {
-
+    
+    @IBOutlet weak var img: UIImageView!
+    
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblSubtitle: UILabel!
+    
     static var identifier = "OnboardingCell"
     
     static func nib() -> UINib {
@@ -20,5 +25,10 @@ class OnboardingCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    func configure(data: OnboardingStruct) {
+        img.image = UIImage(named: data.image)
+        lblTitle.text = data.title
+        lblSubtitle.text = data.subtitle
+    }
 }

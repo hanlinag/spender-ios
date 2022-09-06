@@ -73,3 +73,9 @@ final class CommonVM : NSObject {
     }
     
 }
+
+struct OnboardingStruct {
+    var image: String
+    var title: String
+    var subtitle: String
+}

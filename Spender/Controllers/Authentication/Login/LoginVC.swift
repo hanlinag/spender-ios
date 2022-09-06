@@ -91,8 +91,8 @@ class LoginVC: SpenderViewController {
 //            self.dismiss(animated: true)
 //        })
         
-        let vc = getViewControllerFromInstantiateStoryboard(for: .PinCode) as! PinCodeVC
-        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = getViewControllerFromInstantiateStoryboard(for: .Onboarding) as! OnboardingVC
+        self.present(vc, animated: true)
         
     }//end of Apple login tap action
     

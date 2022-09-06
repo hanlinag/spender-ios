@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,39 +14,33 @@
             <objects>
                 <viewController storyboardIdentifier="Onboarding" id="Y6W-OH-hqX" customClass="OnboardingVC" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d9h-E7-HA8">
-                                <rect key="frame" x="0.0" y="44" width="414" height="627"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d9h-E7-HA8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="695"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JqL-Qo-VyF">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="JqL-Qo-VyF">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jp5-1H-bxU">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="anK-9p-C0z">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="AqP-4o-S2i">
-                                <rect key="frame" x="20" y="771.5" width="374" height="90.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="AqP-4o-S2i">
+                                <rect key="frame" x="20" y="703" width="335" height="65"/>
                                 <subviews>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7e8-FI-BVt">
-                                        <rect key="frame" x="0.0" y="0.0" width="283.5" height="90.5"/>
+                                    <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7e8-FI-BVt">
+                                        <rect key="frame" x="0.0" y="0.0" width="112.66666666666667" height="65"/>
                                         <color key="pageIndicatorTintColor" name="ColorGrey"/>
                                         <color key="currentPageIndicatorTintColor" name="ColorAccent"/>
+                                        <connections>
+                                            <action selector="pageControlValueDidChange:" destination="Y6W-OH-hqX" eventType="valueChanged" id="zJ0-1R-HcS"/>
+                                        </connections>
                                     </pageControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ic-el-erJ">
-                                        <rect key="frame" x="283.5" y="0.0" width="90.5" height="90.5"/>
+                                        <rect key="frame" x="270" y="0.0" width="65" height="65"/>
                                         <color key="backgroundColor" name="ColorAccent"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="5Ic-el-erJ" secondAttribute="height" multiplier="1:1" id="7RV-OJ-5FQ"/>
@@ -55,6 +48,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
+                                        <connections>
+                                            <action selector="buttonForwardDidPress:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HrW-Fo-MVy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -62,9 +58,10 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AqP-4o-S2i" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="3u2-2c-uja"/>
-                            <constraint firstItem="d9h-E7-HA8" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" id="TTy-Kk-gcL"/>
-                            <constraint firstItem="d9h-E7-HA8" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.7" id="WfZ-57-So6"/>
+                            <constraint firstItem="AqP-4o-S2i" firstAttribute="top" secondItem="d9h-E7-HA8" secondAttribute="bottom" constant="8" symbolic="YES" id="0r9-mb-h0a"/>
+                            <constraint firstItem="AqP-4o-S2i" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="-10" id="3u2-2c-uja"/>
+                            <constraint firstItem="5Ic-el-erJ" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.08" id="CT0-0V-iMz"/>
+                            <constraint firstItem="d9h-E7-HA8" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="TTy-Kk-gcL"/>
                             <constraint firstItem="d9h-E7-HA8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="enK-5C-cpP"/>
                             <constraint firstItem="AqP-4o-S2i" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="iEh-wH-oGg"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="d9h-E7-HA8" secondAttribute="trailing" id="iSK-ui-noh"/>
@@ -73,6 +70,8 @@
                     </view>
                     <connections>
                         <outlet property="buttonForward" destination="5Ic-el-erJ" id="n9w-A8-nEF"/>
+                        <outlet property="collectionView" destination="d9h-E7-HA8" id="85K-fG-ZOH"/>
+                        <outlet property="pageControl" destination="7e8-FI-BVt" id="VOk-vM-S3w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

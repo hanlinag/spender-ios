@@ -97,6 +97,12 @@ let occupations = ["Artist", "Business Analyst", "Construction Worker", "Desiger
 let dateFormatForView = "MMM d, yyyy"
 let dateFormatForAPI  = "yyyy-MM-dd"
 
+let onboardingDict = [
+    OnboardingStruct(image: "onboarding",  title: "Step 1", subtitle: "Save your money with Spender."),
+    OnboardingStruct(image: "onboarding1", title: "Step 2", subtitle: "Manage your financial efficently and intelligently"),
+    OnboardingStruct(image: "onboarding2", title: "Step 3", subtitle: "Keep track of every of your expense. ")
+]
+
 /*
  Wednesday, Sep 12, 2018           --> EEEE, MMM d, yyyy
  09/12/2018                        --> MM/dd/yyyy
