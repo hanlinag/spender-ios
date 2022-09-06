@@ -83,6 +83,7 @@
 "btn.change_password" = "Change Password";
 "btn.submit" = "Submit";
 "btn.add" = "Add";
+"btn.update" = "Update";
 
 //placeholder
 "placeholder.email" = "Email";

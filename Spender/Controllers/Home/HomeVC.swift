@@ -97,6 +97,7 @@ extension HomeVC: AddTransactionButtonDelegate {
     func addTransactionDidPress() {
         let vc = getViewControllerFromInstantiateStoryboard(for: .AddTransaction) as! AddTransactionVC
         navigationItem.backButtonTitle = "Back"
+        vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

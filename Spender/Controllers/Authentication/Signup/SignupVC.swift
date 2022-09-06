@@ -34,7 +34,13 @@ class SignupVC: SpenderViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.isHidden = true
+        if vm.signupMode == .editProfile {
+            self.navigationController?.navigationBar.isHidden = false
+            self.navigationItem.title = "settings.edit_profile".localized
+        } else {
+            self.navigationController?.navigationBar.isHidden = true
+        }
+        
         
         tableHeaderHeight = view.frame.size.height * 0.28
         tableCellHeight = view.frame.size.height * 0.07
@@ -45,6 +51,11 @@ class SignupVC: SpenderViewController {
             
             signupTableCells = getSignupTableCellModel()
             
+        } else if self.vm.signupMode == .editProfile {
+            btnRegister.setTitle("btn.update".localized, for: .normal)
+            lblLogin.isHidden = true
+            
+            signupTableCells = getEditProfileTableCellModel()
         } else {
             btnRegister.setTitle("btn.create_account".localized, for: .normal)
             lblLogin.isHidden = true
@@ -57,7 +68,7 @@ class SignupVC: SpenderViewController {
         tableView.dataSource = self
         tableView.register(SignupHeaderTableViewCell.nib(), forCellReuseIdentifier: SignupHeaderTableViewCell.identifier)
         tableView.register(SignupTableViewCell.nib(), forCellReuseIdentifier: SignupTableViewCell.identifier)
-        
+        tableView.register(EditProfileHeaderCell.nib(), forCellReuseIdentifier: EditProfileHeaderCell.identifier)
         
         
         //Actions
@@ -97,11 +108,20 @@ extension SignupVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
-            let header = tableView.dequeueReusableCell(withIdentifier: SignupHeaderTableViewCell.identifier, for: indexPath) as! SignupHeaderTableViewCell
+            if self.vm.signupMode == .editProfile {
+                let profile = tableView.dequeueReusableCell(withIdentifier: EditProfileHeaderCell.identifier, for: indexPath) as! EditProfileHeaderCell
+                profile.selectionStyle = .none
+                
+                return profile
+                
+            } else {
+                let header = tableView.dequeueReusableCell(withIdentifier: SignupHeaderTableViewCell.identifier, for: indexPath) as! SignupHeaderTableViewCell
+                header.selectionStyle = .none
+                header.configure(signupMode: self.vm.signupMode)
+                
+                return header
+            }
             
-            header.configure(signupMode: self.vm.signupMode)
-            
-            return header
             
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: SignupTableViewCell.identifier, for: indexPath) as! SignupTableViewCell

@@ -8,6 +8,11 @@
 
 import Foundation
 
+struct ProfilePicture {
+    let image: String
+    let backgroundColor: Int
+}
+
 final class AuthVM: NSObject {
     static let shared = AuthVM()
     

@@ -80,7 +80,10 @@ extension SettingsVC {
     func goToNextScreen(row: Int) {
         switch row {
         case 0:
-            let vc = getViewControllerFromInstantiateStoryboard(for: .EditProfile, presentationStyle: .overFullScreen, hideBottomBar: true) as! EditProfileVC
+//            let vc = getViewControllerFromInstantiateStoryboard(for: .EditProfile, presentationStyle: .overFullScreen, hideBottomBar: true) as! EditProfileVC
+//            self.navigationController?.pushViewController(vc, animated: true)
+            let vc = getViewControllerFromInstantiateStoryboard(for: .Signup, presentationStyle: .overFullScreen, hideBottomBar: true) as! SignupVC
+            AuthVM.shared.signupMode = .editProfile
             self.navigationController?.pushViewController(vc, animated: true)
             break
         case 1:

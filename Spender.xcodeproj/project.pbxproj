@@ -73,6 +73,10 @@
 		CB51E0032896D230006BCBB3 /* en.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB51E0002896D22A006BCBB3 /* en.strings */; };
 		CB51E0042896D230006BCBB3 /* mm.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB51E0012896D22D006BCBB3 /* mm.strings */; };
 		CB51E0052896D230006BCBB3 /* th.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB51E0022896D230006BCBB3 /* th.strings */; };
+		CB539AD528C796F500B003E2 /* EditProfileHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB539AD328C796F500B003E2 /* EditProfileHeaderCell.swift */; };
+		CB539AD628C796F500B003E2 /* EditProfileHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB539AD428C796F500B003E2 /* EditProfileHeaderCell.xib */; };
+		CB539AD928C799B600B003E2 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB539AD728C799B600B003E2 /* ProfileCell.swift */; };
+		CB539ADA28C799B600B003E2 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB539AD828C799B600B003E2 /* ProfileCell.xib */; };
 		CB5D527C2898F74600F8CE73 /* APIErrorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D527B2898F74600F8CE73 /* APIErrorPlugin.swift */; };
 		CB5D527E2898F77F00F8CE73 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D527D2898F77F00F8CE73 /* APIProvider.swift */; };
 		CB68CB5328BD0301006E5427 /* SpenderUIPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB68CB5228BD0301006E5427 /* SpenderUIPicker.swift */; };
@@ -243,6 +247,10 @@
 		CB51E0002896D22A006BCBB3 /* en.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = en.strings; sourceTree = "<group>"; };
 		CB51E0012896D22D006BCBB3 /* mm.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = mm.strings; sourceTree = "<group>"; };
 		CB51E0022896D230006BCBB3 /* th.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = th.strings; sourceTree = "<group>"; };
+		CB539AD328C796F500B003E2 /* EditProfileHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileHeaderCell.swift; sourceTree = "<group>"; };
+		CB539AD428C796F500B003E2 /* EditProfileHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileHeaderCell.xib; sourceTree = "<group>"; };
+		CB539AD728C799B600B003E2 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		CB539AD828C799B600B003E2 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		CB5D527B2898F74600F8CE73 /* APIErrorPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorPlugin.swift; sourceTree = "<group>"; };
 		CB5D527D2898F77F00F8CE73 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		CB68CB5228BD0301006E5427 /* SpenderUIPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpenderUIPicker.swift; sourceTree = "<group>"; };
@@ -1017,6 +1025,10 @@
 			children = (
 				CBD8025A28C3BFE7000F0680 /* SettingsCell.swift */,
 				CBD8025B28C3BFE7000F0680 /* SettingsCell.xib */,
+				CB539AD328C796F500B003E2 /* EditProfileHeaderCell.swift */,
+				CB539AD428C796F500B003E2 /* EditProfileHeaderCell.xib */,
+				CB539AD728C799B600B003E2 /* ProfileCell.swift */,
+				CB539AD828C799B600B003E2 /* ProfileCell.xib */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -1169,6 +1181,7 @@
 				CB7BF85D276F7D700090FE0A /* Wallets.storyboard in Resources */,
 				CBA97DC728C48AA400BC9971 /* AllTransactions.storyboard in Resources */,
 				CB9749B0276A4F7800357BF2 /* Assets.xcassets in Resources */,
+				CB539AD628C796F500B003E2 /* EditProfileHeaderCell.xib in Resources */,
 				CB50A5BF28A95D4A00A7F082 /* Congratulations.storyboard in Resources */,
 				CBA97DB228C456B400BC9971 /* LegalAndPrivacy.storyboard in Resources */,
 				CB51DFD128963609006BCBB3 /* SpenderNavBar.xib in Resources */,
@@ -1192,6 +1205,7 @@
 				CBA97DCF28C4A18E00BC9971 /* AddTransaction.storyboard in Resources */,
 				CB7BF85F276F7D830090FE0A /* Activity.storyboard in Resources */,
 				CB18F10928C25C40007F998D /* HomeMiddleCell.xib in Resources */,
+				CB539ADA28C799B600B003E2 /* ProfileCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1350,6 +1364,7 @@
 				CB8675042896EFA700144558 /* ExchangeRateAPI.swift in Sources */,
 				CB51DFCF289635FE006BCBB3 /* SpenderNavBar.swift in Sources */,
 				CB18F11228C25E09007F998D /* CardCell.swift in Sources */,
+				CB539AD528C796F500B003E2 /* EditProfileHeaderCell.swift in Sources */,
 				CB0DCAE3285F87C2004A87FA /* CommonVM.swift in Sources */,
 				CB51DFDE2896558B006BCBB3 /* SpenderImageViewController.swift in Sources */,
 				CBD8025C28C3BFE7000F0680 /* SettingsCell.swift in Sources */,
@@ -1388,6 +1403,7 @@
 				CB6A9CB028A8041200F9BC60 /* Constants.swift in Sources */,
 				CBA97DB828C456E800BC9971 /* ChangeLanguageVC.swift in Sources */,
 				CB7BF858276F4E150090FE0A /* HomeVC.swift in Sources */,
+				CB539AD928C799B600B003E2 /* ProfileCell.swift in Sources */,
 				CB7BF856276F4B2A0090FE0A /* MainTabBarViewController.swift in Sources */,
 				CB5D527E2898F77F00F8CE73 /* APIProvider.swift in Sources */,
 				CBA97DCA28C48BDE00BC9971 /* TransactionHeaderCell.swift in Sources */,

@@ -45,6 +45,7 @@ enum TransactionCategory {
 enum SignupMode {
     case normal
     case providers
+    case editProfile
 }
 
 enum StoryboardType: String {
@@ -59,6 +60,7 @@ enum StoryboardType: String {
     case AddTransaction
     case PinCode
     case Onboarding
+    case Signup
     
     var string: String {
         return self.rawValue
@@ -88,8 +90,20 @@ private var signupWithProvidersTableCellModel = [
     SignupTableViewCellModel(title: "placeholder.occupation", inputType: .selector,      value: "", icon: "chevron.down", order: 4)
 ]
 
+private var editProfileTableCellModel = [
+    SignupTableViewCellModel(title: "placeholder.name",       inputType: .textfield,     value: "", locked: false, order: 0),
+    SignupTableViewCellModel(title: "placeholder.nickname",   inputType: .textfield,     value: "", optional: true, order: 1),
+    SignupTableViewCellModel(title: "placeholder.email",      inputType: .email,         value: "", locked: false, order: 2),
+    SignupTableViewCellModel(title: "placeholder.dob",        inputType: .dateSelector,  value: "", icon: "calendar", order: 3),
+    SignupTableViewCellModel(title: "placeholder.occupation", inputType: .selector,      value: "", icon: "chevron.down", order: 4)
+]
+
 func getSignupWithProvidersTableCellModel() -> [SignupTableViewCellModel] {
     return signupWithProvidersTableCellModel.sorted { $0.order < $1.order }
+}
+
+func getEditProfileTableCellModel() -> [SignupTableViewCellModel] {
+    return editProfileTableCellModel.sorted { $0.order < $1.order }
 }
 
 let occupations = ["Artist", "Business Analyst", "Construction Worker", "Desiger", "Entrepreneur", "Freelancer", "Social Worker", "Physicians", "Nurses", "Veterinarians", "Schoolteachers", "College Professors", "Lecturers", "Aeronautic Engineer", "Mechanical Engineer", "Chemical Engineer", "Software Engineer", "Accountant", "General Worker"]
@@ -101,6 +115,18 @@ let onboardingDict = [
     OnboardingStruct(image: "onboarding",  title: "Step 1", subtitle: "Save your money with Spender."),
     OnboardingStruct(image: "onboarding1", title: "Step 2", subtitle: "Manage your financial efficently and intelligently"),
     OnboardingStruct(image: "onboarding2", title: "Step 3", subtitle: "Keep track of every of your expense. ")
+]
+
+let profileData = [
+    ProfilePicture(image: "profile1", backgroundColor: 0xC724B1),
+    ProfilePicture(image: "profile2", backgroundColor: 0x4D4DFF),
+    ProfilePicture(image: "profile3", backgroundColor: 0xE0E722),
+    ProfilePicture(image: "profile4", backgroundColor: 0xFFAD00),
+    ProfilePicture(image: "profile5", backgroundColor: 0xD22730),
+    ProfilePicture(image: "profile6", backgroundColor: 0xDB3EB1),
+    ProfilePicture(image: "profile7", backgroundColor: 0x44D62C),
+    ProfilePicture(image: "profile8", backgroundColor: 0xD05037),
+    ProfilePicture(image: "profile9", backgroundColor: 0x4BBBFF)
 ]
 
 /*

@@ -33,3 +33,13 @@ extension UIImageView {
         self.clipsToBounds = true
     }
 }
+
+extension UIView {
+    func makeCircle() {
+        self.layer.borderWidth = 0.5
+        self.layer.masksToBounds = false
+        self.layer.borderColor = UIColor.gray.cgColor
+        self.layer.cornerRadius = self.frame.size.height/2
+        self.clipsToBounds = true
+    }
+}
