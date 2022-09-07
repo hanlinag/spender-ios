@@ -58,4 +58,15 @@ Therefore, all the business logics will only be done inside VM layer for simplif
 
 </br>
 
-# Reactive Programming
+# [Reactive Programming](https://reactivex.io)
+
+- When the business logic actions are fired inside the VMs, the specific event is triggered. As the required View Controller is listening to the event with Observable objects, VC knows instantly when event is being fired, thus UI changes happen simultaneously.
+- Reactive programming simplifies a lot of things ensuring the less codes of having to write handling for UI changes in some cases. Network calls are now a lot easier with RxAlamofire.
+
+![reactive-programming](https://github.com/hanlinag/spender-ios/blob/develop/files/reactive-programming.png)
+</br>
+
+# Image Loading/Caching
+
+- [Kingfisher](https://github.com/onevcat/Kingfisher) is a very popular image loading pure-swift library available. It contians all the functionalities about caching, managing time out, retrying, adding tranitions, authentication and so on.
+- As the library is still under maintainance, it’s safe to use. For easier mantainnace, Kingfisher will handle all the image loading in UIImage view in this project.
