@@ -61,6 +61,7 @@ enum StoryboardType: String {
     case PinCode
     case Onboarding
     case Signup
+    case CreateNewWallet
     
     var string: String {
         return self.rawValue
@@ -107,6 +108,8 @@ func getEditProfileTableCellModel() -> [SignupTableViewCellModel] {
 }
 
 let occupations = ["Artist", "Business Analyst", "Construction Worker", "Desiger", "Entrepreneur", "Freelancer", "Social Worker", "Physicians", "Nurses", "Veterinarians", "Schoolteachers", "College Professors", "Lecturers", "Aeronautic Engineer", "Mechanical Engineer", "Chemical Engineer", "Software Engineer", "Accountant", "General Worker"]
+
+let walletType = ["Credit", "Debit", "Cash", "Loan"]
 
 let dateFormatForView = "MMM d, yyyy"
 let dateFormatForAPI  = "yyyy-MM-dd"

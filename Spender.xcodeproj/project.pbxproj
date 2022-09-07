@@ -143,6 +143,8 @@
 		CBAC750C28A157AB008D8FCB /* MoyaProvider + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC750B28A157AB008D8FCB /* MoyaProvider + Extensions.swift */; };
 		CBADC22B276DC6D900F8003A /* SplashScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADC22A276DC6D900F8003A /* SplashScreenController.swift */; };
 		CBADC22D276DCABF00F8003A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADC22C276DCABF00F8003A /* LoginVC.swift */; };
+		CBC097B628C8DBA9003AADC4 /* CreateNewWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC097B528C8DBA9003AADC4 /* CreateNewWalletVC.swift */; };
+		CBC097B828C8DBB1003AADC4 /* CreateNewWallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC097B728C8DBB1003AADC4 /* CreateNewWallet.storyboard */; };
 		CBD7D5D128BFCCDD0043A07E /* AlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7D5D028BFCCDD0043A07E /* AlertConfig.swift */; };
 		CBD8025C28C3BFE7000F0680 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8025A28C3BFE7000F0680 /* SettingsCell.swift */; };
 		CBD8025D28C3BFE7000F0680 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD8025B28C3BFE7000F0680 /* SettingsCell.xib */; };
@@ -321,6 +323,8 @@
 		CBAC750B28A157AB008D8FCB /* MoyaProvider + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider + Extensions.swift"; sourceTree = "<group>"; };
 		CBADC22A276DC6D900F8003A /* SplashScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenController.swift; sourceTree = "<group>"; };
 		CBADC22C276DCABF00F8003A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CBC097B528C8DBA9003AADC4 /* CreateNewWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewWalletVC.swift; sourceTree = "<group>"; };
+		CBC097B728C8DBB1003AADC4 /* CreateNewWallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateNewWallet.storyboard; sourceTree = "<group>"; };
 		CBD7D5D028BFCCDD0043A07E /* AlertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConfig.swift; sourceTree = "<group>"; };
 		CBD8025A28C3BFE7000F0680 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		CBD8025B28C3BFE7000F0680 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
@@ -603,6 +607,8 @@
 			children = (
 				CB50A58B28A8ED3E00A7F082 /* WalletSetupVC.swift */,
 				CBA97DBB28C4570C00BC9971 /* WalletSetup.storyboard */,
+				CBC097B528C8DBA9003AADC4 /* CreateNewWalletVC.swift */,
+				CBC097B728C8DBB1003AADC4 /* CreateNewWallet.storyboard */,
 			);
 			path = WalletSetup;
 			sourceTree = "<group>";
@@ -1160,6 +1166,7 @@
 				CB68CB5928BD09E3006E5427 /* SpenderDatePicker.storyboard in Resources */,
 				CB9925B328B29AC500B194DF /* SignupTableViewCell.xib in Resources */,
 				CB13A6C5277782CD00B89753 /* TransactionTableViewCell.xib in Resources */,
+				CBC097B828C8DBB1003AADC4 /* CreateNewWallet.storyboard in Resources */,
 				CB50A55D28A8DFE300A7F082 /* ResetAccount.storyboard in Resources */,
 				CB14430628BE721F00D37E5B /* ConfirmAlert.storyboard in Resources */,
 				CB070C8328C5CEC200EB7D86 /* OnboardingCell.xib in Resources */,
@@ -1372,6 +1379,7 @@
 				CB5D527C2898F74600F8CE73 /* APIErrorPlugin.swift in Sources */,
 				CB8675002896EF8900144558 /* AppConfigAPI.swift in Sources */,
 				CBFF44DD28BBB769008493C3 /* SignupHeaderTableViewCell.swift in Sources */,
+				CBC097B628C8DBA9003AADC4 /* CreateNewWalletVC.swift in Sources */,
 				CB50A5A728A8EFFD00A7F082 /* TransactionDetailVC.swift in Sources */,
 				CB50A55B28A8DFD100A7F082 /* ResetAccount.swift in Sources */,
 				CB6A9CAE28A7EF0C00F9BC60 /* LoginRequest.swift in Sources */,

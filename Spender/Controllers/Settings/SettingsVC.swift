@@ -10,6 +10,7 @@ import UIKit
 
 class SettingsVC: SpenderViewController {
     
+    @IBOutlet weak var layoutProfile: UIView!
     @IBOutlet weak var imgProfile: UIImageView!
     
     @IBOutlet weak var lblVersio: UILabel!
@@ -20,6 +21,8 @@ class SettingsVC: SpenderViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    
+    
     let vm = SettingsVM.shared
     
     override func viewDidLoad() {
@@ -29,8 +32,7 @@ class SettingsVC: SpenderViewController {
         self.navigationController?.navigationBar.isHidden = true
         
         
-        
-        imgProfile.makeCircleImageView()
+        layoutProfile.makeCircle()
         
         lblVersio.text = "v \(vm.appVersion)"
         
@@ -92,6 +94,7 @@ extension SettingsVC {
             break
         case 2:
             let vc = getViewControllerFromInstantiateStoryboard(for: .WalletSetup, presentationStyle: .overFullScreen, hideBottomBar: true) as! WalletSetupVC
+            vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
             break
         case 3:

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I3S-1E-NTr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create New Wallet-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CreateNewWallet" id="Y6W-OH-hqX" customClass="CreateNewWalletVC" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rGd-Qc-bDG">
+                                <rect key="frame" x="0.0" y="98" width="414" height="224"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eX2-Ph-5FF">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="TnQ-oQ-WXg">
+                                <rect key="frame" x="149.5" y="330" width="115.5" height="26"/>
+                                <color key="pageIndicatorTintColor" name="ColorGrey"/>
+                                <color key="currentPageIndicatorTintColor" name="ColorAccent"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsZ-vI-eCG">
+                                <rect key="frame" x="104.5" y="364" width="205" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4Bv-c6-i4e"/>
+                                    <constraint firstAttribute="width" secondItem="BsZ-vI-eCG" secondAttribute="height" multiplier="140:30" id="Pbc-rp-RPp"/>
+                                </constraints>
+                                <color key="tintColor" name="ColorAccent"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Close Wallet"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CgC-0k-MOz">
+                                <rect key="frame" x="25" y="433" width="364" height="108"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="srH-nw-hLN">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="I1M-WL-PCw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceholder" value="placeholder.name"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCa-4Y-Vgw">
+                                        <rect key="frame" x="0.0" y="64" width="364" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="MtG-LD-1wH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceholder" value="placeholder.type"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97s-U5-EWs">
+                                <rect key="frame" x="20" y="808" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Y24-vj-MbQ"/>
+                                </constraints>
+                                <color key="tintColor" name="ColorAccent"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Create"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="btn.create"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BsZ-vI-eCG" firstAttribute="top" secondItem="TnQ-oQ-WXg" secondAttribute="bottom" constant="8" symbolic="YES" id="2hd-Ed-6Jo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="97s-U5-EWs" secondAttribute="trailing" constant="20" id="7q1-gW-NWH"/>
+                            <constraint firstItem="BsZ-vI-eCG" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="BvE-AD-rcE"/>
+                            <constraint firstItem="rGd-Qc-bDG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="GDr-Jx-e5q"/>
+                            <constraint firstItem="TnQ-oQ-WXg" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="LGt-xr-Tc5"/>
+                            <constraint firstItem="TnQ-oQ-WXg" firstAttribute="top" secondItem="rGd-Qc-bDG" secondAttribute="bottom" constant="8" symbolic="YES" id="Mj0-ys-dfj"/>
+                            <constraint firstItem="97s-U5-EWs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="TAp-fI-cDF"/>
+                            <constraint firstItem="CgC-0k-MOz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="Wj4-te-JHW"/>
+                            <constraint firstItem="rGd-Qc-bDG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="b5p-aR-FN3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CgC-0k-MOz" secondAttribute="trailing" constant="25" id="bt5-B7-pzT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rGd-Qc-bDG" secondAttribute="trailing" id="hiL-f1-S9p"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="97s-U5-EWs" secondAttribute="bottom" constant="10" id="pmQ-Dy-o9c"/>
+                            <constraint firstItem="rGd-Qc-bDG" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.25" id="s72-vs-SCS"/>
+                            <constraint firstItem="CgC-0k-MOz" firstAttribute="top" secondItem="BsZ-vI-eCG" secondAttribute="bottom" constant="25" id="srH-js-NFL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create New Wallet" id="Epb-Wy-xJ5">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="title.create_new_wallet"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnClose" destination="BsZ-vI-eCG" id="iGI-2i-zKB"/>
+                        <outlet property="btnCreate" destination="97s-U5-EWs" id="Tgl-BF-u14"/>
+                        <outlet property="collectionView" destination="rGd-Qc-bDG" id="Fem-fx-9aY"/>
+                        <outlet property="pageControl" destination="TnQ-oQ-WXg" id="tFw-Rk-Adr"/>
+                        <outlet property="textFieldName" destination="srH-nw-hLN" id="A2H-FJ-U9B"/>
+                        <outlet property="textFieldType" destination="WCa-4Y-Vgw" id="pjj-V1-rfI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hXD-5s-dHd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I3S-1E-NTr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xme-7Q-xGF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Pbp-fJ-INz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xvG-Fm-6Ee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="ColorAccent">
+            <color red="0.92500001192092896" green="0.40400001406669617" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="ColorGrey">
+            <color red="0.32899999618530273" green="0.32899999618530273" blue="0.32899999618530273" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

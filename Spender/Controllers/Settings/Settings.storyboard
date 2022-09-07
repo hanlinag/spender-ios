@@ -42,16 +42,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yAU-hc-kYD" userLabel="Top Stack View">
-                                <rect key="frame" x="0.0" y="98.000000000000014" width="375" height="208.33333333333337"/>
+                                <rect key="frame" x="0.0" y="97.999999999999986" width="375" height="220.66666666666663"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prifile-pic" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-0b-pkW">
-                                        <rect key="frame" x="112.66666666666669" y="0.0" width="150" height="150"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZAx-P9-lHW">
+                                        <rect key="frame" x="106.33333333333333" y="0.0" width="162.33333333333337" height="162.33333333333334"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile6" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-0b-pkW">
+                                                <rect key="frame" x="5" y="5" width="152.33333333333334" height="152.33333333333334"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="LgU-0b-pkW" secondAttribute="height" multiplier="1:1" id="xuf-hZ-GLV"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="LgU-0b-pkW" secondAttribute="height" multiplier="1:1" id="xuf-hZ-GLV"/>
+                                            <constraint firstItem="LgU-0b-pkW" firstAttribute="leading" secondItem="ZAx-P9-lHW" secondAttribute="leading" constant="5" id="9VZ-4F-Fse"/>
+                                            <constraint firstAttribute="bottom" secondItem="LgU-0b-pkW" secondAttribute="bottom" constant="5" id="RsS-4c-wHT"/>
+                                            <constraint firstAttribute="trailing" secondItem="LgU-0b-pkW" secondAttribute="trailing" constant="5" id="Wgn-qr-BhR"/>
+                                            <constraint firstItem="LgU-0b-pkW" firstAttribute="top" secondItem="ZAx-P9-lHW" secondAttribute="top" constant="5" id="bYq-w2-k5g"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OV7-7v-zGV">
-                                        <rect key="frame" x="145.66666666666666" y="165" width="83.666666666666657" height="43.333333333333343"/>
+                                        <rect key="frame" x="145.66666666666666" y="177.33333333333331" width="83.666666666666657" height="43.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPO-mo-61D">
                                                 <rect key="frame" x="15.333333333333343" y="0.0" width="53" height="24"/>
@@ -98,8 +110,8 @@
                                         <color key="textColor" name="ColorGreyTransparent-1"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022 © Copyright" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDh-DU-Ote">
-                                        <rect key="frame" x="136.33333333333334" y="105.33333333333326" width="102.33333333333334" height="14.333333333333329"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright  © 2022 Tyler" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDh-DU-Ote">
+                                        <rect key="frame" x="119" y="105.33333333333326" width="137" height="14.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" name="ColorGrey"/>
                                         <nil key="highlightedColor"/>
@@ -108,7 +120,7 @@
                                 <color key="tintColor" name="ColorAccent"/>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EGX-49-oxM">
-                                <rect key="frame" x="20" y="316.33333333333331" width="335" height="330.99999999999994"/>
+                                <rect key="frame" x="20" y="328.66666666666663" width="335" height="318.66666666666663"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -119,7 +131,7 @@
                             <constraint firstItem="yAU-hc-kYD" firstAttribute="leading" secondItem="afS-Nf-HDz" secondAttribute="leading" id="4qW-cq-e3P"/>
                             <constraint firstItem="afS-Nf-HDz" firstAttribute="trailing" secondItem="EGX-49-oxM" secondAttribute="trailing" constant="20" id="5VM-Ns-pPw"/>
                             <constraint firstItem="afS-Nf-HDz" firstAttribute="trailing" secondItem="yAU-hc-kYD" secondAttribute="trailing" id="7hc-FR-rsc"/>
-                            <constraint firstItem="LgU-0b-pkW" firstAttribute="width" secondItem="73i-Vo-cwz" secondAttribute="width" multiplier="0.4" id="Kdn-jk-TcE"/>
+                            <constraint firstItem="ZAx-P9-lHW" firstAttribute="height" secondItem="73i-Vo-cwz" secondAttribute="height" multiplier="0.2" id="JDg-NV-mxi"/>
                             <constraint firstItem="EGX-49-oxM" firstAttribute="leading" secondItem="afS-Nf-HDz" secondAttribute="leading" constant="20" id="M0o-H1-4fh"/>
                             <constraint firstItem="afS-Nf-HDz" firstAttribute="trailing" secondItem="Yb0-4c-hKR" secondAttribute="trailing" id="Pme-RD-VIK"/>
                             <constraint firstItem="yAU-hc-kYD" firstAttribute="top" secondItem="afS-Nf-HDz" secondAttribute="top" constant="10" id="VU7-TO-ZmW"/>
@@ -132,6 +144,7 @@
                     <connections>
                         <outlet property="btnLogout" destination="WmS-M3-Pp9" id="dDO-xO-6Gr"/>
                         <outlet property="imgProfile" destination="LgU-0b-pkW" id="aFU-ji-hrG"/>
+                        <outlet property="layoutProfile" destination="ZAx-P9-lHW" id="McP-zj-lho"/>
                         <outlet property="lblName" destination="uPO-mo-61D" id="kPB-Dt-Chs"/>
                         <outlet property="lblOccupation" destination="I89-Z5-zyc" id="IIz-74-nUP"/>
                         <outlet property="lblVersio" destination="WmS-M3-Pp9" id="FYg-6k-v9l"/>
@@ -146,7 +159,7 @@
     <color key="tintColor" name="ColorAccent"/>
     <resources>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
-        <image name="prifile-pic" width="500" height="500"/>
+        <image name="profile6" width="347" height="385"/>
         <namedColor name="ColorAccent">
             <color red="0.92500001192092896" green="0.40400001406669617" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
@@ -158,6 +171,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

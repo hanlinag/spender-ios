@@ -45,6 +45,7 @@
 "title.all_transactions" = "All Transactions";
 "title.add_transaction" = "Add Transaction";
 "title.enter_your_passcode" = "Enter your passcode";
+"title.create_new_wallet" = "Create New Wallet";
 
 
 //labels
@@ -84,6 +85,8 @@
 "btn.submit" = "Submit";
 "btn.add" = "Add";
 "btn.update" = "Update";
+"btn.create" = "Create";
+"btn.create_wallet" = "Create Wallet";
 
 //placeholder
 "placeholder.email" = "Email";
@@ -96,6 +99,7 @@
 "placeholder.nickname" = "Nickname";
 "placeholder.dob" = "Date Of Birth";
 "placeholder.occupation" = "Occoupation";
+"placeholder.type" = "Type";
 
 
 

@@ -8,17 +8,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Wallet SetupVC-->
+        <!--Wallet Setup-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="WalletSetup" id="Y6W-OH-hqX" customClass="WalletSetupVC" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vf7-8a-KSh">
+                                <rect key="frame" x="5" y="88" width="404" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jm7-Ym-rvf">
+                                <rect key="frame" x="25" y="808" width="364" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="MEe-ZQ-buJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Create Wallet"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="btn.create_wallet"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonCreateWalletDidPress:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kSx-P5-h7A"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jm7-Ym-rvf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="3BK-rf-1Co"/>
+                            <constraint firstItem="vf7-8a-KSh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="75m-9C-aRc"/>
+                            <constraint firstAttribute="bottom" secondItem="vf7-8a-KSh" secondAttribute="bottom" id="C5O-ZN-Wwb"/>
+                            <constraint firstItem="vf7-8a-KSh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="NTi-JI-b1m"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Jm7-Ym-rvf" secondAttribute="trailing" constant="25" id="Qs3-fx-7t1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vf7-8a-KSh" secondAttribute="trailing" constant="5" id="VLA-yl-b1j"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Jm7-Ym-rvf" secondAttribute="bottom" constant="10" id="rN4-5Z-qfr"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="to0-N3-bd3"/>
+                    <navigationItem key="navigationItem" title="Wallet Setup" id="to0-N3-bd3">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="settings.wallet_setup"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buttonCreate" destination="Jm7-Ym-rvf" id="Siw-v0-MmR"/>
+                        <outlet property="tableView" destination="vf7-8a-KSh" id="kgc-ic-Vz4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

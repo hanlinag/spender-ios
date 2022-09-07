@@ -31,6 +31,27 @@ In here, you can learn the following concepts: </br>
 - Global API handling
 - Custom ViewControllers [OOP Concept]
 
+# Design
+
+> Please look at the linked PDF file for Low Fedility Design. >
+
+- ![Figma design](www.google.com)
+- [L-F Design- Sketch](www.google.com)
+
+</br>
+
+# Screenshots
+
+![screenshot](www.google.com)
+
+# Usecase Diagram
+
+![usecase](www.google.com)
+
+# ER Diagram
+
+![er](www.google.com)
+
 # Project Structure
 
 - Current project tries to fit in MVVM design along with RxSwift and RxCocoa.
