@@ -2,15 +2,60 @@
 
 ## Expense Tracker
 
-> The idea of this app is to manage your money & finances, allow you to see your spending by category, set up bill payments, keep track of your incomes, and plan for savings.
+![spender-logo](https://github.com/hanlinag/spender-ios/blob/485923ae362372c2c312620bab32b846d241fd33/files/logo.png)
+
+> The idea of this app is to manage your money & finances, allow you to see your spending by category, set up bill payments, keep track of your incomes, and plan for savings.>
+
+</br>
+*Disclaimer: This project and documentation are still under constructions such as refactoring, fixing bug. However, the basic funcationalities should be working properly.*
+
+ </br>
 
 # Requirements Specification
-Please check the following link for detail: [title](https://www.example.com)
-### The required features of the app are:
 
-- Display and compare total cost by day, month, year.
-- Show your invoices during the day.
-- Add a new invoice.
-- Show categories (including food, water bills, etc).
-- Show categories with used invoices (for collecting purpose).
+Please check the following link for detail: [Requirements](https://github.com/hanlinag/spender-ios/blob/develop/Requirements.md)
 
+## Technology Slack
+
+In here, you can learn the following concepts: </br>
+
+- Passcode with FaceID [LocalAuth Framework + Encryption (Private + Public)]
+- MVVM Design Pattern
+- RxSwift, RxCocoa, RxAlamofire as possible
+- Storage:
+  - [Custom Golang API](https://github.com/hanlinag/go-spender-api) - Postgres DB
+  - RealmDB for local cache
+  - User Defaults for flags
+- Custom buttons, text fields, labels
+- Extension concepts
+- Global API handling
+- Custom ViewControllers [OOP Concept]
+
+# Project Structure
+
+- Current project tries to fit in MVVM design along with RxSwift and RxCocoa.
+- Alamofire and Moya are being used together in order to simplify Network calls in iOS.
+- Data encryption for PIN codes and user’s sensitive are made with the use of FaceID, Secure Enclave and Keychain as possible.
+- Tries to use third party libraries as less as possible for less dependeincy and easier maintainability.
+
+</br>
+
+# MVVM Design Pattern
+
+This project tries not to implement the business logic inside the View Controller. View Controller is used only to communicate view and view model. Moreover, view controller is being used for UI manipulation.
+
+- It has 4 layers:
+  - View
+  - View Controller
+  - View Model
+  - Model
+- **View**: is the storyboard itself. It includes the user interface.
+- **View Controller**: stays between UI View and View Model and acts as the communicator. UI manipulations with codes are done in these classes.
+- **View Model**: talks to API calls, DB connections, User Defaults via interfaces like Network calls, and DB schemes. All the business logics regarding the application scopes are made in the VMs for simplification sake. VM talks to view controller and data models while trying to obtain business logic inside it.
+- **Data Model**: perform the same task as in MVC design. Data manipulation are done in this layer as required by the business logic. Data models are for data passing between UI views, to and from APIs, Database and User Defaults.
+
+Therefore, all the business logics will only be done inside VM layer for simplification and maintainability. MVVM design is achieved by using as much as Reactive programming as well as completion handlers. (RxSwift and RxCocoa in this case.)
+
+</br>
+
+# Reactive Programming
