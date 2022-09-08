@@ -14,7 +14,7 @@ enum SpenderAlertType {
     case error   //red
 }
 
-class ConfirmAlertVC: UIViewController, UIGestureRecognizerDelegate {
+class ConfirmAlertVC: SpenderViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet var baseView: UIView!
     
@@ -34,14 +34,16 @@ class ConfirmAlertVC: UIViewController, UIGestureRecognizerDelegate {
         dismissGesture.delegate = self
         self.baseView.addGestureRecognizer(dismissGesture)
         
+        
         setup()
     }
     
     func setup() {
+        
         lblTitle.text = config?.title?.localized
         lblDesc.text = config?.subtitle?.localized
         
-        btnCancel.isHidden = !(config?.showSecondary ?? true) 
+        btnCancel.isHidden = !(config?.showSecondary ?? true)
         
         if let cancelLabel = config?.secondaryLabel {
             btnCancel.setTitle(cancelLabel, for: .normal)
@@ -66,6 +68,17 @@ class ConfirmAlertVC: UIViewController, UIGestureRecognizerDelegate {
     
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         return touch.view == self.baseView
+    }
+    
+    @IBAction func buttonCancelDidPress(_ sender: Any) {
+        self.config?.secondaryAction!()
+        self.dismissView()
+    }
+    
+    @IBAction func buttonOKDidPress(_ sender: Any) {
+        
+        self.config?.primaryAction!()
+        self.dismissView()
     }
     
     

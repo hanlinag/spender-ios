@@ -34,6 +34,7 @@ extension API.Headers {
         
         if let token = token { all["Authorization"] = token }
         
+        all["Content-type"]   =      "application/json"
         all["app_version"]    =      Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown"
         all["os_version"]     =      UIDevice.current.systemVersion
         all["device_model"]   =      UIDevice.modelName //custom mapping method

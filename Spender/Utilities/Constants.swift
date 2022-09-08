@@ -9,12 +9,16 @@
 import Foundation
 
 //MARK: - Enums
-enum LoginType: Codable {
+enum LoginType: String, Codable {
     case email
     case facebook
     case gmail
     case biometric
     case apple
+    
+    var string: String {
+        return self.rawValue
+    }
 }
 
 enum TransactionType {
@@ -67,6 +71,7 @@ enum StoryboardType: String {
         return self.rawValue
     }
 }
+
 
 //MARK: - Local Data
 private var signupTableCellModel = [

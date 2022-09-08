@@ -24,7 +24,7 @@ extension API.Auth: TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .login:    return .get
+        case .login:    return .post
         case .signup:   return .post
         case .logout:   return .post
         }
@@ -33,7 +33,7 @@ extension API.Auth: TargetType {
     var task: Task {
         switch self {
         case let .login(email, password, loginType):
-            return .requestParameters(parameters: ["email": email, "password": password, "login_type": loginType ], encoding: URLEncoding.default)
+            return .requestParameters(parameters: ["email": email, "password": password, "login_type": loginType ], encoding: URLEncoding.httpBody)
         case let .signup(name, email, nickName, password, dob, loginType, occupation):
             return .requestParameters(parameters: ["name": name, "email": email, "nick_name": nickName, "password": password, "dob": dob, "login_type": loginType, "occupation": occupation], encoding: URLEncoding.default)
         case .logout:

@@ -46,6 +46,9 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Cancel" subtitle="">
                                                     <color key="baseForegroundColor" name="ColorAccent"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonCancelDidPress:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="d2O-cq-8Hl"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHO-TQ-wG6">
                                                 <rect key="frame" x="166.5" y="0.0" width="166.5" height="44"/>
@@ -55,6 +58,9 @@
                                                 <color key="tintColor" name="ColorAccent"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="OK"/>
+                                                <connections>
+                                                    <action selector="buttonOKDidPress:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6A2-wN-wAC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -81,17 +87,17 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-text-orange" translatesAutoresizingMaskIntoConstraints="NO" id="Fl3-m6-cRp">
-                                <rect key="frame" x="104.5" y="226.5" width="205" height="125.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-alert" translatesAutoresizingMaskIntoConstraints="NO" id="Fl3-m6-cRp">
+                                <rect key="frame" x="-333" y="217" width="1080" height="157"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="ColorGreyTransparent-1"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Fl3-m6-cRp" firstAttribute="height" secondItem="h9Z-TS-qhf" secondAttribute="height" multiplier="0.4" id="Hco-xF-v6J"/>
+                            <constraint firstItem="Fl3-m6-cRp" firstAttribute="height" secondItem="h9Z-TS-qhf" secondAttribute="height" multiplier="0.5" id="Hco-xF-v6J"/>
                             <constraint firstItem="h9Z-TS-qhf" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.9" id="PZh-h9-Vao"/>
-                            <constraint firstItem="h9Z-TS-qhf" firstAttribute="topMargin" secondItem="Fl3-m6-cRp" secondAttribute="bottom" multiplier="0.85" id="bhd-5e-nbv"/>
+                            <constraint firstItem="h9Z-TS-qhf" firstAttribute="topMargin" secondItem="Fl3-m6-cRp" secondAttribute="bottom" multiplier="0.8" id="bhd-5e-nbv"/>
                             <constraint firstItem="h9Z-TS-qhf" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dob-Dr-Ako"/>
                             <constraint firstItem="Fl3-m6-cRp" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="eMo-Ar-mI7"/>
                             <constraint firstItem="h9Z-TS-qhf" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="tfL-t0-JA0"/>
@@ -112,7 +118,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo-text-orange" width="205" height="205"/>
+        <image name="logo-alert" width="1080" height="1080"/>
         <namedColor name="ColorAccent">
             <color red="0.92500001192092896" green="0.40400001406669617" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
