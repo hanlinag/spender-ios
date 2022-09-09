@@ -17,7 +17,7 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("GOOO: Main Tab Bar now...")
+        debugPrint("GOOO: Main Tab Bar now...")
         // Do any additional setup after loading the view.
     }
     
