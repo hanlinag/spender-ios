@@ -35,14 +35,14 @@ In here, you can learn the following concepts: </br>
 
 > Please look at the linked PDF file for Low Fedility Design. >
 
-- ![Figma design](www.google.com)
-- [L-F Design- Sketch](www.google.com)
+- ![Figma design](https://dribbble.com/shots/19347750-Spender-Expense-Tracker)
+- [L-F Design- Sketch](https://github.com/hanlinag/spender-ios/blob/develop/files/Spender-L-F-Mockup.pdf)
 
 </br>
 
 # Screenshots
 
-![screenshot](www.google.com)
+![screenshot](https://www.saihanlinaung.dev/assets/img/projects/spender.portfolio.png)
 
 # Usecase Diagram
 
