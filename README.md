@@ -33,16 +33,16 @@ In here, you can learn the following concepts: </br>
 
 # Design
 
-> Please look at the linked PDF file for Low Fedility Design. >
+> Please look at the linked PDF file for Low Fedility Design.
 
-- ![Figma design](www.google.com)
-- [L-F Design- Sketch](www.google.com)
+- ![Figma design](https://cdn.dribbble.com/users/2264513/screenshots/19347750/media/d359feef55a4dfcdc912d8aea1019d58.png)
+- [L-F Design- Sketch](https://github.com/hanlinag/spender-ios/blob/develop/files/Spender-L-F-Mockup.pdf)
 
 </br>
 
 # Screenshots
 
-![screenshot](www.google.com)
+![screenshot](https://www.saihanlinaung.dev/assets/img/projects/spender.portfolio.png)
 
 # Usecase Diagram
 
