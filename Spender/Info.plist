@@ -2,6 +2,31 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Spend needs your permission to use Biometric for passcode login</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.719862303650-potpmjlasmjull7m66mqac8n0i64govm</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>637280727709035</string>
+	<key>FacebookClientToken</key>
+	<string>d8e36ece903073a4cb19f0a5d08f115b</string>
+	<key>FacebookDisplayName</key>
+	<string>Spender</string>
+	<key>MSToken</key>
+	<string>9428f531-76d2-4004-b5e7-cfdfc816a538</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Pyidaungsu.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
