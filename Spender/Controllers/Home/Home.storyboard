@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vmx-01-RBi">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="iyd-Jf-R8r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vmx-01-RBi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="yxr-fT-rTC">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="tab.home"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Thl-ow-5b3">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="compactScrollEdgeAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2wh-EN-CBM" kind="relationship" relationship="rootViewController" id="lgI-Rt-lzo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yd-gW-Zlk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3327.1999999999998" y="1783.7438423645322"/>
+        </scene>
+        <!--Spender-->
+        <scene sceneID="Vxo-bH-Oub">
+            <objects>
+                <viewController storyboardIdentifier="Home" id="2wh-EN-CBM" customClass="HomeVC" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U8f-3n-ZeV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4PF-e9-DBs">
+                                <rect key="frame" x="0.0" y="140" width="375" height="638"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lVl-2g-JHp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lVl-2g-JHp" firstAttribute="bottom" secondItem="4PF-e9-DBs" secondAttribute="bottom" id="Hva-uP-pFO"/>
+                            <constraint firstItem="4PF-e9-DBs" firstAttribute="top" secondItem="lVl-2g-JHp" secondAttribute="top" id="Ver-50-GMc"/>
+                            <constraint firstItem="4PF-e9-DBs" firstAttribute="leading" secondItem="lVl-2g-JHp" secondAttribute="leading" id="cAh-Ae-Wai"/>
+                            <constraint firstItem="lVl-2g-JHp" firstAttribute="trailing" secondItem="4PF-e9-DBs" secondAttribute="trailing" id="nvM-8e-xMA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Spender" leftItemsSupplementBackButton="YES" id="qum-OQ-wLv"/>
+                    <connections>
+                        <outlet property="tableView" destination="4PF-e9-DBs" id="iOU-Lr-Gzx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CIN-qs-wPA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3327.5362318840585" y="2528.5714285714284"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="ColorAccent"/>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <namedColor name="ColorAccent">
+            <color red="0.92500001192092896" green="0.40400001406669617" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

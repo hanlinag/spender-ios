@@ -1,0 +1,116 @@
+/* 
+  e.strings
+  Spender
+
+  Created by Tyler on 31/07/2022.
+  Copyright © 2022 Tyler. All rights reserved.
+*/
+
+//general
+"general.yes"       =         "Yes";
+"general.no"        =         "No";
+"general.ok"        =         "OK";
+"general.cancel"    =         "Cancel";
+"general.done"      =         "Done";
+"general.logout"    =         "Logout";
+"general.close"     =         "Close";
+"general.confirm"   =         "Confirm";
+"general.loading"   =         "Loading";
+"general.alert"     =         "Alert!";
+
+//tab bars
+"tab.home"      = "Home";
+"tab.wallets"   = "Wallets";
+"tab.activity"  = "Activity";
+"tab.settings"  = "Settings";
+
+//segmented control
+"segment.income" = "Income";
+"segment.outcome" = "Outcome";
+
+//titles
+"title.login"  = "Login";
+"title.confirmation" = "Confirmation";
+"title.forgot_pw" = "Forgot Password";
+"title.set_new_pw" = "Set New Password";
+"title.congrats" = "Congratulations!";
+"title.create_account" = "Create Account";
+"title.one_more_step" = "One More Step";
+"title.404" = "Service Unavailable";
+"title.total_wealth" = "Total Wealth";
+"title.transactions" = "Transactions";
+"title.my_wallets" = "My Wallets";
+"title.terms_of_use" = "Terms of Use";
+"title.privacy_policy" = "Privacy Policy";
+"title.all_transactions" = "All Transactions";
+"title.add_transaction" = "Add Transaction";
+"title.enter_your_passcode" = "Enter your passcode";
+"title.create_new_wallet" = "Create New Wallet";
+"title.error" = "Error";
+
+
+
+//labels
+"desc.login"  = "Please login to your account to get to know more about your spending behavior.";
+"desc.forgot_pw" = "Please enter your email to reset your password.";
+"desc.confirmation" = "Please enter the code sent to your email: %s";
+"desc.set_new_pw" = "Please enter your new password for your account.";
+"desc.dont_have_account" = "Don’t have an account yet?";
+"desc.login_with" = "Login With";
+"desc.reset_congrats" = "Your password has been resetted successfully.";
+"desc.create_congrats" = "We've successfully created your Spender account.";
+"desc.create_account" = "Fill out all the required infomation to set up a new account.";
+"desc.optional" = " (optional)";
+"desc.one_more_step" = "Please fill out the required information to continue setting up the acccount.";
+"desc.terms_and_conditions" = "By signing up, you have already agreed to our Terms of Use and Privacy Policies.";
+"desc.already_have_an_account" = "Already have an account? Login";
+"desc.404" = "The service you are looking for does’t seem to be available at the moment.";
+"desc.feedback" = "How was your experience with us?";
+"desc.field_missing" = "Please enter emaill and password";
+
+//buttons
+"btn.sign_in" = "Sign In";
+"btn.reset" = "Reset";
+"btn.resend_otp" = "Resend OTP Again";
+"btn.forgot_pw" = "Forgot password?";
+"btn.register" = "Register";
+"btn.send" = "Send";
+"btn.ok" = "OK";
+"btn.confirm"  = "Confirm";
+"btn.get_started" = "Get Started";
+"btn.back" = "Back";
+"btn.create_account" = "Create Account";
+"btn.done" = "Done";
+"btn.add_transaction" = "Add Transaction";
+"btn.see_all" = "See All";
+"btn.logout" = "Logout";
+"btn.change_password" = "Change Password";
+"btn.submit" = "Submit";
+"btn.add" = "Add";
+"btn.update" = "Update";
+"btn.create" = "Create";
+"btn.create_wallet" = "Create Wallet";
+
+//placeholder
+"placeholder.email" = "Email";
+"placeholder.password" = "Password";
+"placeholder.confirm_pw" = "Confirm Password";
+"placeholder.new_password" = "New Password";
+"placeholder.current_password" = "Current Password";
+"placeholder.nickname" = "Nickname (optional)";
+"placeholder.name" = "Name";
+"placeholder.nickname" = "Nickname";
+"placeholder.dob" = "Date Of Birth";
+"placeholder.occupation" = "Occoupation";
+"placeholder.type" = "Type";
+
+
+
+//settings
+"settings.edit_profile" = "Edit Profile";
+"settings.change_password" = "Change Password";
+"settings.wallet_setup" = "Wallet Setup";
+"settings.change_language" = "Change Language";
+"settings.legal_privacy" = "Legal & Privacy";
+"settings.feedback" = "Feedback";
+

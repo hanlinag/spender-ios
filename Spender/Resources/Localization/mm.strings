@@ -1,0 +1,36 @@
+/* 
+  mm.strings
+  Spender
+
+  Created by Tyler on 31/07/2022.
+  Copyright © 2022 Tyler. All rights reserved.
+*/
+
+//general
+"general.yes"       =         "လုပ်မည်";
+"general.no"        =         "မလုပ်ပါ";
+"general.ok"        =         "အိုခေ";
+"general.cancel"    =         "မလုပ်ပါ";
+"general.done"      =         "ပြီးပြီ";
+"general.logout"    =         "ထွက်မည်";
+"general.close"     =         "ပိတ်မည်";
+"general.confirm"   =         "အတည်ပြုသည်";
+"general.loading"   =         "ခေတ္တစောင့်ပါ";
+"general.alert"     =         "Alert!";
+
+//tab bars
+"tab.home"      = "ပင်မ";
+"tab.wallets"   = "ကဒ်များ";
+"tab.activity"  = "လုပ်ဆောင်ချက်";
+"tab.settings"  = "ပြင်ဆင်မှူ";
+
+//titles
+
+
+//labels
+
+
+//buttons
+
+
+//hints

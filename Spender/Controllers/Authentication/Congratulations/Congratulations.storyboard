@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="59O-ud-rkp">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Congratulations-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Congratulations" title="Congratulations" id="Y6W-OH-hqX" customClass="Congratulations" customModule="Spender" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ewm-EJ-KhJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YyL-Bk-XvP">
+                                <rect key="frame" x="25" y="114.33333333333331" width="325" height="340"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="congrats" translatesAutoresizingMaskIntoConstraints="NO" id="wyF-48-eM5">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="257"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYQ-tI-PCK" userLabel="lblTitle">
+                                        <rect key="frame" x="0.0" y="265" width="325" height="28.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="title.congrats"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your password has been resetted successfully." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJu-Rp-crA" userLabel="lblDesc">
+                                        <rect key="frame" x="0.0" y="301.66666666666669" width="325" height="38.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="desc.reset_congrats"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJK-2s-qoR">
+                                <rect key="frame" x="35" y="709" width="305" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nUS-CI-yxP"/>
+                                </constraints>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get Started"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="btn.get_started"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onGetStartedTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e4A-RA-p4B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="NJK-2s-qoR" secondAttribute="bottom" constant="25" id="3Bn-ph-9xs"/>
+                            <constraint firstItem="ewm-EJ-KhJ" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="48P-OO-YEC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NJK-2s-qoR" secondAttribute="trailing" constant="35" id="BMd-gE-ka7"/>
+                            <constraint firstItem="ewm-EJ-KhJ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="NIg-4J-vCs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YyL-Bk-XvP" secondAttribute="trailing" constant="25" id="QPu-bC-Cn3"/>
+                            <constraint firstItem="NJK-2s-qoR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="SGR-0K-fFE"/>
+                            <constraint firstItem="YyL-Bk-XvP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="SOB-gb-GZX"/>
+                            <constraint firstItem="NJK-2s-qoR" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Zd9-DO-bXY"/>
+                            <constraint firstItem="YyL-Bk-XvP" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.7" id="hhw-DW-CxE"/>
+                            <constraint firstAttribute="bottom" secondItem="ewm-EJ-KhJ" secondAttribute="bottom" id="nCT-Yg-CXg"/>
+                            <constraint firstAttribute="trailing" secondItem="ewm-EJ-KhJ" secondAttribute="trailing" id="pSO-Kj-MLf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZMH-hc-msk"/>
+                    <connections>
+                        <outlet property="btnGetStarted" destination="NJK-2s-qoR" id="IfM-y4-k1Q"/>
+                        <outlet property="lblDesc" destination="wJu-Rp-crA" id="5Ca-m8-ujg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.4000000000001" y="89.408866995073893"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UW3-EQ-uPw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="59O-ud-rkp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YCQ-vi-LUP">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="oMV-ae-mCr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6i-0v-8j7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="89.408866995073893"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="390" height="844"/>
+        <image name="congrats" width="343" height="257"/>
+        <namedColor name="AccentColor">
+            <color red="0.92500001192092896" green="0.40400001406669617" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
