@@ -49,17 +49,17 @@ class LoginVC: SpenderViewController {
     
     @IBAction func onLoginButtonAction(_ sender: Any) {
         
-        vm.loginWith(email: email, password: password)
+       // vm.loginWith(email: email, password: password)
         
         //showAlert(title: "title.error".localized, subtitle: "desc.field_missing".localized, type: .error, showSecondary: false, primaryLabel: "".localized, secondaryAction: nil, primaryAction: {
           //  debugPrint("Hello")
         //})
         
         //go to tab bar controller aka main
-        /* let storyboard = UIStoryboard(name: "Main", bundle: nil)
+         let storyboard = UIStoryboard(name: "Main", bundle: nil)
          let vc = storyboard.instantiateViewController(withIdentifier: "MainTabBarBoard") as! MainTabBarViewController
          let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
-         sceneDelegate.window?.rootViewController = vc */
+         sceneDelegate.window?.rootViewController = vc
         
     }
     

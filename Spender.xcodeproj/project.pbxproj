@@ -98,6 +98,13 @@
 		CB7BF867276F81900090FE0A /* WalletsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF866276F81900090FE0A /* WalletsVC.swift */; };
 		CB7BF869276F819D0090FE0A /* ActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF868276F819D0090FE0A /* ActivityVC.swift */; };
 		CB7BF86B276F81A80090FE0A /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BF86A276F81A80090FE0A /* SettingsVC.swift */; };
+		CB7E259728D96808006605BC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7E259628D96808006605BC /* WidgetKit.framework */; };
+		CB7E259928D96808006605BC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7E259828D96808006605BC /* SwiftUI.framework */; };
+		CB7E259C28D96808006605BC /* SpenderWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7E259B28D96808006605BC /* SpenderWidget.swift */; };
+		CB7E259F28D9680A006605BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7E259E28D9680A006605BC /* Assets.xcassets */; };
+		CB7E25A128D9680A006605BC /* SpenderWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CB7E259D28D96808006605BC /* SpenderWidget.intentdefinition */; };
+		CB7E25A228D9680A006605BC /* SpenderWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CB7E259D28D96808006605BC /* SpenderWidget.intentdefinition */; };
+		CB7E25A528D9680A006605BC /* SpenderWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CB7E259528D96808006605BC /* SpenderWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CB8674F22896DC6B00144558 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8674F12896DC6B00144558 /* LoadingButton.swift */; };
 		CB8674F42896DC7A00144558 /* SpenderPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8674F32896DC7A00144558 /* SpenderPrimaryButton.swift */; };
 		CB8674F62896E1B900144558 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8674F52896E1B900144558 /* API.swift */; };
@@ -157,6 +164,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CB7E25A328D9680A006605BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB97499B276A4F7700357BF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB7E259428D96808006605BC;
+			remoteInfo = SpenderWidgetExtension;
+		};
 		CB9749BA276A4F7800357BF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB97499B276A4F7700357BF2 /* Project object */;
@@ -172,6 +186,20 @@
 			remoteInfo = Spender;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB7E25A628D9680A006605BC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB7E25A528D9680A006605BC /* SpenderWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0696D0929A7546EC73E59DE3 /* Pods_Spender_SpenderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spender_SpenderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -274,6 +302,13 @@
 		CB7BF866276F81900090FE0A /* WalletsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsVC.swift; sourceTree = "<group>"; };
 		CB7BF868276F819D0090FE0A /* ActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityVC.swift; sourceTree = "<group>"; };
 		CB7BF86A276F81A80090FE0A /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		CB7E259528D96808006605BC /* SpenderWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpenderWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7E259628D96808006605BC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CB7E259828D96808006605BC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CB7E259B28D96808006605BC /* SpenderWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpenderWidget.swift; sourceTree = "<group>"; };
+		CB7E259D28D96808006605BC /* SpenderWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SpenderWidget.intentdefinition; sourceTree = "<group>"; };
+		CB7E259E28D9680A006605BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB7E25A028D9680A006605BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB8674F12896DC6B00144558 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
 		CB8674F32896DC7A00144558 /* SpenderPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpenderPrimaryButton.swift; sourceTree = "<group>"; };
 		CB8674F52896E1B900144558 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -338,6 +373,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CB7E259228D96808006605BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7E259928D96808006605BC /* SwiftUI.framework in Frameworks */,
+				CB7E259728D96808006605BC /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB9749A0276A4F7700357BF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -846,6 +890,17 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		CB7E259A28D96808006605BC /* SpenderWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CB7E259B28D96808006605BC /* SpenderWidget.swift */,
+				CB7E259D28D96808006605BC /* SpenderWidget.intentdefinition */,
+				CB7E259E28D9680A006605BC /* Assets.xcassets */,
+				CB7E25A028D9680A006605BC /* Info.plist */,
+			);
+			path = SpenderWidget;
+			sourceTree = "<group>";
+		};
 		CB8674F02896D82000144558 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -861,6 +916,7 @@
 				CB9749A5276A4F7700357BF2 /* Spender */,
 				CB9749BC276A4F7800357BF2 /* SpenderTests */,
 				CB9749C6276A4F7800357BF2 /* SpenderUITests */,
+				CB7E259A28D96808006605BC /* SpenderWidget */,
 				CB9749A4276A4F7700357BF2 /* Products */,
 				1F2543A30A9E12602F91866E /* Pods */,
 				FC7ED27727377D2CC119CD96 /* Frameworks */,
@@ -873,6 +929,7 @@
 				CB9749A3276A4F7700357BF2 /* Spender.app */,
 				CB9749B9276A4F7800357BF2 /* SpenderTests.xctest */,
 				CB9749C3276A4F7800357BF2 /* SpenderUITests.xctest */,
+				CB7E259528D96808006605BC /* SpenderWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1045,6 +1102,8 @@
 				62D196E67E62F517D6D4A411 /* Pods_Spender.framework */,
 				0696D0929A7546EC73E59DE3 /* Pods_Spender_SpenderTests.framework */,
 				A226962AF9C3EF698F43A402 /* Pods_Spender_SpenderUITests.framework */,
+				CB7E259628D96808006605BC /* WidgetKit.framework */,
+				CB7E259828D96808006605BC /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1052,6 +1111,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CB7E259428D96808006605BC /* SpenderWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB7E25A928D9680A006605BC /* Build configuration list for PBXNativeTarget "SpenderWidgetExtension" */;
+			buildPhases = (
+				CB7E259128D96808006605BC /* Sources */,
+				CB7E259228D96808006605BC /* Frameworks */,
+				CB7E259328D96808006605BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpenderWidgetExtension;
+			productName = SpenderWidgetExtension;
+			productReference = CB7E259528D96808006605BC /* SpenderWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		CB9749A2276A4F7700357BF2 /* Spender */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB9749CD276A4F7800357BF2 /* Build configuration list for PBXNativeTarget "Spender" */;
@@ -1061,10 +1137,12 @@
 				CB9749A0276A4F7700357BF2 /* Frameworks */,
 				CB9749A1276A4F7700357BF2 /* Resources */,
 				1DEB4B90FBDCBFC11789980D /* [CP] Embed Pods Frameworks */,
+				CB7E25A628D9680A006605BC /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CB7E25A428D9680A006605BC /* PBXTargetDependency */,
 			);
 			name = Spender;
 			productName = Spender;
@@ -1118,10 +1196,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = Tyler;
 				TargetAttributes = {
+					CB7E259428D96808006605BC = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					CB9749A2276A4F7700357BF2 = {
 						CreatedOnToolsVersion = 13.2;
 					};
@@ -1153,11 +1234,20 @@
 				CB9749A2276A4F7700357BF2 /* Spender */,
 				CB9749B8276A4F7800357BF2 /* SpenderTests */,
 				CB9749C2276A4F7800357BF2 /* SpenderUITests */,
+				CB7E259428D96808006605BC /* SpenderWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CB7E259328D96808006605BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7E259F28D9680A006605BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB9749A1276A4F7700357BF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1353,6 +1443,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CB7E259128D96808006605BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7E25A128D9680A006605BC /* SpenderWidget.intentdefinition in Sources */,
+				CB7E259C28D96808006605BC /* SpenderWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB97499F276A4F7700357BF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1401,6 +1500,7 @@
 				CBA227C328A237FA00B7E8A2 /* Rx + MoyaProvider.swift in Sources */,
 				CB8675082896F58100144558 /* ErrorResponse.swift in Sources */,
 				CBD7D5D128BFCCDD0043A07E /* AlertConfig.swift in Sources */,
+				CB7E25A228D9680A006605BC /* SpenderWidget.intentdefinition in Sources */,
 				CB14430228BE5FED00D37E5B /* ServiceUnavailableVC.swift in Sources */,
 				CB8674FA2896EF6A00144558 /* AuthAPI.swift in Sources */,
 				CB8675022896EF9400144558 /* FeedbackAPI.swift in Sources */,
@@ -1470,6 +1570,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CB7E25A428D9680A006605BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB7E259428D96808006605BC /* SpenderWidgetExtension */;
+			targetProxy = CB7E25A328D9680A006605BC /* PBXContainerItemProxy */;
+		};
 		CB9749BB276A4F7800357BF2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CB9749A2276A4F7700357BF2 /* Spender */;
@@ -1506,6 +1611,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CB7E25A728D9680A006605BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 469N27T8BN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpenderWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpenderWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Tyler. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saihanlinaung.Spender.SpenderWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB7E25A828D9680A006605BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 469N27T8BN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpenderWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpenderWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Tyler. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saihanlinaung.Spender.SpenderWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		CB9749CB276A4F7800357BF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1558,7 +1723,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1614,7 +1779,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1628,6 +1793,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C182BA3C70AFA8C15DC635AF /* Pods-Spender.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1635,12 +1801,15 @@
 				DEVELOPMENT_TEAM = 469N27T8BN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Spender/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Spend needs your permission to use Biometric for passcode login";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1659,6 +1828,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC4A85D7CEC8AA7DA6041D72 /* Pods-Spender.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1667,18 +1837,21 @@
 				DEVELOPMENT_TEAM = 469N27T8BN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Spender/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Spend needs your permission to use Biometric for passcode login";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.saihanlinaung.Spender;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.saihanlinaung.Spender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1770,6 +1943,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CB7E25A928D9680A006605BC /* Build configuration list for PBXNativeTarget "SpenderWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7E25A728D9680A006605BC /* Debug */,
+				CB7E25A828D9680A006605BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CB97499E276A4F7700357BF2 /* Build configuration list for PBXProject "Spender" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

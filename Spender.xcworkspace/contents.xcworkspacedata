@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../../Downloads/MyLibrary">
+   </FileRef>
+   <FileRef
       location = "group:Spender.xcodeproj">
    </FileRef>
    <FileRef
