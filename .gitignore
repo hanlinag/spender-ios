@@ -7723,3 +7723,56 @@ Pods/Target Support Files/GoogleSignIn/GoogleSignIn-Info.plist
 Pods/Target Support Files/GoogleSignIn/GoogleSignIn.debug.xcconfig
 Pods/Target Support Files/GoogleSignIn/GoogleSignIn.release.xcconfig
 Pods/Target Support Files/GoogleSignIn/ResourceBundle-GoogleSignIn-GoogleSignIn-Info.plist
+Pods/AppAuth/Source/AppAuth/iOS/OIDAuthorizationService+IOS.h
+Pods/AppAuth/Source/AppAuth/iOS/OIDAuthorizationService+IOS.m
+Pods/AppAuth/Source/AppAuth/iOS/OIDAuthState+IOS.h
+Pods/AppAuth/Source/AppAuth/iOS/OIDAuthState+IOS.m
+Pods/AppAuth/Source/AppAuth/iOS/OIDExternalUserAgentCatalyst.h
+Pods/AppAuth/Source/AppAuth/iOS/OIDExternalUserAgentCatalyst.m
+Pods/AppAuth/Source/AppAuth/iOS/OIDExternalUserAgentIOS.h
+Pods/AppAuth/Source/AppAuth/iOS/OIDExternalUserAgentIOS.m
+Pods/AppAuth/Source/AppAuthCore/OIDServiceConfiguration.m
+Pods/AppAuth/Source/AppAuthCore/OIDServiceDiscovery.m
+Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsBundle.swift
+Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/RingBuffer.swift
+Pods/GoogleSignIn/README.md
+Pods/Manifest.lock
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/AppAuth.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/AppCenter.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/FBAEMKit.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/FBSDKCoreKit.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/FBSDKCoreKit_Basics.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/FBSDKLoginKit.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/FirebaseAnalytics.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/FirebaseAuth.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/FirebaseCore.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/FirebaseCoreDiagnostics.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/FirebaseCoreInternal.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/FirebaseInstallations.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/GoogleAppMeasurement.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/GoogleDataTransport.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/GoogleSignIn-GoogleSignIn.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/GoogleSignIn.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/GoogleUtilities.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/GTMAppAuth.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/GTMSessionFetcher.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/nanopb.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/Pods-Spender-SpenderTests.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/Pods-Spender-SpenderUITests.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/Pods-Spender.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/PromisesObjC.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/R.swift.Library.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/R.swift.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/aceplus.xcuserdatad/xcschemes/xcschememanagement.plist
+Pods/Target Support Files/AppAuth/AppAuth-Info.plist
+Pods/Target Support Files/FirebaseCore/FirebaseCore-Info.plist
+Pods/Target Support Files/FirebaseCore/FirebaseCore.debug.xcconfig
+Pods/Target Support Files/FirebaseCore/FirebaseCore.release.xcconfig
+Pods/Target Support Files/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics-Info.plist
+Pods/Target Support Files/FirebaseCoreInternal/FirebaseCoreInternal-Info.plist
+Pods/Target Support Files/FirebaseInstallations/FirebaseInstallations-Info.plist
+Pods/Target Support Files/GoogleSignIn/GoogleSignIn-Info.plist
+Pods/Target Support Files/GoogleSignIn/GoogleSignIn.debug.xcconfig
+Pods/Target Support Files/GoogleSignIn/GoogleSignIn.release.xcconfig
+Pods/Target Support Files/GoogleSignIn/ResourceBundle-GoogleSignIn-GoogleSignIn-Info.plist
