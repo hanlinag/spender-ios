@@ -157,6 +157,7 @@
 		CBD8025D28C3BFE7000F0680 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD8025B28C3BFE7000F0680 /* SettingsCell.xib */; };
 		CBF26A3128E02B1900236CBC /* AuthValidatorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF26A3028E02B1900236CBC /* AuthValidatorsTest.swift */; };
 		CBF26A3628E02E5B00236CBC /* AuthValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF26A3528E02E5B00236CBC /* AuthValidators.swift */; };
+		CBF26A3928E0A65900236CBC /* AuthUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF26A3828E0A65900236CBC /* AuthUITest.swift */; };
 		CBFF44DA28BB65EA008493C3 /* SignupTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF44D928BB65EA008493C3 /* SignupTableViewCellModel.swift */; };
 		CBFF44DD28BBB769008493C3 /* SignupHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF44DB28BBB769008493C3 /* SignupHeaderTableViewCell.swift */; };
 		CBFF44DE28BBB769008493C3 /* SignupHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBFF44DC28BBB769008493C3 /* SignupHeaderTableViewCell.xib */; };
@@ -367,6 +368,7 @@
 		CBD8025B28C3BFE7000F0680 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
 		CBF26A3028E02B1900236CBC /* AuthValidatorsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidatorsTest.swift; sourceTree = "<group>"; };
 		CBF26A3528E02E5B00236CBC /* AuthValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidators.swift; sourceTree = "<group>"; };
+		CBF26A3828E0A65900236CBC /* AuthUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUITest.swift; sourceTree = "<group>"; };
 		CBFF44D928BB65EA008493C3 /* SignupTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTableViewCellModel.swift; sourceTree = "<group>"; };
 		CBFF44DB28BBB769008493C3 /* SignupHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		CBFF44DC28BBB769008493C3 /* SignupHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupHeaderTableViewCell.xib; sourceTree = "<group>"; };
@@ -970,6 +972,7 @@
 		CB9749C6276A4F7800357BF2 /* SpenderUITests */ = {
 			isa = PBXGroup;
 			children = (
+				CBF26A3728E0A64500236CBC /* Auth */,
 				CB9749C7276A4F7800357BF2 /* SpenderUITests.swift */,
 				CB9749C9276A4F7800357BF2 /* SpenderUITestsLaunchTests.swift */,
 			);
@@ -1116,6 +1119,14 @@
 				CBF26A3528E02E5B00236CBC /* AuthValidators.swift */,
 			);
 			path = AuthValidators;
+			sourceTree = "<group>";
+		};
+		CBF26A3728E0A64500236CBC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CBF26A3828E0A65900236CBC /* AuthUITest.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		FC7ED27727377D2CC119CD96 /* Frameworks */ = {
@@ -1588,6 +1599,7 @@
 			files = (
 				CB9749CA276A4F7800357BF2 /* SpenderUITestsLaunchTests.swift in Sources */,
 				CB9749C8276A4F7800357BF2 /* SpenderUITests.swift in Sources */,
+				CBF26A3928E0A65900236CBC /* AuthUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1656,7 +1668,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.saihanlinaung.Spender.SpenderWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.saihanlinaung.Spender.SpenderWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1686,7 +1698,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.saihanlinaung.Spender.SpenderWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.saihanlinaung.Spender.SpenderWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1747,7 +1759,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1803,7 +1815,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1831,13 +1843,13 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.saihanlinaung.Spender;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.saihanlinaung.Spender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1865,7 +1877,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1890,9 +1902,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 469N27T8BN;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sai.SpenderTests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.saihanlinaung.SpenderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -1911,9 +1923,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 469N27T8BN;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sai.SpenderTests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.saihanlinaung.SpenderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -1931,8 +1943,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 469N27T8BN;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sai.SpenderUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.saihanlinaung.SpenderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -1950,8 +1963,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 469N27T8BN;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sai.SpenderUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.saihanlinaung.SpenderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;

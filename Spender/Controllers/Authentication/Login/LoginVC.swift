@@ -20,6 +20,15 @@ class LoginVC: SpenderViewController {
     
     var currentTextField: UITextField?
     
+    @IBOutlet weak var btnForgot: UIButton!
+    @IBOutlet weak var btnSignin: LoadingButton!
+    
+    @IBOutlet weak var btnGoogleLogin: UIButton!
+    @IBOutlet weak var btnFacebookLogin: UIButton!
+    @IBOutlet weak var btnAppleLogin: UIButton!
+    
+    @IBOutlet weak var btnRegister: UIButton!
+    
     var email: String?
     var password: String?
     
@@ -36,6 +45,17 @@ class LoginVC: SpenderViewController {
         //tfPassword.addTarget(self, action: #selector(textFieldListener), for: .valueChanged)
         tfEmail.delegate = self
         tfPassword.delegate = self
+        
+        prepareForAccessibility()
+    }
+    
+    private func prepareForAccessibility() {
+        btnForgot.accessibilityLabel        = "buttonForgotPasword"
+        btnSignin.accessibilityLabel        = "buttonSigin"
+        btnGoogleLogin.accessibilityLabel   = "buttonGoogleLogin"
+        btnFacebookLogin.accessibilityLabel = "buttonFacebookLogin"
+        btnAppleLogin.accessibilityLabel    = "buttonAppleLogin"
+        btnRegister.accessibilityLabel      = "buttonRegister"
     }
     
     @objc func textFieldListener(_ sender: UITextField) {

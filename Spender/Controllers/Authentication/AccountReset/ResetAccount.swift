@@ -43,6 +43,14 @@ class ResetAccount: SpenderViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tfEmail.accessibilityLabel           = "tfEmail"
+        tfOne.accessibilityLabel             = "tfOne"
+        tfTwo.accessibilityLabel             = "tfTwo"
+        tfThree.accessibilityLabel           = "tfThree"
+        tfFour.accessibilityLabel            = "tfFour"
+        tfPassword.accessibilityLabel        = "tfPassword"
+        tfPasswordConfirm.accessibilityLabel = "tfPasswordConfirm"
+        
         //Disable swipe down to dismiss gesture
         self.isModalInPresentation = true
         
