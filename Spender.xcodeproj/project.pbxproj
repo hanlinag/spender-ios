@@ -155,6 +155,8 @@
 		CBD7D5D128BFCCDD0043A07E /* AlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7D5D028BFCCDD0043A07E /* AlertConfig.swift */; };
 		CBD8025C28C3BFE7000F0680 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8025A28C3BFE7000F0680 /* SettingsCell.swift */; };
 		CBD8025D28C3BFE7000F0680 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD8025B28C3BFE7000F0680 /* SettingsCell.xib */; };
+		CBF26A3128E02B1900236CBC /* AuthValidatorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF26A3028E02B1900236CBC /* AuthValidatorsTest.swift */; };
+		CBF26A3628E02E5B00236CBC /* AuthValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF26A3528E02E5B00236CBC /* AuthValidators.swift */; };
 		CBFF44DA28BB65EA008493C3 /* SignupTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF44D928BB65EA008493C3 /* SignupTableViewCellModel.swift */; };
 		CBFF44DD28BBB769008493C3 /* SignupHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF44DB28BBB769008493C3 /* SignupHeaderTableViewCell.swift */; };
 		CBFF44DE28BBB769008493C3 /* SignupHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBFF44DC28BBB769008493C3 /* SignupHeaderTableViewCell.xib */; };
@@ -363,6 +365,8 @@
 		CBD7D5D028BFCCDD0043A07E /* AlertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConfig.swift; sourceTree = "<group>"; };
 		CBD8025A28C3BFE7000F0680 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		CBD8025B28C3BFE7000F0680 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
+		CBF26A3028E02B1900236CBC /* AuthValidatorsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidatorsTest.swift; sourceTree = "<group>"; };
+		CBF26A3528E02E5B00236CBC /* AuthValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidators.swift; sourceTree = "<group>"; };
 		CBFF44D928BB65EA008493C3 /* SignupTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTableViewCellModel.swift; sourceTree = "<group>"; };
 		CBFF44DB28BBB769008493C3 /* SignupHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		CBFF44DC28BBB769008493C3 /* SignupHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupHeaderTableViewCell.xib; sourceTree = "<group>"; };
@@ -808,6 +812,7 @@
 		CB7BF853276F4AAD0090FE0A /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				CBF26A3428E02E4A00236CBC /* AuthValidators */,
 				CB50A57B28A8ECAB00A7F082 /* AdditionalInfo */,
 				CB50A57228A8E0B800A7F082 /* Signup */,
 				CB50A56D28A8E07200A7F082 /* Congratulations */,
@@ -956,6 +961,7 @@
 		CB9749BC276A4F7800357BF2 /* SpenderTests */ = {
 			isa = PBXGroup;
 			children = (
+				CBF26A2F28E02B0A00236CBC /* Validators */,
 				CB9749BD276A4F7800357BF2 /* SpenderTests.swift */,
 			);
 			path = SpenderTests;
@@ -1094,6 +1100,22 @@
 				CB539AD828C799B600B003E2 /* ProfileCell.xib */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		CBF26A2F28E02B0A00236CBC /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				CBF26A3028E02B1900236CBC /* AuthValidatorsTest.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		CBF26A3428E02E4A00236CBC /* AuthValidators */ = {
+			isa = PBXGroup;
+			children = (
+				CBF26A3528E02E5B00236CBC /* AuthValidators.swift */,
+			);
+			path = AuthValidators;
 			sourceTree = "<group>";
 		};
 		FC7ED27727377D2CC119CD96 /* Frameworks */ = {
@@ -1502,6 +1524,7 @@
 				CBD7D5D128BFCCDD0043A07E /* AlertConfig.swift in Sources */,
 				CB7E25A228D9680A006605BC /* SpenderWidget.intentdefinition in Sources */,
 				CB14430228BE5FED00D37E5B /* ServiceUnavailableVC.swift in Sources */,
+				CBF26A3628E02E5B00236CBC /* AuthValidators.swift in Sources */,
 				CB8674FA2896EF6A00144558 /* AuthAPI.swift in Sources */,
 				CB8675022896EF9400144558 /* FeedbackAPI.swift in Sources */,
 				CB7BF869276F819D0090FE0A /* ActivityVC.swift in Sources */,
@@ -1554,6 +1577,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF26A3128E02B1900236CBC /* AuthValidatorsTest.swift in Sources */,
 				CB9749BE276A4F7800357BF2 /* SpenderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1807,8 +1831,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1843,8 +1865,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
