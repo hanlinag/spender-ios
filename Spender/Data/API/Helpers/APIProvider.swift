@@ -72,7 +72,20 @@ class SpenderProvider<Target> where Target: Moya.TargetType {
                // cancellable.cancel()
             }
         })
-        
+
+    }
+
+    func requestAsync(_ t: Target) async throws -> Response {
+        return try await withCheckedThrowingContinuation { continuation in
+            _ = self.provider.request(t) { result in
+                switch result {
+                case .success(let response):
+                    continuation.resume(returning: response)
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                }
+            }
+        }
     }
     
     

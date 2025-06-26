@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '15.5'
+platform :ios, '18.0'
 
 target 'Spender' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -24,13 +24,9 @@ target 'Spender' do
   pod 'AppCenter'
   #Photo Lib
   pod 'Kingfisher'
-  #Rx and Network
+  #Networking
   pod 'Moya', '15.0.0'
-  pod 'Moya/RxSwift', '15.0.0'
   pod 'Alamofire'
-  pod 'RxAlamofire'
-  pod 'RxDataSources'
-  pod 'RxRealm'
   #Realm DB
   pod 'RealmSwift', '10.28.3'
   pod 'Realm', '10.28.3'
