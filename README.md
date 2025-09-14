@@ -9,6 +9,8 @@
 </br>
 *Disclaimer: This project and documentation are still under constructions such as refactoring, fixing bug. However, the basic funcationalities should be working properly.*
 
+**Minimum iOS Version: 18.0**
+
  </br>
 
 # Requirements Specification

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import RxCocoa
 import RxSwift
 
 struct ProfilePicture {
@@ -17,10 +16,13 @@ struct ProfilePicture {
 
 
 
+@MainActor
 final class AuthVM: NSObject {
     static let shared = AuthVM()
-    
+
     var accountStatus: String? = ""
+
+    private let disposeBag = DisposeBag()
     
     var signupMode: SignupMode = .normal //Default
     
@@ -29,23 +31,25 @@ final class AuthVM: NSObject {
     func clearAuthInfo() {
         self.accountStatus = nil
     }
-    
+
     func loginWith(email: String?, password: String?) {
-        
+
         if let mail = email, let pw = password {
             API.Auth.login(email: mail, password: pw, loginType: LoginType.email.rawValue)
                 .requestAPI()
                 .subscribe { response in
                     debugPrint(response.statusCode)
-                    
+
                 } onFailure: { error in
                     debugPrint(error.localizedDescription)
-                } onDisposed: {
-                    DisposeBag()
                 }
-        } else {
-            
+                .disposed(by: disposeBag)
         }
-        
+    }
+
+    func loginAsync(email: String, password: String) async throws {
+        let response = try await API.Auth.login(email: email, password: password, loginType: LoginType.email.rawValue)
+            .requestAPIAsync()
+        debugPrint(response.statusCode)
     }
 }

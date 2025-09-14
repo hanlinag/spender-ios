@@ -1,0 +1,16 @@
+workflows:
+  ios-build:
+    name: Build and Test
+    environment:
+      xcode: latest
+      vars:
+        XCODE_WORKSPACE: Spender.xcworkspace
+        XCODE_SCHEME: Spender
+    scripts:
+      - name: Install dependencies
+        script: |
+          brew install cocoapods || true
+          pod install --repo-update
+      - name: Build
+        script: |
+          xcodebuild -workspace $XCODE_WORKSPACE -scheme $XCODE_SCHEME -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14' build
